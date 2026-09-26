@@ -146,6 +146,8 @@ def main():
     except Exception as e:
         sys.exit(f"Copywriter failed ({e}). Not posting an incomplete story.")
     copy = P.scrub(copy)
+    for k in [k for k in copy if k.startswith('caption_')]:
+        copy[k] = copy[k].replace('*', '')  # asterisks only mean 'highlight' on slides; social captions show them literally
     post = {**copy, "story_id": story["id"], "topic": story["topic"], "title": story["title"],
             "source_name": story["sourceName"], "source_url": story.get("sourceUrl"), "writer": writer,
             "mode": mode, "trend": trend}

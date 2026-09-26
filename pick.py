@@ -218,6 +218,8 @@ def main():
         if not copy:
             sys.exit("AI copywriter unavailable and no story short enough to show completely. Skipping this slot.")
     copy = scrub(copy)
+    for k in [k for k in copy if k.startswith('caption_')]:
+        copy[k] = copy[k].replace('*', '')  # asterisks only mean 'highlight' on slides; social captions show them literally
     post = {**copy, "story_id": story["id"], "topic": story["topic"], "title": story["title"],
             "source_name": story["sourceName"], "source_url": story.get("sourceUrl"), "writer": writer}
     src = f"\n\nSource: {story['sourceName']} {story.get('sourceUrl') or ''}".rstrip()
