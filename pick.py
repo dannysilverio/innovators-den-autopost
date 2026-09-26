@@ -8,7 +8,7 @@ import json, os, re, html, sys, pathlib, datetime as dt, urllib.request, urllib.
 
 API = os.environ.get("DEN_API", "https://innovators-den-news--danny449.replit.app/api")
 APP_LINK = os.environ.get("DEN_APP_LINK", "https://innovators-den-news--danny449.replit.app/web/")
-MODEL = os.environ.get("ANTHROPIC_MODEL") or "claude-sonnet-4-5"
+MODEL = os.environ.get("ANTHROPIC_MODEL") or "claude-sonnet-5"
 ROOT = pathlib.Path(__file__).parent
 STATE, POSTED = ROOT / "state.json", ROOT / "posted.json"
 
@@ -157,11 +157,13 @@ def _llm(story, feedback=None, previous=None):
     if feedback:
         msgs += [{"role": "assistant", "content": json.dumps(previous)},
                  {"role": "user", "content": "Fix these problems and return the full corrected JSON only: " + "; ".join(feedback)}]
-    body = json.dumps({"model": MODEL, "max_tokens": 4000, "messages": msgs}).encode()
+    body = json.dumps({"model": MODEL, "max_tokens": 16000, "messages": msgs}).encode()
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, headers={
         "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        text = json.loads(r.read())["content"][0]["text"]
+    with urllib.request.urlopen(req, timeout=300) as r:
+        res = json.loads(r.read())
+    # Newer models may return thinking blocks first; use only the text blocks.
+    text = "".join(b.get("text", "") for b in res["content"] if b.get("type") == "text")
     return json.loads(text[text.find("{"): text.rfind("}") + 1])
 
 def fallback(story):
