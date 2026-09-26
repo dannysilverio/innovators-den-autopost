@@ -1,1 +1,25 @@
-[]
+[
+ {
+  "date": "2026-09-26",
+  "posted_at": "2026-09-26T19:35-04:00",
+  "mode": "trending",
+  "run_id": "20260926-2334-36279824815",
+  "story_id": "c0e7baad-73f8-4041-8bea-620cb1ee74ac",
+  "topic": "Spotlight",
+  "title": "Quavo Announces QR\u00d6MELIFE Tracklist With Tyler, The Creator, Justin Timberlake, Future, & More",
+  "source": "Stereogum",
+  "writer": "claude",
+  "dry_run": true,
+  "results": {
+   "instagram": {
+    "dry_run": true
+   },
+   "facebook": {
+    "dry_run": true
+   },
+   "linkedin": {
+    "dry_run": true
+   }
+  }
+ }
+]
