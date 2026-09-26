@@ -107,7 +107,8 @@ def main():
         except Exception as e:
             results[name] = {"ok": False, "error": str(e)[:600]}; print(f"{name}: FAILED {e}")
     log = json.loads(POSTED.read_text()) if POSTED.exists() else []
-    log.append({"date": dt.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d"),
+    now = dt.datetime.now(ZoneInfo("America/New_York"))
+    log.append({"date": now.strftime("%Y-%m-%d"), "posted_at": now.isoformat(timespec="minutes"), "mode": post.get("mode"),
                 "run_id": run_id, "story_id": post["story_id"], "topic": post["topic"], "title": post["title"],
                 "source": post["source_name"], "writer": post.get("writer"), "dry_run": DRY, "results": results})
     POSTED.write_text(json.dumps(log, indent=1))

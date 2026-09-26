@@ -3,15 +3,19 @@
 Posts one branded carousel every **Mon / Wed / Fri at 11:00 AM ET** to Instagram, the Facebook Page and the LinkedIn company page. No approval step.
 
 ## How it works
-1. **cron-job.org** calls the GitHub Actions workflow at 11:00 ET (same trigger setup as formerlyknownwrites).
-2. `guard.py` checks whether a post already went out today and skips the run if so. The GitHub backup schedule at about 11:30 relies on this so it never double-posts.
-3. `pick.py` pulls approved stories from Innovators Den News (`/api/articles?status=approved`). It rotates through the categories (Innovation comes up 4x per cycle) and skips categories with no fresh story (96h window). It filters out sales/deals, reviews, violence and partisan politics, and never repeats a story.
-4. **Complete stories only.** A story is eligible only if the full article text is available (at least 1,200 characters). When the Den feed carries only a teaser, the full article is pulled from the publisher's page. Claude (Anthropic API) then tells the whole story in order: cover + 3 to 8 story slides + closing slide, up to Instagram's 10-slide limit. Every slide is a complete thought, with no cliffhangers or "..." endings. If a draft breaks the rules, it is sent back for one revision. If it still runs long, adjacent slides are merged, and nothing is ever dropped. Separate captions are written for IG, FB and LinkedIn: facts only, no em dashes, source credited.
-   - If the AI copywriter is unavailable, the no-AI backup posts only a story short enough to show in full. If none qualifies, the slot is skipped rather than posting half a story.
-5. `render.py` renders 1080x1350 slides in the Den brand (lightbulb-brain logo, black / #FFE600 / #FF4D7E).
-6. Slides are committed to `public/<run>/` so Instagram and Facebook can fetch them. The repo must be **public**.
-7. `publish.py` posts to each platform independently. A LinkedIn failure never blocks Instagram.
-8. Results are logged to `posted.json`. The category rotation is saved in `state.json`.
+Every 2 hours (9am to 9pm ET), cron-job.org wakes the GitHub workflow and Claude runs the trend desk:
+
+1. **Should we post?** (`scout.py`)
+   - **Mon/Wed/Fri:** one post is guaranteed from 11am on.
+   - **Any day:** an extra post goes out when a story is trending hard. Max 2 posts on Mon/Wed/Fri and 1 on other days, at least 3 hours apart, only between 8am and 9pm ET.
+2. **What's trending?** Claude gets the Den feed's fresh stories (last 36h, all 13 topics) and uses **live web search** (trending searches plus what major outlets are covering at once) to score how hard each is trending, from 1 to 10.
+   - Only stories inside the Den's topics count. Politics, crime, deaths, gossip and product sales are excluded.
+   - An extra post needs a score of **8+** (set the `TREND_MIN_SCORE` variable to change it).
+   - On a baseline slot, the top trending story is used if it scores 5+. Otherwise the category rotation picks one.
+   - If a bigger in-topic story is missing from the Den feed, Claude can pull it straight from a major outlet.
+3. **Complete stories only.** The full article text is required. Claude tells the whole story, in order, on up to 10 slides (cover, 3 to 8 story slides, closing). Every slide is a complete thought. Separate captions go to IG, FB and LinkedIn: facts only, no em dashes, source credited. If the writer fails, nothing posts.
+4. `render.py` builds the 1080x1350 slides in the Den brand. They're committed to `public/<run>/` (the repo must be **public** so Instagram and Facebook can load them).
+5. `publish.py` posts to each platform independently and logs everything to `posted.json` (time, mode `trending`/`baseline`, and results or errors).
 
 ## One-time setup
 
@@ -30,16 +34,16 @@ Posts one branded carousel every **Mon / Wed / Fri at 11:00 AM ET** to Instagram
 | `LI_ORG_ID` | Numeric ID in the company page admin URL (linkedin.com/company/**12345678**/admin) |
 | `LI_ACCESS_TOKEN` | LinkedIn app token with `w_organization_social` (needs Community Management API approval) |
 
-Optional **Variables**: `PLATFORMS` (e.g. `instagram,facebook` until LinkedIn is approved), `ANTHROPIC_MODEL`, `IG_GRAPH_HOST` (`graph.facebook.com` if using a Facebook-login token instead of Instagram-login).
+Optional **Variables**: `TREND_MIN_SCORE` (default 8), `PLATFORMS` (e.g. `instagram,facebook` until LinkedIn is approved), `ANTHROPIC_MODEL`, `IG_GRAPH_HOST` (`graph.facebook.com` if using a Facebook-login token instead of Instagram-login).
 
 ### 3. cron-job.org
 - URL: `https://api.github.com/repos/dannysilverio/innovators-den-autopost/actions/workflows/post.yml/dispatches`
 - Method: POST. Body: `{"ref":"main"}`
 - Headers: `Authorization: Bearer <fine-grained PAT with Actions: read/write on this repo>`, `Accept: application/vnd.github+json`
-- Schedule: Mon, Wed, Fri at 11:00, timezone America/New_York.
+- Schedule: **every day, every 2 hours from 9:00 to 21:00** (9am, 11am, 1pm, 3pm, 5pm, 7pm, 9pm), timezone America/New_York.
 
 ### 4. First test
-Actions → *Innovators Den autopost* → Run workflow → `dry_run = 1`. Check the slides in `public/`, then run once with `dry_run = 0`.
+Actions → *Innovators Den autopost* → Run workflow → `dry_run = 1`, `force = 1`. Check the slides in `public/`, then run once with `dry_run = 0`.
 
 ## Token upkeep
 - Instagram and Facebook long-lived user tokens expire after about 60 days. Page tokens made from a long-lived user token don't expire.
