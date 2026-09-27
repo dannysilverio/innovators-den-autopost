@@ -21,5 +21,23 @@
     "dry_run": true
    }
   }
+ },
+ {
+  "date": "2026-09-26",
+  "posted_at": "2026-09-26T20:19-04:00",
+  "mode": "baseline",
+  "run_id": "20260927-0018-36281995652",
+  "story_id": "eedd1193-b771-4583-8849-484fc17126a9",
+  "topic": "Innovation",
+  "title": "What 25,000 Startup Applications Reveal About The New Rules Of Seed-Stage Startups",
+  "source": "Crunchbase News",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18053137019651076"
+   }
+  }
  }
 ]
