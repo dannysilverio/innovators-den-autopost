@@ -39,5 +39,27 @@
     "id": "18053137019651076"
    }
   }
+ },
+ {
+  "date": "2026-09-26",
+  "posted_at": "2026-09-26T21:52-04:00",
+  "mode": "trending",
+  "run_id": "20260927-0150-36286657863",
+  "story_id": "2138a2df-81e8-43ed-85af-e9631162b1c5",
+  "topic": "Astrology",
+  "title": "September\u2019s Aries Full Moon: Be YOU, Unapologetically",
+  "source": "AstroStyle",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18130475482739760"
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122206382426797044"
+   }
+  }
  }
 ]
