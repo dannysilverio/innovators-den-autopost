@@ -1,0 +1,64 @@
+{
+ "kicker": "SPACE WATCH",
+ "hook": "Starship Reaches *Orbit* for the First Time",
+ "dek": "Starship reached orbit for the first time despite an engine loss and a scrub reversal.",
+ "slides": [
+  {
+   "label": "What Happened",
+   "text": "SpaceX's Starship launched from South Texas early Monday and reached *Earth orbit* for the first time ever."
+  },
+  {
+   "label": "The Hiccup",
+   "text": "Right after stage separation, the upper stage lost *one of its six* Raptor engines."
+  },
+  {
+   "label": "Quick Reversal",
+   "text": "SpaceX first called off the orbit attempt, then reversed course minutes later and kept pushing."
+  },
+  {
+   "label": "The Plan",
+   "text": "The original plan: orbit Earth *six times* over nine hours while deploying *26* new Starlink satellites."
+  },
+  {
+   "label": "Still Unclear",
+   "text": "It's still unclear if that mission plan changed because of the engine loss and the delay."
+  },
+  {
+   "label": "Booster Landing",
+   "text": "The Super Heavy booster separated, returned to the Gulf coast, and stuck its *cleanest* simulated landing yet."
+  },
+  {
+   "label": "Big Picture",
+   "text": "Musk is centering the whole company on Starship, from NASA moon missions to orbital data center satellites."
+  },
+  {
+   "label": "Why It Matters",
+   "text": "Reusable rockets could cut launch costs, opening space work to *more builders*, not just legacy giants."
+  }
+ ],
+ "cta_line": "Orbit hit. *Reusability* next.",
+ "question": "Would cheaper rockets open space up to more builders, not just billionaires?",
+ "caption_instagram": "Starship just made it to orbit, and it wasn't a clean ride.\n\nSpaceX's mega rocket launched from South Texas early Monday and reached Earth orbit for the first time ever, according to TechCrunch. Right after stage separation, the upper stage lost one of its six Raptor engines. SpaceX first scrubbed the orbit attempt, then reversed course minutes later and kept pushing.\n\nThe original plan had Starship circling Earth six times over nine hours while dropping off 26 new Starlink satellites. It's still unclear if that plan changed. Meanwhile the Super Heavy booster nailed its cleanest simulated landing yet, a big step toward a fully reusable rocket.\n\nReaching orbit brings SpaceX closer to regular commercial missions and cheaper access to space, which could open doors for builders who never had a shot at the industry before.\n\nWould cheaper rockets open space up to more builders, not just billionaires?\n\nFull story: link in bio.\n\n#TheInnovatorsDen #SpaceX #Starship #Innovation #TechNews #SpaceRace #FutureTech",
+ "caption_facebook": "Big space news: SpaceX's Starship finally reached Earth orbit, though it wasn't smooth, TechCrunch reports. Right after separating from its booster, the rocket lost one of six engines. SpaceX called off the orbit attempt, then reversed course minutes later and pushed through anyway.\n\nThe plan was for Starship to circle Earth six times over nine hours and drop 26 new Starlink satellites, though it's unclear if that held up. The booster landed cleaner than ever in a simulated touchdown over the Gulf.\n\nThis matters because cheaper, reusable rockets could open space work to way more people, not just the big players.\n\nWould cheaper rockets open space up to more builders, not just billionaires? #TheInnovatorsDen\n\nSource: TechCrunch https://techcrunch.com/2026/09/28/spacexs-starship-rocket-reaches-orbit-for-the-first-time/",
+ "caption_linkedin": "SpaceX's Starship just reached Earth orbit for the first time, and the path there, per TechCrunch, says a lot about how real engineering decisions get made under pressure.\n\nRight after stage separation, the rocket lost one of its six Raptor engines. SpaceX initially scrubbed the orbit attempt, then reversed that call within minutes and pushed forward anyway. That kind of real time recalibration is a founder level lesson: sometimes the right move is to keep going even after you've already said stop.\n\nThe original mission plan had Starship orbiting Earth six times over nine hours while deploying 26 new Starlink satellites. It's still unclear if that plan survived the delay. The Super Heavy booster, separately, completed its cleanest simulated landing yet, a real step toward full reusability.\n\nFor founders and operators watching from the outside, this is a reminder that lower launch costs could eventually reshape who gets to build in space, not just who funds it.\n\nWould cheaper, reusable rockets change who gets to build in the space economy? #TheInnovatorsDen #Innovation #SpaceTech\n\nSource: TechCrunch https://techcrunch.com/2026/09/28/spacexs-starship-rocket-reaches-orbit-for-the-first-time/",
+ "story_id": "852afeda-a442-4fa9-82e4-847813523fa2",
+ "topic": "Innovation",
+ "title": "SpaceX\u2019s Starship rocket reaches orbit for the first time",
+ "source_name": "TechCrunch",
+ "source_url": "https://techcrunch.com/2026/09/28/spacexs-starship-rocket-reaches-orbit-for-the-first-time/",
+ "writer": "claude",
+ "mode": "trending",
+ "trend": {
+  "story_id": "852afeda-a442-4fa9-82e4-847813523fa2",
+  "outside_url": null,
+  "topic": "Innovation",
+  "score": 9,
+  "why": "SpaceX's Starship reached Earth orbit for the first time ever this morning, a historic milestone drawing simultaneous live coverage from CNN, CNBC, NPR, TechCrunch, Fox Business, and Space.com within the last few hours.",
+  "evidence": [
+   "https://www.cnbc.com/2026/09/28/spacex-prepares-to-send-starship-rocket-to-orbit-for-first-time.html",
+   "https://techcrunch.com/2026/09/28/spacexs-starship-rocket-reaches-orbit-for-the-first-time/",
+   "https://www.npr.org/2026/09/28/nx-s1-5983418/spacex-starship-first-orbital-flight-14-nasa",
+   "https://www.cnn.com/2026/09/28/science/live-news/spacex-starship-flight-14-launch"
+  ]
+ }
+}
