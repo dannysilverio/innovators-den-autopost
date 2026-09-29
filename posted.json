@@ -127,5 +127,27 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Monday, 28-Sep-26 12:03:34 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ApAPWH5zps0-ZeXj4IBssa_\"}}"
    }
   }
+ },
+ {
+  "date": "2026-09-29",
+  "posted_at": "2026-09-29T09:03-04:00",
+  "mode": "trending",
+  "run_id": "20260929-1302-36571967861",
+  "story_id": "023ade6e-1961-456e-8a81-0b8ffe416681",
+  "topic": "Innovation",
+  "title": "Anthropic warns of \u2018catastrophic\u2019 AI risks in its own IPO filing",
+  "source": "The Verge",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18104341414999363"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Tuesday, 29-Sep-26 06:03:31 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AhK4gLrXrqtz-QrQRuEjXY7\"}}"
+   }
+  }
  }
 ]
