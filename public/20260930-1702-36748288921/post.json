@@ -1,0 +1,64 @@
+{
+ "kicker": "MONEY MOVES",
+ "hook": "Hedge Fund CEO Drops *$3 Billion* on One University",
+ "dek": "Ken Griffin's gift is the largest single donation ever made to a U.S. university.",
+ "slides": [
+  {
+   "label": "What happened",
+   "text": "Ken Griffin, founder of hedge fund Citadel, is giving *$3 billion* to Carnegie Mellon University."
+  },
+  {
+   "label": "Record breaking",
+   "text": "It's the *largest single donation* ever made to a U.S. university, topping all previous gifts."
+  },
+  {
+   "label": "Miami campus",
+   "text": "*$2 billion* of the gift builds a new 35-acre CMU campus in Miami's Wynwood neighborhood."
+  },
+  {
+   "label": "Who it serves",
+   "text": "The campus will enroll about *3,500 students* across undergrad, master's and doctoral programs."
+  },
+  {
+   "label": "How it works",
+   "text": "Instead of majors, it focuses on 'grand challenge areas': AI, health, energy, national security and manufacturing."
+  },
+  {
+   "label": "Pittsburgh piece",
+   "text": "The rest splits between renaming CMU's *computer science program* after Griffin and other main campus projects."
+  },
+  {
+   "label": "The backdrop",
+   "text": "Griffin owns a home in Miami, joins CMU's Board of Trustees, and picked a city already home to *135,000* college students."
+  },
+  {
+   "label": "Why it matters",
+   "text": "Huge private gifts increasingly shape which schools get to build AI focused programs, raising real access questions."
+  }
+ ],
+ "cta_line": "*Big money* is redrawing higher ed",
+ "question": "Should billionaire gifts decide which schools get to build the future?",
+ "caption_instagram": "$3 billion. One gift. One university transformed forever.\n\nHedge fund CEO Ken Griffin just made the largest single donation ever given to a U.S. university, and Carnegie Mellon is the one holding the check. Most of the $3 billion, about $2 billion, is building a brand new 35 acre campus in Miami's Wynwood neighborhood built around AI, health, energy and national security instead of traditional majors.\n\nThe rest lands back home in Pittsburgh, where CMU's computer science program is being renamed after Griffin. Miami already has 135,000 students across three other schools, and CMU wants a seat at that table too.\n\nGifts this size decide which schools get to build the AI future first, and who gets left waiting for a seat.\n\nWho do you think should be deciding the future of AI education, billionaires or the students actually building it?\n\nFull story: link in bio.\n#TheInnovatorsDen #Innovation #HigherEducation #AI #Miami #FutureOfWork #TechNews",
+ "caption_facebook": "Ken Griffin, the hedge fund CEO behind Citadel, just gave Carnegie Mellon University $3 billion, the biggest single gift any U.S. university has ever received. Most of it is going toward a new Miami campus built around AI, health, energy and national security instead of regular majors, with the rest renaming CMU's computer science program after him back in Pittsburgh.\n\nMiami already has 135,000 students spread across other schools, and now CMU is moving in with billionaire backing. Fast Company reports this could reshape who gets first access to AI focused education.\n\nShould a single billionaire's check be deciding where the next wave of AI talent gets trained? #TheInnovatorsDen\n\nSource: Fast Company https://www.fastcompany.com/91615785/hedge-fund-ceo-ken-griffin-just-made-single-biggest-donation-ever-u-s-university",
+ "caption_linkedin": "Ken Griffin, founder of Citadel, just made the largest single donation in U.S. university history: $3 billion to Carnegie Mellon University, according to Fast Company.\n\nThe bulk, $2 billion, funds a new 35 acre campus in Miami's Wynwood district, enrolling around 3,500 students across undergraduate, master's and doctoral levels. Rather than traditional majors, the curriculum centers on 'grand challenge areas' like AI, energy resilience, national security and advanced manufacturing. The rest renames CMU's computer science program after Griffin and funds other projects on the Pittsburgh campus.\n\nFor founders and operators watching the AI talent pipeline, this matters. Private capital is increasingly shaping which institutions get to define what AI education even looks like, and Miami's existing 135,000 student ecosystem is about to compete with a fresh, heavily funded entrant.\n\nAccess to that kind of infrastructure has always been uneven. As billionaire backed campuses multiply, the question isn't just who builds AI, it's who gets trained to build it.\n\nWhere should the next generation of AI talent actually be trained?\n\n#Innovation #HigherEducation #AI\n\nSource: Fast Company https://www.fastcompany.com/91615785/hedge-fund-ceo-ken-griffin-just-made-single-biggest-donation-ever-u-s-university",
+ "story_id": "1be13aa5-9282-426c-a2f4-8a6faacbc6f2",
+ "topic": "Innovation",
+ "title": "Hedge fund CEO Ken Griffin just made the single biggest donation ever to a U.S. university",
+ "source_name": "Fast Company",
+ "source_url": "https://www.fastcompany.com/91615785/hedge-fund-ceo-ken-griffin-just-made-single-biggest-donation-ever-u-s-university",
+ "writer": "claude",
+ "mode": "trending",
+ "trend": {
+  "story_id": "1be13aa5-9282-426c-a2f4-8a6faacbc6f2",
+  "outside_url": null,
+  "topic": "Finance",
+  "score": 8,
+  "why": "Ken Griffin's record-breaking $3B gift to Carnegie Mellon is being covered simultaneously by nearly every major outlet (CNBC, CNN, Bloomberg, WaPo, NBC, Forbes, Axios, AP) within hours of the announcement, making it the single biggest cross-outlet story in the Den's lane right now.",
+  "evidence": [
+   "https://www.cnbc.com/2026/09/30/ken-griffin-pledges-3-billion-to-carnegie-mellon-university.html",
+   "https://www.cnn.com/2026/09/30/business/ken-griffin-carnegie-mellon-donation-miami",
+   "https://www.washingtonpost.com/education/2026/09/30/carnegie-mellon-nets-3-billion-gift-most-ever-given-university/",
+   "https://www.forbes.com/sites/siladityaray/2026/09/30/billionaire-ken-griffin-pledges-record-3-billion-to-carnegie-mellon-backing-miami-campus-plans/"
+  ]
+ }
+}
