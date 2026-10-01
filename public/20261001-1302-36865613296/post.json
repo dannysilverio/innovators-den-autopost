@@ -1,0 +1,64 @@
+{
+ "kicker": "AI WATCH",
+ "hook": "Google Drops *Gemini 4 Argon*, Its Strongest AI Yet",
+ "dek": "A new model built for cybersecurity, coding, and long, complex tasks.",
+ "slides": [
+  {
+   "label": "What Happened",
+   "text": "Google released *Gemini 4 Argon*, which it calls its most powerful AI model yet, built for coding, research, and writing."
+  },
+  {
+   "label": "Who Gets It",
+   "text": "Argon is only rolling out to select cyber partners through Google's *Fairwind Program*, its security initiative."
+  },
+  {
+   "label": "Its Specialty",
+   "text": "Trained for defensive cyber work, Argon can *autonomously find, validate, and patch* critical software vulnerabilities."
+  },
+  {
+   "label": "Other Skills",
+   "text": "Google says Argon is also strong at debugging, codebase migrations, and parsing long videos and charts."
+  },
+  {
+   "label": "The Claim",
+   "text": "Google says Argon outscored OpenAI's *GPT-6 Astra* and Anthropic's Fable and Opus on multiple AI benchmarks."
+  },
+  {
+   "label": "The Race",
+   "text": "OpenAI's Astra, Anthropic's Fable, now Argon, every top lab keeps calling its newest model the *best yet*."
+  },
+  {
+   "label": "Google's Comeback",
+   "text": "Once seen as behind in AI, Google's Gemini app recently hit *over a billion* monthly users, rivaling ChatGPT."
+  },
+  {
+   "label": "Why It Matters",
+   "text": "As AI tools reshape coding and security work, early access to models like Argon shapes who builds the next wave of tech."
+  }
+ ],
+ "cta_line": "The AI race just *leveled up* again",
+ "question": "Should early access to powerful AI tools like Argon be this limited, or opened up faster?",
+ "caption_instagram": "Google just said 'watch this.' \n\nGemini 4 Argon is Google's most powerful AI model yet, and it's being pitched hard at cybersecurity work, claiming it can find, validate, and patch software vulnerabilities on its own. Right now it's only in the hands of select partners through Google's Fairwind Program, not the public.\n\nThis drops right after OpenAI's Astra and Anthropic's Fable, each one claiming to be the smartest model out. Google says Argon beats them both on benchmarks, and its Gemini app recently crossed a billion monthly users, putting it right up there with ChatGPT.\n\nWho gets first access to tools like this decides who builds what's next.\n\nShould early access to powerful AI tools like Argon be this limited, or opened up faster?\n\nFull story: link in bio.\n\n#TheInnovatorsDen #AI #TechNews #Google #Gemini #Cybersecurity #Innovation #ForUsByUs",
+ "caption_facebook": "Google just dropped Gemini 4 Argon, calling it its most powerful AI model yet. It's built to handle coding, research, writing, and especially cybersecurity, with Google saying it can find, validate, and patch software vulnerabilities on its own.\n\nFor now, it's only available to select partners through Google's Fairwind Program, not the general public. This comes right after OpenAI's Astra and Anthropic's Fable, each one claiming top spot in the AI race. Google says Argon beats them both on the benchmarks, and Gemini's app recently hit a billion monthly users.\n\nTools like this are going to shape who builds what's next in tech and security.\n\nShould early access to powerful AI tools like Argon be this limited, or opened up faster? #TheInnovatorsDen\n\nSource: TechCrunch https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+ "caption_linkedin": "Google just raised the stakes in the AI model race.\n\nGemini 4 Argon, described as Google's most powerful model yet, is built for coding, research, writing, and especially defensive cybersecurity work. Google says it can autonomously find, validate, and patch critical software vulnerabilities, and the model is currently only available to select partners through its Fairwind Program.\n\nThis follows a pattern we've seen all year: OpenAI's Astra, Anthropic's Fable, now Argon, each lab racing to claim the top benchmark spot. Google says Argon outperforms both competitors, and its Gemini app recently crossed a billion monthly users, putting it on par with ChatGPT.\n\nFor founders and technical teams, this matters beyond the headline. Who gets early access to tools like this often determines who ships faster, secures systems better, and sets the pace in their market.\n\nShould early access to powerful AI tools like Argon be this limited, or opened up faster?\n\n#AI #Cybersecurity #Innovation\n\nSource: TechCrunch https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+ "story_id": "f84b6f88-e3ed-459c-9311-f39bb0b37c36",
+ "topic": "Innovation",
+ "title": "Google releases Gemini 4 Argon, called its most powerful model yet",
+ "source_name": "TechCrunch",
+ "source_url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+ "writer": "claude",
+ "mode": "trending",
+ "trend": {
+  "story_id": "f84b6f88-e3ed-459c-9311-f39bb0b37c36",
+  "outside_url": null,
+  "topic": "Innovation",
+  "score": 9,
+  "why": "Google's Gemini 4 Argon launch is dominating tech and markets coverage in the last 24 hours, moving Alphabet's stock and drawing benchmarked comparisons across TechCrunch, Seeking Alpha, GuruFocus, Stocktwits and more.",
+  "evidence": [
+   "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+   "https://www.gurufocus.com/news/9105090/google-shares-climbs-as-gemini-4-argon-enters-the-ai-race",
+   "https://stocktwits.com/news-articles/markets/equity/googl-stock-gemini-4-argon-launch-reclaim-leadership/cZD05VWRBip",
+   "https://artificialanalysis.ai/articles/gemini-4-argon-google-top-three-labs"
+  ]
+ }
+}
