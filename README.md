@@ -14,7 +14,7 @@ Every 2 hours (9am to 9pm ET), cron-job.org wakes the GitHub workflow and Claude
    - On a baseline slot, the top trending story is used if it scores 5+. Otherwise the category rotation picks one.
    - If a bigger in-topic story is missing from the Den feed, Claude can pull it straight from a major outlet.
 3. **Complete stories only.** The full article text is required. Claude tells the whole story, in order, on up to 10 slides (cover, 3 to 8 story slides, closing). Every slide is a complete thought. Separate captions go to IG, FB and LinkedIn: facts only, no em dashes, source credited. If the writer fails, nothing posts.
-4. `render.py` builds the 1080x1350 slides in the Den brand. They're committed to `public/<run>/` (the repo must be **public** so Instagram and Facebook can load them).
+4. `render.py` builds the 1080x1350 slides in the Den brand. The cover changes by day: Mon breaking, Tue newspaper, Wed classic, Thu tabloid, Fri magazine, Sat duotone, Sun broadcast (`covers.py`). `photo.py` finds a free-licensed Wikimedia Commons photo of the story's subject and prints the credit on the cover; with no usable photo, the classic or text newspaper cover is used. They're committed to `public/<run>/` (the repo must be **public** so Instagram and Facebook can load them).
 5. `publish.py` posts to each platform independently and logs everything to `posted.json` (time, mode `trending`/`baseline`, and results or errors).
 
 ## One-time setup

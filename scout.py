@@ -151,6 +151,17 @@ def main():
     post = {**copy, "story_id": story["id"], "topic": story["topic"], "title": story["title"],
             "source_name": story["sourceName"], "source_url": story.get("sourceUrl"), "writer": writer,
             "mode": mode, "trend": trend}
+    try:
+        from photo import find_photo
+        ph = find_photo(copy.get("photo_subjects") or [], OUT / "photo.jpg")
+        if ph:
+            ph["caption"] = copy.get("photo_caption") or ph["subject"]
+            post["photo"] = ph
+            say(f"cover photo: {ph['subject']} ({ph['credit']})")
+        else:
+            say("no licensed cover photo found, using a text cover")
+    except Exception as e:
+        say(f"photo lookup failed: {e}")
     src = f"\n\nSource: {story['sourceName']} {story.get('sourceUrl') or ''}".rstrip()
     post["caption_facebook"] += src
     post["caption_linkedin"] += src

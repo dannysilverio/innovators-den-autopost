@@ -96,15 +96,23 @@ def single(post):
             f"<p style='font-weight:600;font-size:40px;line-height:1.3;color:#D8D8D8;margin-top:44px'>{mark(post['dek'],'strong')}</p></div>"
             f"<div class='foot'><span>via {esc(post['source_name'])}</span><span style='font-family:Anton;color:#FF4D7E;font-size:32px'>FOR US. BY US.</span></div>")
 
+
+import covers
+
 def render(post, outdir):
     out = pathlib.Path(outdir); out.mkdir(parents=True, exist_ok=True); files = []
     with sync_playwright() as p:
         b = p.chromium.launch()
-        def shot(inner, name, wm=True):
+        def shot(inner, name, wm=True, full=False):
             pg = b.new_page(viewport={"width": W, "height": H})
-            pg.set_content(page(inner, wm), wait_until="networkidle"); pg.wait_for_timeout(300)
+            pg.set_content(inner if full else page(inner, wm), wait_until="networkidle"); pg.wait_for_timeout(400)
             f = out / name; pg.screenshot(path=str(f)); pg.close(); files.append(str(f))
-        for i, s in enumerate(carousel(post), 1):
+        slides = carousel(post)
+        style = covers.pick_style(post)
+        print(f"cover style: {style}")
+        for i, s in enumerate(slides, 1):
+            if i == 1 and style != "classic":
+                shot(covers.COVERS[style](post), "carousel_01.png", full=True); continue
             shot(s, f"carousel_{i:02d}.png", wm=(i != len(post["slides"]) + 2))
         shot(single(post), "single.png")
         b.close()

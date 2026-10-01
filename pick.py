@@ -96,6 +96,8 @@ Turn this news story into an Instagram carousel (up to 10 slides total) plus cap
  "slides": [ {"label": "What happened", "text": "..."}, {"label": "...", "text": "..."}, "... as many as the story needs, 3 to 8 total ...", {"label": "Why it matters", "text": "..."} ],
  "cta_line": "punchy closing line, max 40 characters, one phrase in *asterisks*",
  "question": "a real question that invites comments, max 90 characters",
+ "photo_subjects": ["exact English Wikipedia article title of the main person, group, company, team or place in the story, best first", "up to 2 more fallbacks, e.g. the company or city"],
+ "photo_caption": "max 70 characters naming who or what would be pictured, using only facts from the article",
  "caption_instagram": "120-180 words. Hook first line, 3 short paragraphs, end with the question, then 'Full story: link in bio.' then 5-8 relevant hashtags incl #TheInnovatorsDen",
  "caption_facebook": "80-130 words, conversational, ends with the question. No hashtags except #TheInnovatorsDen",
  "caption_linkedin": "120-200 words, sharper professional angle for founders/operators, short paragraphs, end with the question, 3 hashtags max"
