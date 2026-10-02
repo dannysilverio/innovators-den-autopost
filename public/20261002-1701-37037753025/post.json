@@ -1,0 +1,70 @@
+{
+ "kicker": "MEDIA MERGER",
+ "hook": "$*110B* Studio Deal Gets A New Name",
+ "dek": "Paramount and Warner Bros. Discovery's megamerger will be called Skydance.",
+ "slides": [
+  {
+   "label": "What happened",
+   "text": "Paramount Skydance CEO David Ellison announced the combined company will be named *Skydance* once the merger closes."
+  },
+  {
+   "label": "The deal",
+   "text": "It's a *$110 billion* merger between Paramount and Warner Bros. Discovery, closing next week."
+  },
+  {
+   "label": "Why the name",
+   "text": "Ellison said he didn't want a new corporate identity to *diminish or overshadow* Paramount or Warner Bros.'s legacies."
+  },
+  {
+   "label": "Cleared hurdle",
+   "text": "A judge just approved Paramount's settlement with *California and 11 other states* that sued over the deal."
+  },
+  {
+   "label": "New terms",
+   "text": "Paramount must release a minimum number of theatrical films yearly, starting with *30 films* in years one and two."
+  },
+  {
+   "label": "Leadership move",
+   "text": "Ynon Kreiz, former Mattel chairman and CEO, has been named *co-CEO* of the new company."
+  },
+  {
+   "label": "Timeline",
+   "text": "The merger is expected to officially close on *October 6th*."
+  },
+  {
+   "label": "Why it matters",
+   "text": "Media consolidation shapes whose stories get greenlit. Underrepresented creators should watch who holds power at *Skydance*."
+  }
+ ],
+ "cta_line": "Big name, bigger stakes: *watch this space*",
+ "question": "Do mega-mergers like this help or hurt diverse storytelling in Hollywood?",
+ "photo_subjects": [
+  "David Ellison",
+  "Skydance Media",
+  "Paramount Global"
+ ],
+ "photo_caption": "David Ellison, Skydance CEO, announcing the new combined company name",
+ "caption_instagram": "$110 billion merger. One new name. Skydance.\n\nParamount and Warner Bros. Discovery are combining into a company that will officially be called Skydance, according to CEO David Ellison. He says the name protects both studios' identities instead of burying them under a new corporate label.\n\nA judge just cleared the last legal hurdle after states sued over the deal, Paramount now has to release at least 30 films a year for two years, and Mattel's former CEO Ynon Kreiz is stepping in as co-CEO. The merger closes October 6th.\n\nMedia consolidation always changes who gets greenlit and whose stories get told. Worth watching closely.\n\nDo mega-mergers like this help or hurt diverse storytelling in Hollywood?\n\nFull story: link in bio.\n#TheInnovatorsDen #Hollywood #MediaMerger #Skydance #Paramount #WarnerBros #Entertainment",
+ "caption_facebook": "Big Hollywood news: Paramount and Warner Bros. Discovery's $110 billion merger will officially be called Skydance. CEO David Ellison says he didn't want a new corporate name to bury either studio's legacy.\n\nA judge just approved a settlement clearing the deal's last legal roadblock, Paramount now has to put out at least 30 films a year for the next two years, and Mattel's former CEO Ynon Kreiz is joining as co-CEO. The deal closes October 6th, according to The Verge.\n\nDo mega-mergers like this help or hurt diverse storytelling in Hollywood?\n\nSource: The Verge https://www.theverge.com/entertainment/1004016/paramount-warner-bros-skydance-megamerger-name",
+ "caption_linkedin": "A $110 billion media merger just got its final name: Skydance.\n\nParamount and Warner Bros. Discovery are combining, and CEO David Ellison says the Skydance name is designed to let both legacy studios keep their own identities instead of disappearing into a generic corporate brand.\n\nThe business details matter here. A judge just approved a settlement with California and 11 other states that had sued over the deal, clearing its last major legal obstacle. Paramount is now required to release at least 30 theatrical films annually for the first two years. Mattel's former chairman and CEO, Ynon Kreiz, has been named co-CEO of the new company. The deal is expected to close October 6th, per The Verge.\n\nFor founders and operators in media and entertainment, this is a reminder that scale changes leverage, who greenlights projects, and who gets access to distribution.\n\nDo mega-mergers like this help or hurt diverse storytelling in Hollywood?\n#MediaMerger #Hollywood #TheInnovatorsDen\n\nSource: The Verge https://www.theverge.com/entertainment/1004016/paramount-warner-bros-skydance-megamerger-name",
+ "story_id": "e2662591-b659-4eb8-95ab-5dd5e2f830ed",
+ "topic": "Innovation",
+ "title": "Paramount\u2019s Warner Bros. megamerger will just be called Skydance",
+ "source_name": "The Verge",
+ "source_url": "https://www.theverge.com/entertainment/1004016/paramount-warner-bros-skydance-megamerger-name",
+ "writer": "claude",
+ "mode": "trending",
+ "trend": {
+  "story_id": "e2662591-b659-4eb8-95ab-5dd5e2f830ed",
+  "outside_url": null,
+  "topic": "Business Growth",
+  "score": 8,
+  "why": "David Ellison's Friday announcement that the $110B Paramount-Warner Bros. Discovery merger will be named 'Skydance' is being covered simultaneously by CNN, Variety, The Hollywood Reporter, and multiple other major outlets within hours of the news breaking.",
+  "evidence": [
+   "https://www.cnn.com/2026/10/02/media/ellison-skydance-paramount-warner-bros-merger",
+   "https://variety.com/2026/film/news/name-of-paramount-warner-bros-unveiled-skydance-1236893761/",
+   "https://www.hollywoodreporter.com/business/business-news/david-ellison-paramount-warner-bros-name-scalled-kydance-1236720826/",
+   "https://www.washingtontimes.com/news/2026/oct/2/paramount-warner-bros-discovery-merger-gets-name-skydance/"
+  ]
+ }
+}
