@@ -259,5 +259,27 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Friday, 02-Oct-26 10:03:04 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AqdbsR3xDB17QHDHsG06IcO\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-03",
+  "posted_at": "2026-10-03T09:04-04:00",
+  "mode": "trending",
+  "run_id": "20261003-1302-37124713184",
+  "story_id": "15b33a75-5b41-499a-ad8c-8f0d200398e0",
+  "topic": "Culture",
+  "title": "Another Semester Secured! Netflix Renews \u2018A Different World\u2019 For Season 2, Felicia Pride & Debbie Allen Thank Fans For Sparking Hillman Hysteria",
+  "source": "Bossip",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18098355476403292"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Saturday, 03-Oct-26 06:04:12 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AcHwZrLwnxVWBfSe-PI5hID\"}}"
+   }
+  }
  }
 ]
