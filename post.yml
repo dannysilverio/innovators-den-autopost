@@ -1,0 +1,91 @@
+name: Innovators Den autopost
+
+on:
+  workflow_dispatch:           # cron-job.org calls this every 2 hours, 9am to 9pm ET
+    inputs:
+      dry_run: { description: "Dry run: write + render only, no posting", default: "0" }
+      force:   { description: "Post now even if caps/hours say no", default: "0" }
+  schedule:
+    - cron: "40 15 * * *"  # backup ~11:40 ET: only fills a missed daily baseline
+
+permissions:
+  contents: write
+
+concurrency: { group: den-autopost, cancel-in-progress: false }
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install trafilatura
+
+      - name: Trend scout (Claude decides + writes the full story)
+        run: python scout.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          TREND_MIN_SCORE: ${{ vars.TREND_MIN_SCORE }}
+          FORCE: ${{ github.event.inputs.force }}
+          BASELINE_ONLY: ${{ github.event_name == 'schedule' && '1' || '0' }}
+
+      - id: check
+        run: echo "go=$([ -f build/post.json ] && echo true || echo false)" >> $GITHUB_OUTPUT
+
+      - name: Render slides
+        if: steps.check.outputs.go == 'true'
+        run: |
+          pip install playwright==1.47.0 && python -m playwright install --with-deps chromium
+          python render.py build/post.json build/slides
+          python reel.py build/slides build/reel.mp4 || echo "reel render failed, posting carousel only"
+
+      - name: Commit slides to public/ (so Instagram/Facebook can fetch them)
+        if: steps.check.outputs.go == 'true'
+        run: |
+          RUN_ID=$(date -u +%Y%m%d-%H%M)-${GITHUB_RUN_ID}
+          echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
+          mkdir -p public/$RUN_ID && cp build/slides/carousel_*.png build/post.json public/$RUN_ID/
+          [ -f build/reel.mp4 ] && cp build/reel.mp4 public/$RUN_ID/ || true
+          python -c "import pathlib,shutil,datetime as d; c=(d.date.today()-d.timedelta(days=10)).strftime('%Y%m%d'); [shutil.rmtree(p) for p in pathlib.Path('public').iterdir() if p.is_dir() and p.name[:8].isdigit() and p.name[:8]<c]"
+          git config user.name "den-autopost" && git config user.email "actions@github.com"
+          git add -A public && git commit -m "slides $RUN_ID" && git push
+          sleep 20
+
+      - name: Post to Instagram, Facebook, LinkedIn
+        if: steps.check.outputs.go == 'true'
+        run: python publish.py
+        env:
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          PLATFORMS: ${{ vars.PLATFORMS }}
+          REELS: ${{ vars.REELS }}
+          REEL_TRIAL: ${{ vars.REEL_TRIAL }}
+          IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/public
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          LI_ACCESS_TOKEN: ${{ secrets.LI_ACCESS_TOKEN }}
+          LI_ORG_ID: ${{ secrets.LI_ORG_ID }}
+
+      - name: Save log + rotation state
+        if: always() && steps.check.outputs.go == 'true'
+        run: |
+          [ -f build/state.next.json ] && [ "${{ github.event.inputs.dry_run }}" != "1" ] && cp build/state.next.json state.json || true
+          git add posted.json state.json 2>/dev/null || true
+          git commit -m "log ${RUN_ID:-run}" || true
+          git pull --rebase && git push
+
+      - name: Track performance (daily Instagram insights snapshot)
+        if: always()
+        run: |
+          python track.py || true
+          git config user.name "den-autopost" && git config user.email "actions@github.com"
+          git add metrics.json 2>/dev/null && git commit -m "metrics $(date -u +%F)" && git pull --rebase && git push || true
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST }}

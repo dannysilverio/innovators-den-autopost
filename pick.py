@@ -91,14 +91,16 @@ PROMPT = """You write social posts for The Innovators Den, a media network and n
 Turn this news story into an Instagram carousel (up to 10 slides total) plus captions. The carousel must tell the COMPLETE story: someone who only swipes the slides, never opening the article, should know everything important that happened. Return ONLY valid JSON matching this schema:
 {
  "kicker": "2-3 word label for the cover, e.g. AI WATCH, MONEY MOVES, CULTURE CHECK",
- "hook": "cover headline, max 55 characters, wrap the single most striking word/number in *asterisks*",
+ "hook": "cover headline, max 55 characters, wrap the single most striking word/number in *asterisks*. It must stop the scroll in under 2 seconds: lead with the most surprising fact, number, name or tension (curiosity gap, stakes, or contrast). Never generic, never a label",
  "dek": "one sentence, max 90 characters",
  "slides": [ {"label": "What happened", "text": "..."}, {"label": "...", "text": "..."}, "... as many as the story needs, 3 to 8 total ...", {"label": "Why it matters", "text": "..."} ],
  "cta_line": "punchy closing line, max 40 characters, one phrase in *asterisks*",
- "question": "a real question that invites comments, max 90 characters",
+ "question": "max 90 characters. ONE low-effort question specific to this story that people can answer in 1 to 5 words. Rotate formats: this-or-that ('Smart move or big mistake? One word.'), prediction ('Will this last 5 years? Yes or no.'), rate it ('Rate this 1 to 10.'), your experience, fill-in-the-blank, or a respectful hot take ('Unpopular opinion: this is overdue. Agree?'). Never generic like 'Thoughts?' or 'What do you think?'",
+ "first_comment": "the Den's own first comment under the post, max 150 characters: either one extra surprising fact from the article or a follow-up question that invites replies. Conversational, no hashtags, no links",
  "photo_subjects": ["exact English Wikipedia article title of the main person, group, company, team or place in the story, best first", "up to 2 more fallbacks, e.g. the company or city"],
  "photo_caption": "max 70 characters naming who or what would be pictured, using only facts from the article",
- "caption_instagram": "120-180 words. Hook first line, 3 short paragraphs, end with the question, then 'Full story: link in bio.' then 5-8 relevant hashtags incl #TheInnovatorsDen",
+ "caption_instagram": "120-180 words. First sentence restates the hook and naturally contains the 2-3 keywords people would search for this story (names, company, topic), because Instagram search ranks caption keywords. 3 short paragraphs. End with the question, then one share prompt that names who should get it (e.g. 'Send this to a founder who needs to see it.'), then 'Full story: link in bio.' then 3-5 specific hashtags incl #TheInnovatorsDen",
+ "caption_reel": "40-80 words for the Reel version: keyword-rich first sentence, the 2 most important facts, the question, the same share prompt, then the same 3-5 hashtags",
  "caption_facebook": "80-130 words, conversational, ends with the question. No hashtags except #TheInnovatorsDen",
  "caption_linkedin": "120-200 words, sharper professional angle for founders/operators, short paragraphs, end with the question, 3 hashtags max"
 }

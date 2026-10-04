@@ -9,6 +9,14 @@ import json, re, time, html, pathlib, urllib.request, urllib.parse
 UA = "InnovatorsDenBot/1.0 (https://github.com/dannysilverio/innovators-den-autopost)"
 API = "https://en.wikipedia.org/w/api.php"
 OK_LICENSE = re.compile(r"^(CC0|CC BY|CC-BY|Public domain|PD)", re.I)
+# Lead images that are not real photos (charts, logos, maps, flags...) make terrible covers
+NOT_PHOTO = re.compile(r"(chart|graph|plot|logo|map|diagram|flag|seal|coat[ _]of[ _]arms|icon|emblem|screenshot|wordmark|signature|infographic|table|locator|svg|banner)", re.I)
+
+
+def _related(subject, title):
+    """The matched article must actually share a meaningful word with what we searched for."""
+    words = {w for w in re.findall(r"[a-z0-9]+", subject.lower()) if len(w) > 2}
+    return bool(words & set(re.findall(r"[a-z0-9]+", (title or "").lower())))
 
 
 def _get(params, tries=3):
@@ -32,7 +40,7 @@ def _lead_image(subject):
     d = _get({"action": "query", "generator": "search", "gsrsearch": subject, "gsrlimit": 1,
               "prop": "pageimages", "piprop": "name"})
     for p in d.get("query", {}).get("pages", {}).values():
-        if p.get("pageimage"):
+        if p.get("pageimage") and _related(subject, p.get("title")):
             return p["pageimage"]
     return None
 
@@ -46,8 +54,8 @@ def find_photo(subjects, dest):
     Returns {"path", "credit", "subject"} or None."""
     for subject in [s for s in subjects or [] if s][:3]:
         name = _lead_image(subject)
-        if not name or name.lower().endswith((".svg", ".gif")):
-            continue
+        if not name or not name.lower().endswith((".jpg", ".jpeg")) or NOT_PHOTO.search(name):
+            continue  # real photos are almost always JPEGs; charts, logos and maps are PNG/SVG
         d = _get({"action": "query", "titles": "File:" + name, "prop": "imageinfo",
                   "iiprop": "extmetadata|url", "iiurlwidth": 1200,
                   "iiextmetadatafilter": "Artist|LicenseShortName"})

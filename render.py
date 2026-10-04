@@ -46,6 +46,8 @@ p.txt strong{color:#FFE600;font-weight:800}
 .cta p{font-weight:600;font-size:40px;line-height:1.3;color:#E5E5E5;margin-top:44px;max-width:880px}
 .acts{display:flex;gap:18px;margin-top:44px}
 .acts span{border:3px solid #FFE600;color:#FFE600;font-weight:900;font-size:26px;letter-spacing:.1em;padding:14px 26px;border-radius:999px}
+.cta p.q{font-family:Anton,sans-serif;font-size:64px;line-height:1.12;color:#fff;margin-top:40px;text-transform:uppercase;font-weight:400}
+.cmt{margin-top:28px;background:#FFE600;color:#000;font-weight:900;font-size:30px;letter-spacing:.1em;padding:16px 30px;border-radius:999px}
 .fubu{font-family:Anton;color:#FF4D7E;font-size:40px;letter-spacing:.04em;margin-top:40px}
 """
 
@@ -85,7 +87,7 @@ def carousel(post):
                    f"<p class='txt' style='font-size:{tsize(s['text'])}px'>{mark(s['text'],'strong')}</p></div>"
                    f"<div class='foot'><span>via {esc(src)}</span>{dots(i,n)}</div>")
     out.append(f"<div class='body cta'><img src='{FULL}'><h1>{mark(post['cta_line'],'em')}</h1>"
-               f"<p>{esc(post['question'])}</p><div class='acts'><span>FOLLOW</span><span>SAVE</span><span>SHARE</span></div>"
+               f"<p class='q'>{esc(post['question'])}</p><div class='cmt'>COMMENT YOUR ANSWER &darr;</div><div class='acts'><span>SEND TO A FRIEND</span><span>FOLLOW</span></div>"
                f"<div class='fubu'>FOR US. BY US.</div></div>"
                f"<div class='foot'><span>Full story: link in bio</span>{dots(n,n)}</div>")
     return out

@@ -1,9 +1,9 @@
 """Trend scout: decides IF and WHAT to post this run, then writes build/post.json.
 
 Runs every 2 hours (8am to 9pm ET). Rules:
-- Mon/Wed/Fri: a baseline post is guaranteed from 11am on (trending story if there is one, otherwise the category rotation).
-- Any day: an extra post goes out when Claude confirms (via live web search) that a story in the Den's topics is trending hard.
-- Caps: 2 posts max on Mon/Wed/Fri, 1 on other days, at least 3 hours apart, never the same story twice.
+- Every day: a baseline post is guaranteed from 11am on (trending story if there is one, otherwise the category rotation).
+- Any day: a 2nd post goes out when Claude confirms (via live web search) that a story in the Den's topics is trending hard.
+- Caps: 2 posts max per day, at least 3 hours apart, never the same story twice.
 If nothing qualifies, it writes nothing and the workflow stops quietly.
 """
 import json, os, re, sys, pathlib, datetime as dt, urllib.request, urllib.parse
@@ -13,8 +13,8 @@ import pick as P
 ET = ZoneInfo("America/New_York")
 TOPICS = ["Innovation", "Art", "Culture", "Music", "Business Growth", "Sports", "Dining", "Health",
           "Travel", "Astrology", "Law", "Finance", "Spotlight"]
-TREND_MIN = int(os.environ.get("TREND_MIN_SCORE") or 8)      # 1-10, how hard a story must be trending for an extra post
-BASELINE_DAYS = {0, 2, 4}                                     # Mon, Wed, Fri
+TREND_MIN = int(os.environ.get("TREND_MIN_SCORE") or 7)      # 1-10, how hard a story must be trending for a 2nd post that day
+BASELINE_DAYS = {0, 1, 2, 3, 4, 5, 6}                         # every day (growth mode: daily posting)
 BASELINE_HOUR = 11
 MIN_GAP_H = 3
 OUT = P.ROOT / "build"
@@ -28,7 +28,7 @@ def decide_slot(now, posts):
     today = now.strftime("%Y-%m-%d")
     todays = [e for e in posts if e["date"] == today]
     is_base_day = now.weekday() in BASELINE_DAYS
-    cap = 2 if is_base_day else 1
+    cap = 2
     baseline_due = is_base_day and now.hour >= BASELINE_HOUR and not todays
     if os.environ.get("FORCE") == "1":
         return "forced", True
@@ -69,7 +69,7 @@ Stories the Den already posted recently (never pick these or the same event agai
 Rules:
 - The story MUST fit one of the Den's topics. Skip partisan politics, crime, deaths, disasters, gossip, and product sales or deals.
 - Strongly prefer a candidate from the Den feed (return its id). Only if a clearly bigger trending story in the Den's topics is missing from the feed, return the URL of one solid, full news article about it (a major outlet, not a video or social post).
-- "score" is how hard it is trending right now, 1 to 10. 8+ means widely covered by multiple major outlets in the last 24h and showing up in trending searches. Be strict: most hours nothing is an 8.
+- "score" is how hard it is trending right now, 1 to 10. 8+ means widely covered by multiple major outlets in the last 24h and showing up in trending searches. 10 means the story is dominating right now: a top trending search nationally, covered by most major outlets, and exploding on social in the last 12 hours (the kind of story everyone is talking about today). Be strict: most hours nothing is an 8, and a 10 happens only a few times a month.
 - Always return your best pick even if the score is low.
 
 Return ONLY JSON:
