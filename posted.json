@@ -303,5 +303,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Sunday, 04-Oct-26 06:03:51 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AZrzzsZefg3Gu1dXrda6K-Z\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-04",
+  "posted_at": "2026-10-04T18:12-04:00",
+  "mode": "trending",
+  "run_id": "20261004-2211-37238911884",
+  "story_id": "9596cf9a-5386-4c9f-a4eb-c41ff4f46b52",
+  "topic": "Sports",
+  "title": "Verstappen wins in Malaysia after long delays as Russell retires",
+  "source": "BBC Sport",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18035065802845283"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18101088026149537"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Sunday, 04-Oct-26 15:12:39 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A5gZN8DjRUnCtnRbNLV0CoA\"}}"
+   }
+  }
  }
 ]
