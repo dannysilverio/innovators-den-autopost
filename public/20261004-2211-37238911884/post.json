@@ -1,0 +1,78 @@
+{
+ "kicker": "F1 CHAOS",
+ "hook": "Russell's Title Hopes Die With *5* Laps Left",
+ "dek": "Verstappen dominated a chaotic Bahrain GP in Malaysia while Russell's title bid collapsed.",
+ "slides": [
+  {
+   "label": "What happened",
+   "text": "Max Verstappen won a chaotic Bahrain GP held in Malaysia after a *90-minute* start delay."
+  },
+  {
+   "label": "The delay",
+   "text": "Heavy rain caused a wet start, then a software issue made cars crawl during formation laps."
+  },
+  {
+   "label": "The fix",
+   "text": "FIA issued a software update mid-delay, but the field order got jumbled with no rule to fix it."
+  },
+  {
+   "label": "Race restart",
+   "text": "FIA restarted the race in original grid order, ignoring usual penalty rules for an unprecedented situation."
+  },
+  {
+   "label": "Russell's collapse",
+   "text": "George Russell retired from *third place* with five laps left after a power unit failure."
+  },
+  {
+   "label": "Title math",
+   "text": "Antonelli now leads Russell by *84 points* with six or seven races left this season."
+  },
+  {
+   "label": "Hamilton's comeback",
+   "text": "Hamilton fell to 17th after a bad tyre call, then fought back to finish *third* for Ferrari."
+  },
+  {
+   "label": "Why it matters",
+   "text": "Hamilton's comeback from 17th shows why adapting fast when the system fails you matters, on track and off it."
+  }
+ ],
+ "cta_line": "That's *racing chaos* for you",
+ "question": "Will Antonelli's 84-point lead hold? Yes or no.",
+ "first_comment": "The FIA's software fix came mid-delay, after cars were stuck crawling behind the safety car.",
+ "photo_subjects": [
+  "Max Verstappen",
+  "George Russell (racing driver)",
+  "Andrea Kimi Antonelli"
+ ],
+ "photo_caption": "Verstappen wins as Russell's retirement rocks the title race.",
+ "caption_instagram": "Max Verstappen dominated a chaos-filled Bahrain Grand Prix held in Malaysia, while George Russell's title hopes collapsed after he retired from third place with five laps left, according to BBC Sport.\n\nThe race started 90 minutes late after heavy rain, then a bizarre software issue left cars crawling on the formation laps. The FIA had no rulebook answer for the mess, and ended up restarting the field in its original order.\n\nOnce racing resumed, Verstappen was untouchable. Behind him, Kimi Antonelli now leads Russell by 84 points with only six or seven races left. Lewis Hamilton put on a show too, recovering from 17th to third after a bad tyre gamble at the start.\n\nWill Antonelli's 84-point lead hold? Yes or no.\n\nSend this to the F1 fan in your group chat.\n\nFull story: link in bio.\n\n#TheInnovatorsDen #F1 #BahrainGP #Verstappen #Motorsport",
+ "caption_reel": "Max Verstappen won a chaotic Bahrain GP in Malaysia after a 90-minute delay, and George Russell's title hopes collapsed when he retired from third place with five laps left, per BBC Sport. Antonelli now leads Russell by 84 points. Will that lead hold? Yes or no. Send this to the F1 fan in your group chat. #TheInnovatorsDen #F1 #BahrainGP #Verstappen",
+ "caption_facebook": "Max Verstappen just won one of the wildest races of the year. The Bahrain Grand Prix, held in Malaysia, started 90 minutes late because of rain and a strange software glitch that left cars crawling on track, per BBC Sport. Once it finally got going, Verstappen was unstoppable. Meanwhile George Russell's championship hopes basically ended when he retired from third place with five laps to go. Kimi Antonelli now leads him by 84 points with just a handful of races left. Lewis Hamilton also had a wild one, recovering from near last place to finish third. Will Antonelli's lead hold up? Yes or no. #TheInnovatorsDen\n\nSource: BBC Sport https://www.bbc.co.uk/sport/formula1/articles/c5n49zx3zlvwo?at_medium=RSS&at_campaign=rss",
+ "caption_linkedin": "Sunday's Bahrain Grand Prix, held in Malaysia, is a case study in what happens when a system has no plan for the unexpected, per BBC Sport.\n\nA 90 minute delay was triggered by rain, then compounded by a software issue that left cars crawling during formation laps. The FIA's rulebook simply did not cover the scenario, and officials had to make a judgment call on the restart order in real time.\n\nMax Verstappen used the chaos to dominate. George Russell's title bid effectively ended when he retired from third place with five laps left, handing Kimi Antonelli an 84 point championship lead. Lewis Hamilton showed the value of staying in the fight, recovering from 17th to finish third after a bad early tyre call.\n\nThe lesson for operators: the rules you write rarely cover the moment that actually breaks you. How you respond in that gap decides the outcome.\n\nWill Antonelli's lead hold? Yes or no.\n\n#F1 #Leadership #TheInnovatorsDen\n\nSource: BBC Sport https://www.bbc.co.uk/sport/formula1/articles/c5n49zx3zlvwo?at_medium=RSS&at_campaign=rss",
+ "story_id": "9596cf9a-5386-4c9f-a4eb-c41ff4f46b52",
+ "topic": "Sports",
+ "title": "Verstappen wins in Malaysia after long delays as Russell retires",
+ "source_name": "BBC Sport",
+ "source_url": "https://www.bbc.co.uk/sport/formula1/articles/c5n49zx3zlvwo?at_medium=RSS&at_campaign=rss",
+ "writer": "claude",
+ "mode": "trending",
+ "trend": {
+  "story_id": "9596cf9a-5386-4c9f-a4eb-c41ff4f46b52",
+  "outside_url": null,
+  "topic": "Sports",
+  "score": 8,
+  "why": "Max Verstappen's chaotic, rain-delayed return win at the Bahrain GP in Malaysia\u2014marked by a late Russell retirement that reshaped the title race and a stunning Hamilton recovery drive\u2014is being covered simultaneously by ESPN, Sky Sports, Formula1.com, PlanetF1, Motorsport Week and Crash.net within hours of the checkered flag.",
+  "evidence": [
+   "https://www.espn.com/f1/story/_/id/50075933/bahrain-grand-prix-malaysia-2026-live-updates-results-analysis-commentary",
+   "https://www.skysports.com/f1/news/13594860/bahrain-gp-in-malaysia-max-verstappen-wins-first-race-of-2026-f1-season-in-wild-rain-hit-grand-prix-as-lewis-hamilton-surges-back",
+   "https://www.formula1.com/en/latest/article/verstappen-wins-rain-hit-bahrain-gp-in-malaysia-over-antonelli-as-russell-retires-late-on.6qfpIHPch8mIVj2YgfHdCp",
+   "https://www.motorsportweek.com/2026/10/04/f1-2026-bahrain-grand-prix-in-malaysia-race-results/"
+  ]
+ },
+ "photo": {
+  "path": "/home/runner/work/innovators-den-autopost/innovators-den-autopost/build/photo.jpg",
+  "credit": "Photo: Steffen Pr\u00f6\u00dfdorf / CC BY-SA 4.0 via Wikimedia Commons",
+  "subject": "Max Verstappen",
+  "caption": "Verstappen wins as Russell's retirement rocks the title race."
+ }
+}
