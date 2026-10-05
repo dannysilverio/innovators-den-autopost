@@ -29,6 +29,20 @@ def http(method, url, data=None, headers=None, raw=None):
     except urllib.error.HTTPError as e:
         raise RuntimeError(f"{method} {url.split('?')[0]} -> {e.code}: {e.read().decode()[:500]}")
 
+def _warm(url, wait=90):
+    """Make sure a just-committed image is actually live on the CDN before asking Instagram to fetch it."""
+    end = time.time() + wait
+    while time.time() < end:
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, method="GET"), timeout=20) as r:
+                r.read()
+                if r.status == 200:
+                    return True
+        except Exception:
+            pass
+        time.sleep(5)
+    return False
+
 # ---------- Instagram (Graph API content publishing) ----------
 def instagram(post, urls):
     host = os.environ.get("IG_GRAPH_HOST") or "graph.instagram.com"
@@ -36,7 +50,16 @@ def instagram(post, urls):
     base = f"https://{host}/{ver}"
     kids = []
     for u in urls:
-        r, _ = http("POST", f"{base}/{uid}/media", {"image_url": u, "is_carousel_item": "true", "access_token": tok})
+        _warm(u)
+        for attempt in range(4):  # Instagram sometimes times out fetching freshly committed images; wait and retry
+            try:
+                r, _ = http("POST", f"{base}/{uid}/media", {"image_url": u, "is_carousel_item": "true", "access_token": tok})
+                break
+            except RuntimeError as e:
+                if attempt == 3 or not re.search(r"Timeout|2207003|is_transient\":true|download", str(e)):
+                    raise
+                print(f"instagram: media fetch timed out, retry {attempt + 1} in {20 * (attempt + 1)}s")
+                time.sleep(20 * (attempt + 1))
         kids.append(r["id"])
     r, _ = http("POST", f"{base}/{uid}/media", {"media_type": "CAROUSEL", "children": ",".join(kids),
                                                 "caption": post["caption_instagram"], "access_token": tok})
