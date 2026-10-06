@@ -429,5 +429,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Tuesday, 06-Oct-26 08:03:30 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AAlJNH9v6x9ln0y1fe0StiC\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-06",
+  "posted_at": "2026-10-06T17:03-04:00",
+  "mode": "trending",
+  "run_id": "20261006-2102-37530692438",
+  "story_id": "d839e01c-888f-4111-b92c-a85600e4501b",
+  "topic": "Innovation",
+  "title": "Paramount and Warner Bros. Discovery complete $110 billion media megamerger",
+  "source": "The Verge",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18019429199732912"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17910823032499346"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Tuesday, 06-Oct-26 14:03:48 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ATmCIvOUTMfKkxacJ83ae2v\"}}"
+   }
+  }
  }
 ]
