@@ -1,0 +1,72 @@
+{
+ "kicker": "MEDIA MOVES",
+ "hook": "*$110B* merger just created a new media giant",
+ "dek": "Paramount and Warner Bros. Discovery are now one company called Skydance.",
+ "slides": [
+  {
+   "label": "What happened",
+   "text": "Paramount officially closed its *$110 billion* acquisition of Warner Bros. Discovery. The combined company is now called *Skydance*."
+  },
+  {
+   "label": "Who's under one roof",
+   "text": "HBO, CBS News, CNN, and major film studios from both companies now sit under *Skydance*."
+  },
+  {
+   "label": "How we got here",
+   "text": "Paramount beat out *Netflix* in a months-long bidding war for WBD before locking in the deal back in February."
+  },
+  {
+   "label": "The pushback",
+   "text": "Lawmakers and Hollywood talent criticized the deal, warning about the *impact of media consolidation*."
+  },
+  {
+   "label": "Last hurdle cleared",
+   "text": "Last month, Paramount settled with *12 states* that sued to block the merger over antitrust concerns."
+  },
+  {
+   "label": "The fine print",
+   "text": "Skydance must release *30 theatrical films* in its first two years and spend *$300 million more* on US production than both companies spent last year combined."
+  },
+  {
+   "label": "Who's running it",
+   "text": "*David Ellison* leads Skydance alongside *Ynon Kreiz*, the former chairman and CEO of Mattel."
+  },
+  {
+   "label": "Why it matters",
+   "text": "Fewer companies now control more of what gets greenlit and aired, which raises the stakes for creators outside the usual gatekept circles."
+  }
+ ],
+ "cta_line": "One company just got *massive*.",
+ "question": "Good for the industry or bad for competition? One word.",
+ "first_comment": "Wild detail: the only reason this closed is Skydance agreed to spend $300M MORE on US production than Paramount and WBD combined spent last year.",
+ "photo_subjects": [
+  "Paramount Skydance",
+  "Warner Bros. Discovery",
+  "David Ellison"
+ ],
+ "photo_caption": "David Ellison, now co-leading the newly formed Skydance",
+ "caption_instagram": "Paramount and Warner Bros. Discovery just completed a $110 billion merger, forming a new company called Skydance that now controls HBO, CBS News, CNN and major film studios.\n\nThe deal almost didn't happen. Paramount had to out-compete Netflix for WBD, survive criticism from lawmakers and Hollywood talent over consolidation, and settle with 12 states that sued to block it over antitrust concerns. Part of that settlement forces Skydance to release at least 30 theatrical films in its first two years and spend $300 million more on US production than both companies spent last year combined. David Ellison now leads Skydance alongside Ynon Kreiz, former chairman and CEO of Mattel.\n\nFewer, bigger gatekeepers controlling more of what gets made and aired is worth watching, especially for creators still trying to get a foot in the door.\n\nGood for the industry or bad for competition? One word.\n\nSend this to someone who works in film or TV. Full story: link in bio.\n\n#TheInnovatorsDen #MediaMerger #Skydance #Hollywood #ParamountWBD",
+ "caption_reel": "Paramount and Warner Bros. Discovery just closed a $110 billion merger forming Skydance, now home to HBO, CBS News, CNN and major film studios. The deal came with a catch: Skydance must release 30 theatrical films in two years and spend $300M more on US production. Good or bad for competition? Send this to someone in film or TV. #TheInnovatorsDen #MediaMerger #Skydance #Hollywood",
+ "caption_facebook": "Big news out of Hollywood. Paramount and Warner Bros. Discovery just completed a $110 billion merger, creating a new company called Skydance that now controls HBO, CBS News, CNN, and major film studios.\n\nThe path here was rocky. Paramount beat out Netflix for WBD, faced backlash over consolidation, and had to settle with 12 states before closing the deal. As part of that settlement, Skydance must release at least 30 theatrical films over the next two years and spend $300 million more on US production than both companies spent last year combined.\n\nGood for the industry or bad for competition? One word. #TheInnovatorsDen\n\nSource: The Verge https://www.theverge.com/entertainment/1005480/paramount-warner-bros-discovey-merger-closed",
+ "caption_linkedin": "Paramount and Warner Bros. Discovery have officially completed their $110 billion merger, creating Skydance, a company now controlling HBO, CBS News, CNN, and major film studios.\n\nWhat stands out operationally is the settlement that cleared the deal. To resolve antitrust lawsuits from 12 states, Skydance agreed to release at least 30 theatrical films over the next two years and spend $300 million more on US production than Paramount and WBD spent combined last year. That's a rare case where regulatory pushback directly shaped a company's production commitments, not just its deal terms.\n\nDavid Ellison now leads Skydance alongside Ynon Kreiz, the former chairman and CEO of Mattel, betting that scale and reach can outcompete streaming rivals.\n\nFor founders and operators, this is a reminder that consolidation reshapes who controls distribution and access, which matters most for those building outside the biggest platforms.\n\nGood for the industry or bad for competition? One word.\n\n#MediaMerger #Hollywood #Streaming\n\nSource: The Verge https://www.theverge.com/entertainment/1005480/paramount-warner-bros-discovey-merger-closed",
+ "story_id": "d839e01c-888f-4111-b92c-a85600e4501b",
+ "topic": "Innovation",
+ "title": "Paramount and Warner Bros. Discovery complete $110 billion media megamerger",
+ "source_name": "The Verge",
+ "source_url": "https://www.theverge.com/entertainment/1005480/paramount-warner-bros-discovey-merger-closed",
+ "writer": "claude",
+ "mode": "trending",
+ "trend": {
+  "story_id": "d839e01c-888f-4111-b92c-a85600e4501b",
+  "outside_url": null,
+  "topic": "Innovation",
+  "score": 9,
+  "why": "Paramount Skydance officially closed its $110B takeover of Warner Bros. Discovery today, with NBC, CBS, CNBC, Variety, Bloomberg and TheWrap all covering the historic media megamerger simultaneously.",
+  "evidence": [
+   "https://www.nbcnews.com/business/media/paramount-warner-bros-skydance-closes-rcna601833",
+   "https://www.cbsnews.com/news/paramount-warner-bros-discovery-deal-skydance/",
+   "https://variety.com/2026/film/news/paramount-warner-bros-merger-officially-closes-skydance-david-ellison-1236900047/",
+   "https://www.cnbc.com/2026/10/06/paramount-wbd-deal-timeline.html"
+  ]
+ }
+}
