@@ -1,0 +1,78 @@
+{
+ "kicker": "AI WATCH",
+ "hook": "ChatGPT just dropped *GPT-6* and a whole new look",
+ "dek": "OpenAI's new Intelligent UI turns chats into tappable charts and calculators.",
+ "slides": [
+  {
+   "label": "What Happened",
+   "text": "OpenAI is rolling out *Intelligent UI*, a new visual interface for ChatGPT, launching with GPT-6."
+  },
+  {
+   "label": "How It Works",
+   "text": "Instead of plain text, ChatGPT will add *interactive* buttons, calculators, charts and editable graphs."
+  },
+  {
+   "label": "The Goal",
+   "text": "OpenAI says the point is to make *learning complex topics* easier, not just chatting in text."
+  },
+  {
+   "label": "Real Example",
+   "text": "A product manager asked ChatGPT how a plane wing generates lift, it instantly built *interactive diagrams*."
+  },
+  {
+   "label": "More Examples",
+   "text": "Other demos included recipe visuals, bike mechanics diagrams, hiking maps and a *savings calculator*."
+  },
+  {
+   "label": "Your Choice",
+   "text": "Don't want all the extra visuals? Users can *dial them back* anytime."
+  },
+  {
+   "label": "Rollout Timeline",
+   "text": "Intelligent UI launches Wednesday for *Pro, Plus, Business and Enterprise* users, Thursday for Go and free tiers."
+  },
+  {
+   "label": "Why It Matters",
+   "text": "A more visual, interactive AI could make complex info *more accessible* for learners who don't just absorb walls of text."
+  }
+ ],
+ "cta_line": "ChatGPT just got *way* more visual",
+ "question": "Rate this new visual ChatGPT 1 to 10.",
+ "first_comment": "Fun fact: free and Go tier users get Intelligent UI a full day after Pro and Plus users, not the same day.",
+ "photo_subjects": [
+  "ChatGPT",
+  "OpenAI",
+  "GPT-4"
+ ],
+ "photo_caption": "ChatGPT's new Intelligent UI interface, powered by GPT-6",
+ "caption_instagram": "ChatGPT is getting a major visual upgrade with OpenAI's new Intelligent UI interface, rolling out alongside the GPT-6 model this week, according to TechCrunch.\n\nInstead of just text, ChatGPT will now generate interactive buttons, custom calculators, editable graphs and tappable charts right inside your conversation. OpenAI says the goal is to make learning complex topics easier, whether that's a college student asking how an airplane wing generates lift or someone planning a multi-day hike.\n\nThe rollout starts Wednesday for Pro, Plus, Business and Enterprise users, then hits free and Go tier users Thursday. Not into all the extra visuals? You can dial them back anytime.\n\nFor creators, students and founders who learn best visually, not just by reading walls of text, this could shift how accessible AI tools really feel.\n\nWould you actually use visual ChatGPT for learning? Rate it 1 to 10.\n\nSend this to a founder who lives in ChatGPT all day.\n\nFull story: link in bio.\n\n#TheInnovatorsDen #ChatGPT #OpenAI #AI #GPT6",
+ "caption_reel": "ChatGPT just got a visual overhaul. OpenAI's new Intelligent UI, launching with GPT-6, brings interactive charts, calculators and diagrams straight into your chats. It rolls out Wednesday for paid users, Thursday for free and Go tiers. Rate this new visual ChatGPT 1 to 10. Send this to a founder who lives in ChatGPT all day. #TheInnovatorsDen #ChatGPT #OpenAI #AI",
+ "caption_facebook": "ChatGPT is changing how it looks and works. OpenAI just announced Intelligent UI, a new feature launching with GPT-6 that adds interactive buttons, calculators, charts and diagrams right inside your chats, according to TechCrunch.\n\nInstead of reading a wall of text when you ask something complicated, like how an airplane wing generates lift, you'll get a visual breakdown you can actually interact with. It starts rolling out Wednesday for paid users and Thursday for free and Go tier users. Don't want all the extra visuals? You can turn them down.\n\nFor anyone who learns better by seeing instead of reading, this is a pretty big deal.\n\nRate this new visual ChatGPT 1 to 10.\n\n#TheInnovatorsDen\n\nSource: TechCrunch https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+ "caption_linkedin": "OpenAI is rolling out Intelligent UI, a new ChatGPT interface launching alongside GPT-6, according to TechCrunch. The update brings interactive elements, tappable buttons, editable graphs, custom calculators and charts, directly into conversations instead of plain text responses.\n\nOpenAI's stated goal is making complex topics easier to learn, but the bigger story may be accessibility. A more visual, interactive interface lowers the barrier for users who don't want to parse dense text to get useful answers, whether that's a founder building a financial model or a student learning a new skill.\n\nThe rollout starts Wednesday for Pro, Plus, Business and Enterprise users, then expands Thursday to free and Go tier users. Visuals are customizable, so teams that prefer a lighter touch can scale them back.\n\nFor founders and operators building with AI tools daily, interface changes like this often signal where the bigger platform shift is headed next.\n\nWill visual AI interfaces become the standard within 5 years? Yes or no.\n\n#AI #OpenAI #Innovation\n\nSource: TechCrunch https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+ "story_id": "ext:https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+ "topic": "Innovation",
+ "title": "ChatGPT is getting a lot more visual, with the launch of a new interface | TechCrunch",
+ "source_name": "TechCrunch",
+ "source_url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+ "writer": "claude",
+ "mode": "trending",
+ "trend": {
+  "story_id": null,
+  "outside_url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+  "topic": "Innovation",
+  "score": 8,
+  "why": "OpenAI's global GPT-6 rollout with the new 'Intelligent UI' feature broke in the last 24 hours and is being covered simultaneously by TechCrunch, The Verge, Search Engine Journal and multiple other tech outlets as a major shift for hundreds of millions of ChatGPT users.",
+  "evidence": [
+   "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+   "https://www.searchenginejournal.com/chatgpt-gpt-6-intelligent-ui/592249/",
+   "https://aiweekly.co/alerts/openai-launches-chatgpt-intelligent-ui-alongside-gpt-6",
+   "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+  ]
+ },
+ "photo": {
+  "path": "/home/runner/work/innovators-den-autopost/innovators-den-autopost/build/photo.jpg",
+  "credit": "Photo: Coolcaesar / CC BY 4.0 via Wikimedia Commons",
+  "subject": "OpenAI",
+  "caption": "ChatGPT's new Intelligent UI interface, powered by GPT-6"
+ }
+}
