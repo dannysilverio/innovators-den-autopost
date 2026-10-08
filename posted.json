@@ -507,5 +507,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Thursday, 08-Oct-26 06:03:54 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A3CopzfqI2qv-TKV6rv6h8-\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-08",
+  "posted_at": "2026-10-08T15:04-04:00",
+  "mode": "trending",
+  "run_id": "20261008-1903-37828636821",
+  "story_id": "ff827709-7369-4717-bc97-a07c2300d6e2",
+  "topic": "Innovation",
+  "title": "Meta\u2019s Muse is taking off. So are the privacy concerns",
+  "source": "Fast Company",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17994160373843262"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18138103006566568"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Thursday, 08-Oct-26 12:04:51 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ArCL3s11h-q-fPB0DMe2WCu\"}}"
+   }
+  }
  }
 ]
