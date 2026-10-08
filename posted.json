@@ -481,5 +481,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Wednesday, 07-Oct-26 06:03:56 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"ABrSmO2MPNvVFBB3deklorL\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-08",
+  "posted_at": "2026-10-08T09:03-04:00",
+  "mode": "trending",
+  "run_id": "20261008-1302-37780978049",
+  "story_id": "ext:https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+  "topic": "Innovation",
+  "title": "ChatGPT is getting a lot more visual, with the launch of a new interface | TechCrunch",
+  "source": "TechCrunch",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18151535245549111"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18033757022851695"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Thursday, 08-Oct-26 06:03:54 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A3CopzfqI2qv-TKV6rv6h8-\"}}"
+   }
+  }
  }
 ]
