@@ -611,5 +611,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Saturday, 10-Oct-26 06:03:52 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A1Qg4HiANHlvcIcdg7pEbz8\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-10",
+  "posted_at": "2026-10-10T13:03-04:00",
+  "mode": "trending",
+  "run_id": "20261010-1702-38069948448",
+  "story_id": "af2adfd4-106b-45cd-8a59-7513d31363db",
+  "topic": "Culture",
+  "title": "Atlanta Dream in WNBA Finals; sweep New York Liberty 3-0",
+  "source": "Rolling Out",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18144087343599950"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18438287344180991"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Saturday, 10-Oct-26 10:03:29 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AskD_AE2lgxoHZQw17I1C3d\"}}"
+   }
+  }
  }
 ]
