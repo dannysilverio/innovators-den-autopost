@@ -637,5 +637,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Saturday, 10-Oct-26 10:03:29 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AskD_AE2lgxoHZQw17I1C3d\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-11",
+  "posted_at": "2026-10-11T09:03-04:00",
+  "mode": "trending",
+  "run_id": "20261011-1302-38141441583",
+  "story_id": "a1009563-d2ba-4766-8c53-3653b67f31ce",
+  "topic": "Culture",
+  "title": "A\u2019ja Wilson Becomes First Player to Win 5 WNBA MVPs, Third Consecutive",
+  "source": "EBONY",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18117900427971052"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17910090912480184"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Sunday, 11-Oct-26 06:03:44 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AFGhXYY1A1k-i-BDN6xkfWe\"}}"
+   }
+  }
  }
 ]
