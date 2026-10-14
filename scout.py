@@ -104,8 +104,34 @@ def den_story(a):
     if len(body) < P.MIN_BODY or body.rstrip().endswith(("…", "...")): return None
     return {**a, "body": body[:12000]}
 
+def manual_post():
+    """A hand-written post dropped in manual/post.json goes out on the next run, ahead of the trend desk."""
+    src = P.ROOT / "manual" / "post.json"
+    if not src.exists(): return False
+    post = json.loads(src.read_text())
+    post.setdefault("mode", "manual"); post.setdefault("writer", "manual"); post.setdefault("trend", None)
+    try:
+        from photo import find_photo
+        ph = find_photo(post.get("photo_subjects") or [], OUT / "photo.jpg")
+        if ph:
+            ph["caption"] = post.get("photo_caption") or ph["subject"]
+            post["photo"] = ph
+            say(f"cover photo: {ph['subject']} ({ph['credit']})")
+    except Exception as e:
+        say(f"photo lookup failed: {e}")
+    tail = f"\n\nSource: {post['source_name']} {post.get('source_url') or ''}".rstrip()
+    post["caption_facebook"] += tail
+    post["caption_linkedin"] += tail
+    (OUT / "post.json").write_text(json.dumps(post, indent=1))
+    (OUT / "state.next.json").write_text(json.dumps(P.load(P.STATE, {"idx": 0})))
+    done = P.ROOT / "manual" / "done"; done.mkdir(parents=True, exist_ok=True)
+    src.rename(done / f"{dt.datetime.now(ET):%Y%m%d-%H%M}-{post['story_id']}.json")
+    say(f"POSTING (manual) [{post['topic']}] {post['title']}")
+    return True
+
 def main():
     OUT.mkdir(exist_ok=True)
+    if manual_post(): return
     now = dt.datetime.now(ET)
     posts = real_posts()
     reason, go = decide_slot(now, posts)

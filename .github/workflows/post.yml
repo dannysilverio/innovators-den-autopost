@@ -76,6 +76,7 @@ jobs:
         run: |
           [ -f build/state.next.json ] && [ "${{ github.event.inputs.dry_run }}" != "1" ] && cp build/state.next.json state.json || true
           git add posted.json state.json 2>/dev/null || true
+          git add -A manual 2>/dev/null || true
           git commit -m "log ${RUN_ID:-run}" || true
           git pull --rebase && git push
 
