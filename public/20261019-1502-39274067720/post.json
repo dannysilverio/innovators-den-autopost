@@ -1,0 +1,66 @@
+{
+ "kicker": "STARTUP WATCH",
+ "hook": "Holmes's husband says it's not *Theranos 2.0*",
+ "dek": "Billy Evans's new startup echoes Theranos, backed by up to $20M in funding.",
+ "slides": [
+  {
+   "label": "What happened",
+   "text": "Billy Evans, Elizabeth Holmes's husband, built a health tech startup called *Haemanthus*."
+  },
+  {
+   "label": "Who's involved",
+   "text": "Holmes isn't listed on any incorporation docs, but she appears with Evans in a new documentary, *You Can See Everything*."
+  },
+  {
+   "label": "The comparison",
+   "text": "In the film, Evans agrees when it's suggested he and Holmes are building *Theranos 2.0*."
+  },
+  {
+   "label": "The tech",
+   "text": "Haemanthus claims it can test blood, urine and saliva at home using *laser light* (Raman Spectroscopy), unlike Theranos's old method."
+  },
+  {
+   "label": "The money",
+   "text": "The company started with $3.5M from friends and family. It now reports up to *$20 million* in funding."
+  },
+  {
+   "label": "The red flag",
+   "text": "Marketing materials reportedly told investors the device faces 'no regulatory oversight.' The *USDA disagrees*."
+  },
+  {
+   "label": "Current status",
+   "text": "Haemanthus has no products, barely a LinkedIn page, and stays in 'stealth.' Full launch could take *3 years and $70M*."
+  },
+  {
+   "label": "Why it matters",
+   "text": "For founders building real innovation, this story is a reminder that hype and secrecy aren't proof. *Trust is earned*."
+  }
+ ],
+ "cta_line": "Not Theranos 2.0? *Prove it*.",
+ "question": "Second chance or second scam? One word.",
+ "first_comment": "Haemanthus's known addresses trace back to private homes in Austin, not an office. Make that make sense.",
+ "photo_subjects": [
+  "Elizabeth Holmes",
+  "Theranos",
+  "Austin, Texas"
+ ],
+ "photo_caption": "Elizabeth Holmes with husband Billy Evans, founder of Haemanthus.",
+ "caption_instagram": "Billy Evans, husband of Theranos founder Elizabeth Holmes, is building a new health tech startup called Haemanthus, and people are already calling it 'Theranos 2.0.' According to Wired, Holmes isn't named in any company paperwork, but she shows up alongside Evans in a new documentary where he doesn't fully deny the comparison.\n\nHaemanthus says it will test blood, urine and saliva at home using laser based technology called Raman Spectroscopy, different from Theranos's old approach. The company has raised as much as $20 million, grown from an initial $3.5 million from friends and family, but has released zero products and stays in 'stealth mode.' Marketing materials reportedly claimed the device would face 'no regulatory oversight,' something the USDA has since disputed.\n\nFor founders chasing real breakthroughs, this is a lesson in what separates hype from proof.\n\nSecond chance or second scam? One word.\n\nSend this to a founder who talks big before they build. Full story: link in bio.\n\n#TheInnovatorsDen #Theranos #ElizabethHolmes #StartupNews #Innovation",
+ "caption_reel": "Billy Evans, Elizabeth Holmes's husband, is building a health startup called Haemanthus that people are calling 'Theranos 2.0,' per Wired. It's raised up to $20 million but has zero products and stays in stealth mode. Second chance or second scam? One word. Send this to a founder who talks big before they build. #TheInnovatorsDen #Theranos #ElizabethHolmes #Innovation",
+ "caption_facebook": "Billy Evans, the husband of Theranos founder Elizabeth Holmes, has a new startup called Haemanthus, and according to Wired, he's not exactly shutting down comparisons to 'Theranos 2.0.' The company says it'll test blood, urine and saliva at home using laser technology, has raised up to $20 million, but has released no products and remains in stealth mode. Investors were reportedly told the device faces 'no regulatory oversight,' which the USDA disputes.\n\nSecond chance or second scam? One word. #TheInnovatorsDen\n\nSource: Wired https://www.wired.com/story/the-story-of-billy-evans-and-theranos-20/",
+ "caption_linkedin": "Billy Evans, husband of Theranos founder Elizabeth Holmes, founded a health diagnostics startup called Haemanthus in 2022. According to Wired, the company has raised as much as $20 million (up from an initial $3.5 million from friends and family) while releasing zero products and operating almost entirely in stealth.\n\nHaemanthus claims it can test blood, urine and saliva at home using laser based Raman Spectroscopy, a real but difficult diagnostic technique. A UC Irvine chemistry professor consulting for the company says the engineering ideas are legitimate, even as marketing materials reportedly told investors the device would face 'no regulatory oversight,' a claim the USDA disputes.\n\nFor operators and founders, the lesson isn't about Holmes or Evans specifically. It's about how easily 'stealth mode' and big funding numbers can substitute for actual proof, especially when a founder's name alone generates buzz. Real diligence means asking what's been built, not just what's been pitched.\n\nSecond chance or second scam? One word.\n\n#Innovation #StartupFunding #TheInnovatorsDen\n\nSource: Wired https://www.wired.com/story/the-story-of-billy-evans-and-theranos-20/",
+ "story_id": "205f290a-221f-49ae-b423-e4ebf30521f6",
+ "topic": "Innovation",
+ "title": "The Story of Billy Evans and \u2018Theranos 2.0\u2019",
+ "source_name": "Wired",
+ "source_url": "https://www.wired.com/story/the-story-of-billy-evans-and-theranos-20/",
+ "writer": "claude",
+ "mode": "baseline",
+ "trend": null,
+ "photo": {
+  "path": "/home/runner/work/innovators-den-autopost/innovators-den-autopost/build/photo.jpg",
+  "credit": "Photo: Photo by Max Morse for TechCrunch TechCrunch / CC BY 2.0 via Wikimedia Commons",
+  "subject": "Elizabeth Holmes",
+  "caption": "Elizabeth Holmes with husband Billy Evans, founder of Haemanthus."
+ }
+}
