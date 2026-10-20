@@ -8,6 +8,8 @@ from zoneinfo import ZoneInfo
 
 HERE = pathlib.Path(__file__).parent
 BULB = "data:image/png;base64," + base64.b64encode((HERE / "assets/logo_bulb.png").read_bytes()).decode()
+# Black rounded plate for light/colored backgrounds (gold + slate mark vanishes on cream and red)
+PLATE = "data:image/png;base64," + base64.b64encode((HERE / "assets/logo_plate.png").read_bytes()).decode()
 ET = ZoneInfo("America/New_York")
 
 # Monday=0 ... Sunday=6
@@ -128,7 +130,7 @@ h1{font-family:'Playfair Display',serif;font-weight:900;line-height:1.02;letter-
              f"<div class='cap'><span>{esc(c['caption'])}</span><span class='cr'>{esc(c['credit'])}</span></div>") if has else ""
     return doc(css, f"""<div class='np{'' if has else ' nophoto'}'>
 <div class='meta'><span>Vol. I &middot; No. {c['yday']}</span><span>{c['date']}</span><span>For Us. By Us.</span></div>
-<div class='mast'><img src='{BULB}'><h2>The Innovators Den</h2></div><div class='rule'></div>
+<div class='mast'><img src='{PLATE}'><h2>The Innovators Den</h2></div><div class='rule'></div>
 <div class='sec'><span class='chip'>{esc(c['topic'])}</span><span class='kick'>{esc(c['kicker'])}</span><span class='via'>via {esc(c['src'])}</span></div>
 <h1 style='font-size:{fs}px'>{plain(c['hook'])}</h1>{photo}
 <div class='cols'><div class='dek'>{plain(c['dek'])}</div><p>{c['lede']}</p></div>
@@ -153,7 +155,7 @@ h1 em{font-style:normal;color:#FFE600}
 .sw{background:#fff;color:#000;padding:12px 22px;font-weight:900;font-size:20px}"""
     fs = fit(c["hook"], [(24, 160), (36, 138), (50, 118), (99, 100)])
     return doc(css, f"""<div class='t'><img class='ph' src='{c['img']}' style='object-position:{c['focus']}'><div class='shade'></div>
-<div class='mast'><img src='{BULB}'><b>THE INNOVATORS DEN</b><i>{c['day']} {c['short']}<br>FOR US. BY US.</i></div>
+<div class='mast'><img src='{PLATE}'><b>THE INNOVATORS DEN</b><i>{c['day']} {c['short']}<br>FOR US. BY US.</i></div>
 <div class='box'><div class='tag'>{esc(c['topic'])} &middot; {esc(c['kicker'])}</div><h1 style='font-size:{fs}px'>{mark(c['hook'])}</h1></div>
 <div class='foot'><span>{esc(c['credit'])} &middot; via {esc(c['src'])}</span><span class='sw'>SWIPE &rarr;</span></div></div>""")
 
@@ -189,7 +191,7 @@ def duotone(post):
     css = """
 .t{position:relative;width:1080px;height:1350px;background:#FFE600;overflow:hidden;display:flex;flex-direction:column}
 .pic{position:relative;height:720px;overflow:hidden;background:#FF4D7E}
-.pic img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.25) brightness(1.05);mix-blend-mode:multiply}
+.pic>img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.25) brightness(1.05);mix-blend-mode:multiply}
 .pic:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,0,40,.25),rgba(20,0,40,0) 30%)}
 .top{position:absolute;top:36px;left:48px;right:48px;display:flex;justify-content:space-between;align-items:center;z-index:2}
 .brand{display:flex;align-items:center;gap:12px;color:#fff;font-family:Inter;font-weight:900;font-size:24px;letter-spacing:.08em;line-height:1.05}.brand img{height:78px}
@@ -203,7 +205,7 @@ h1 em{font-style:normal;background:#000;color:#FFE600;padding:0 12px;-webkit-box
 .sw{background:#000;color:#FFE600;padding:14px 24px;font-weight:900;font-size:20px;letter-spacing:.1em}"""
     fs = fit(c["hook"], [(28, 150), (42, 128), (56, 110), (99, 92)])
     return doc(css, f"""<div class='t'><div class='pic'><img src='{c['img']}' style='object-position:{c['focus']}'>
-<div class='top'><div class='brand'><img src='{BULB}'><span>THE INNOVATORS<br>DEN</span></div><span class='date'>{c['day']} &middot; {c['short']}</span></div></div>
+<div class='top'><div class='brand'><img src='{PLATE}'><span>THE INNOVATORS<br>DEN</span></div><span class='date'>{c['day']} &middot; {c['short']}</span></div></div>
 <div class='low'><div class='k'><span>{esc(c['topic'])} / {esc(c['kicker'])}</span><span>via {esc(c['src'])}</span></div>
 <h1 style='font-size:{fs}px'>{mark(c['hook'])}</h1>
 <div class='foot'><span>{esc(c['credit'])}</span><span class='sw'>SWIPE &rarr;</span></div></div></div>""")
