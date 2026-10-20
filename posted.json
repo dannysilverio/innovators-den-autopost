@@ -1001,5 +1001,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Monday, 19-Oct-26 08:03:38 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AhNiqbOVrf5cYj8To-JWQX4\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-20",
+  "posted_at": "2026-10-20T11:04-04:00",
+  "mode": "baseline",
+  "run_id": "20261020-1502-39444404517",
+  "story_id": "577d1700-1143-469d-8d4d-e1225c8eeb0f",
+  "topic": "Finance",
+  "title": "Everyone\u2019s taking PTO and sick days to play \u2018Grand Theft Auto VI\u2019",
+  "source": "Fast Company",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18081209204686758"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18043467842837955"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Tuesday, 20-Oct-26 08:04:10 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AYuHZAaTq4DEaqChcJoa6S4\"}}"
+   }
+  }
  }
 ]
