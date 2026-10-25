@@ -1131,5 +1131,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Saturday, 24-Oct-26 08:03:19 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AC55Z5PHoSzgO3WZ9FoHJOc\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-25",
+  "posted_at": "2026-10-25T11:03-04:00",
+  "mode": "baseline",
+  "run_id": "20261025-1502-40204861945",
+  "story_id": "5a96470f-0c95-4fec-ac1c-bab7eca12019",
+  "topic": "Spotlight",
+  "title": "Vans And Pro BMXer Coco Zurita Debut The Acura ADX \u201cCZ-77 Concept\u201d",
+  "source": "Sneaker News",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18136378795679770"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17944817763362800"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 26-Sep-26 20:00:00 PDT. The current time is Sunday, 25-Oct-26 08:03:12 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AB-pQl2qqLvl4C1xHrfRBTG\"}}"
+   }
+  }
  }
 ]
