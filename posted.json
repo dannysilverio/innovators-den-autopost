@@ -1235,5 +1235,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session is invalid because the user logged out.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":467,\"fbtrace_id\":\"As7l7dRgbWxrSEAPmD8dQuY\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-28",
+  "posted_at": "2026-10-28T11:03-04:00",
+  "mode": "baseline",
+  "run_id": "20261028-1502-40711532686",
+  "story_id": "afc9c210-5d94-4bd2-ad19-46e11e062d0e",
+  "topic": "Travel",
+  "title": "Bilt\u2019s 2027 Shake-Up: Longer-Lasting Bilt Cash and a Deadline You Can\u2019t Miss",
+  "source": "Thrifty Traveler",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18133236058688903"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18164283910491506"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session is invalid because the user logged out.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":467,\"fbtrace_id\":\"A77wz9nFOIHrYL7hRWWBJ6q\"}}"
+   }
+  }
  }
 ]
