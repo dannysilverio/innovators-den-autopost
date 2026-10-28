@@ -66,7 +66,7 @@ def ctx(post):
     ph = post.get("photo") or {}
     return dict(topic=post.get("topic", ""), color=TOPIC_COLORS.get(post.get("topic"), "#FFE600"),
                 kicker=post.get("kicker", ""), hook=post.get("hook", ""), dek=post.get("dek", ""),
-                src=post.get("source_name", ""), img=photo_uri(post), credit=ph.get("credit", ""),
+                src=post.get("source_name", ""), via=post.get("credit_line") or f"via {post.get('source_name', '')}", img=photo_uri(post), credit=ph.get("credit", ""),
                 caption=ph.get("caption") or ph.get("subject", ""), focus=ph.get("focus", "50% 22%"),
                 day=now.strftime("%a").upper(), date=f"{now.strftime('%A, %B')} {now.day}, {now.year}",
                 short=f"{now.strftime('%b').upper()} {now.day}", yday=now.timetuple().tm_yday,
@@ -95,7 +95,7 @@ h1 em{font-style:normal;color:#000;background:#FFE600;padding:0 12px;-webkit-box
     return doc(css, f"""<div class='t'><img class='ph' src='{c['img']}' style='object-position:{c['focus']}'><div class='shade'></div>
 <div class='top'><div class='brand'><img src='{BULB}'><span>THE INNOVATORS<br>DEN</span></div><div class='chip' style='background:{c['color']}'>{esc(c['topic'])}</div></div>
 <div class='box'><div class='live'>{esc(c['kicker'])}</div><h1 style='font-size:{fs}px'>{mark(c['hook'])}</h1><div class='dek'>{plain(c['dek'])}</div></div>
-<div class='foot'><span>{esc(c['credit'])} &middot; via {esc(c['src'])}</span><span class='sw'>SWIPE &rarr;</span></div></div>""")
+<div class='foot'><span>{esc(c['credit'])} &middot; {esc(c['via'])}</span><span class='sw'>SWIPE &rarr;</span></div></div>""")
 
 
 # ---------------------------------------------------------------- 2. NEWSPAPER (Tue)
@@ -131,7 +131,7 @@ h1{font-family:'Playfair Display',serif;font-weight:900;line-height:1.02;letter-
     return doc(css, f"""<div class='np{'' if has else ' nophoto'}'>
 <div class='meta'><span>Vol. I &middot; No. {c['yday']}</span><span>{c['date']}</span><span>For Us. By Us.</span></div>
 <div class='mast'><img src='{PLATE}'><h2>The Innovators Den</h2></div><div class='rule'></div>
-<div class='sec'><span class='chip'>{esc(c['topic'])}</span><span class='kick'>{esc(c['kicker'])}</span><span class='via'>via {esc(c['src'])}</span></div>
+<div class='sec'><span class='chip'>{esc(c['topic'])}</span><span class='kick'>{esc(c['kicker'])}</span><span class='via'>{esc(c['via'])}</span></div>
 <h1 style='font-size:{fs}px'>{plain(c['hook'])}</h1>{photo}
 <div class='cols'><div class='dek'>{plain(c['dek'])}</div><p>{c['lede']}</p></div>
 <div class='foot'><span>Continued inside</span><span class='sw'>Swipe for the full story &rarr;</span></div></div>""")
@@ -157,7 +157,7 @@ h1 em{font-style:normal;color:#FFE600}
     return doc(css, f"""<div class='t'><img class='ph' src='{c['img']}' style='object-position:{c['focus']}'><div class='shade'></div>
 <div class='mast'><img src='{PLATE}'><b>THE INNOVATORS DEN</b><i>{c['day']} {c['short']}<br>FOR US. BY US.</i></div>
 <div class='box'><div class='tag'>{esc(c['topic'])} &middot; {esc(c['kicker'])}</div><h1 style='font-size:{fs}px'>{mark(c['hook'])}</h1></div>
-<div class='foot'><span>{esc(c['credit'])} &middot; via {esc(c['src'])}</span><span class='sw'>SWIPE &rarr;</span></div></div>""")
+<div class='foot'><span>{esc(c['credit'])} &middot; {esc(c['via'])}</span><span class='sw'>SWIPE &rarr;</span></div></div>""")
 
 
 # ---------------------------------------------------------------- 4. MAGAZINE (Fri)
@@ -182,7 +182,7 @@ h1 em{font-style:italic;color:#FFE600}
     return doc(css, f"""<div class='t'><img class='ph' src='{c['img']}' style='object-position:{c['focus']}'><div class='shade'></div>
 <div class='mast'>THE DEN</div><div class='sub'><span>THE INNOVATORS DEN</span><b>&bull;</b><span>{c['short']} ISSUE</span></div>
 <div class='box'><span class='k' style='background:{c['color']}'>{esc(c['topic'])}</span><h1 style='font-size:{fs}px'>{mark(c['hook'])}</h1><p>{plain(c['dek'])}</p></div>
-<div class='foot'><div class='bar'><img src='{BULB}'><span>{esc(c['credit'])}<br>via {esc(c['src'])}</span></div><span class='sw'>SWIPE &rarr;</span></div></div>""")
+<div class='foot'><div class='bar'><img src='{BULB}'><span>{esc(c['credit'])}<br>{esc(c['via'])}</span></div><span class='sw'>SWIPE &rarr;</span></div></div>""")
 
 
 # ---------------------------------------------------------------- 5. DUOTONE SPLIT (Sat)
@@ -206,7 +206,7 @@ h1 em{font-style:normal;background:#000;color:#FFE600;padding:0 12px;-webkit-box
     fs = fit(c["hook"], [(28, 150), (42, 128), (56, 110), (99, 92)])
     return doc(css, f"""<div class='t'><div class='pic'><img src='{c['img']}' style='object-position:{c['focus']}'>
 <div class='top'><div class='brand'><img src='{PLATE}'><span>THE INNOVATORS<br>DEN</span></div><span class='date'>{c['day']} &middot; {c['short']}</span></div></div>
-<div class='low'><div class='k'><span>{esc(c['topic'])} / {esc(c['kicker'])}</span><span>via {esc(c['src'])}</span></div>
+<div class='low'><div class='k'><span>{esc(c['topic'])} / {esc(c['kicker'])}</span><span>{esc(c['via'])}</span></div>
 <h1 style='font-size:{fs}px'>{mark(c['hook'])}</h1>
 <div class='foot'><span>{esc(c['credit'])}</span><span class='sw'>SWIPE &rarr;</span></div></div></div>""")
 
@@ -238,7 +238,7 @@ def broadcast(post):
 <div class='bug'><img src='{BULB}'><span>TID</span></div>
 <div class='lt'><div class='tab' style='background:{c['color']}'>{esc(c['topic'])}</div>
 <div class='main'><h1 style='font-size:{fs}px'>{mark(c['hook'])}</h1></div><div class='sub'>{plain(c['dek'])}</div></div>
-<div class='ticker'><b>THE INNOVATORS DEN</b><span>{esc(c['kicker'])} &bull; via {esc(c['src'])} &bull; For Us. By Us.</span></div>
+<div class='ticker'><b>THE INNOVATORS DEN</b><span>{esc(c['kicker'])} &bull; {esc(c['via'])} &bull; For Us. By Us.</span></div>
 <div class='foot'><span>{esc(c['credit'])}</span><span class='sw'>SWIPE &rarr;</span></div></div>""")
 
 

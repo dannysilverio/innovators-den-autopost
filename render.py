@@ -52,6 +52,7 @@ p.txt strong{color:#FFE600;font-weight:800}
 """
 
 def esc(s): return html.escape(s, quote=False)
+def credit(post): return post.get("credit_line") or f"via {post['source_name']}"  # Den originals: "By The Innovators Den"
 def mark(s, tag):
     out, on = [], False
     for part in esc(s).split("*"):
@@ -81,11 +82,11 @@ def carousel(post):
     t, src, n = post["topic"], post["source_name"], len(post["slides"]) + 2
     out = [top(t) + f"<div class='body'><div class='kicker'>{esc(post.get('kicker','Signal'))}</div>"
            f"<h1 style='font-size:{hsize(post['hook'])}px'>{mark(post['hook'],'em')}</h1></div>"
-           f"<div class='foot'><span>via {esc(src)}</span><span class='swipe'>SWIPE &rarr;</span></div>"]
+           f"<div class='foot'><span>{esc(credit(post))}</span><span class='swipe'>SWIPE &rarr;</span></div>"]
     for i, s in enumerate(post["slides"], start=2):
         out.append(top(t) + f"<div class='body'><div class='big'>{i-1:02d}</div><div class='label'>{esc(s['label'])}</div>"
                    f"<p class='txt' style='font-size:{tsize(s['text'])}px'>{mark(s['text'],'strong')}</p></div>"
-                   f"<div class='foot'><span>via {esc(src)}</span>{dots(i,n)}</div>")
+                   f"<div class='foot'><span>{esc(credit(post))}</span>{dots(i,n)}</div>")
     out.append(f"<div class='body cta'><img src='{FULL}'><h1>{mark(post['cta_line'],'em')}</h1>"
                f"<p class='q'>{esc(post['question'])}</p><div class='cmt'>COMMENT YOUR ANSWER &darr;</div><div class='acts'><span>SEND TO A FRIEND</span><span>FOLLOW</span></div>"
                f"<div class='fubu'>FOR US. BY US.</div></div>"
@@ -96,7 +97,7 @@ def single(post):
     return (top(post["topic"]) + f"<div class='body'><div class='kicker'>{esc(post.get('kicker','Signal'))}</div>"
             f"<h1 style='font-size:{hsize(post['hook'])}px'>{mark(post['hook'],'em')}</h1>"
             f"<p style='font-weight:600;font-size:40px;line-height:1.3;color:#D8D8D8;margin-top:44px'>{mark(post['dek'],'strong')}</p></div>"
-            f"<div class='foot'><span>via {esc(post['source_name'])}</span><span style='font-family:Anton;color:#FF4D7E;font-size:32px'>FOR US. BY US.</span></div>")
+            f"<div class='foot'><span>{esc(credit(post))}</span><span style='font-family:Anton;color:#FF4D7E;font-size:32px'>FOR US. BY US.</span></div>")
 
 
 import covers
