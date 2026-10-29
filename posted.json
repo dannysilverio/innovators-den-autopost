@@ -1287,5 +1287,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session is invalid because the user logged out.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":467,\"fbtrace_id\":\"AmpGIrcstlxCqh1Nd4Jh3GE\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-29",
+  "posted_at": "2026-10-29T11:04-04:00",
+  "mode": "baseline",
+  "run_id": "20261029-1503-40897123832",
+  "story_id": "ca9c1faf-4076-4a80-85ee-c3fd800d098b",
+  "topic": "Law",
+  "title": "Tarter Krinsky & Drogin Announces Six 2026 Attorney Promotions Across Key Practices",
+  "source": "Legal Reader",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17957117916273238"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18152750365510383"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session is invalid because the user logged out.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":467,\"fbtrace_id\":\"AQc_gb2y6L8u19IYK_yeQJF\"}}"
+   }
+  }
  }
 ]
