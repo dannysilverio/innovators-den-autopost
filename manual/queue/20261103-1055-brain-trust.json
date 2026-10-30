@@ -1,0 +1,58 @@
+{
+ "post_at": "2026-11-03T10:55:00-05:00",
+ "kicker": "BRAIN TRUST",
+ "hook": "Type a sentence. *Walk* into a world.",
+ "dek": "Google DeepMind's Genie 4 builds explorable scenes with sound and talking characters from a single prompt.",
+ "slides": [
+  {
+   "label": "The drop",
+   "text": "Last Tuesday, Oct. 27, Google DeepMind unveiled *Genie 4*, a world model that turns a text prompt into a place you can *walk through* with a keyboard. It is a research preview, not a product."
+  },
+  {
+   "label": "How it works",
+   "text": "Describe a scene and Genie 4 generates it *frame by frame in real time*. Mid-session, type changes like weather, a camera angle or a new person walking in. The world adjusts *without starting over*."
+  },
+  {
+   "label": "The sound",
+   "text": "The headline upgrade is audio: ambient sound, music and characters who *talk back*. Google calls it the first real-time world model with native audio, but Runway's *GWM Worlds 2* also generates audio."
+  },
+  {
+   "label": "The limits",
+   "text": "TechCrunch reported scenes hold together for about *two minutes*. Details drift and objects vanish, and text, physics and audio remain unsolved. DataCamp: *\"Treat the demo audio as a ceiling rather than a floor.\"*"
+  },
+  {
+   "label": "Who gets it",
+   "text": "Only *trusted testers* for now. Google AI Ultra subscribers come next, then Gemini API partners. No public price, no release date. Every frame carries *SynthID* watermarking, not yet independently validated."
+  },
+  {
+   "label": "The upside",
+   "text": "Testers are running live film takes, turning *archival photos* into explorable spaces and prototyping games before writing engine code. For a director with *no location budget*, that changes who gets a meeting."
+  },
+  {
+   "label": "The other side",
+   "text": "Bloomberg framed Genie 4 as rattling *video game stocks*. Prototyping, concept art and previsualization look most exposed, and those jobs have been *entry points* for young Black and Brown creatives."
+  },
+  {
+   "label": "The Den's take",
+   "text": "Genie 4 drifts, forgets and cannot write a readable sign. But the direction is clear. Get close to world models early, learn the vocabulary, and *be in the room* when access opens."
+  }
+ ],
+ "cta_line": "Be the one *holding the controller*.",
+ "question": "World models: CREATOR TOOL or JOB KILLER? Pick one.",
+ "first_comment": "One sentence, any world: your block in 1995, a film you haven't made yet, or somewhere that doesn't exist? Tell us below. Full story with every source: link in bio.",
+ "photo_subjects": [
+  "Video game controller",
+  "Virtual reality headset"
+ ],
+ "photo_caption": "A video game controller, standing in for interactive AI-generated worlds.",
+ "caption_instagram": "Type a sentence, get a place. Not a picture or a clip, a world you can walk through.\n\nGoogle DeepMind unveiled Genie 4 on Oct. 27. You describe a scene, it generates it in real time, and you move through it with a keyboard while typing changes like rain or a new character. It adds ambient sound, music and characters who talk back. TechCrunch reported scenes stay consistent for about two minutes. Only trusted testers have it now, with Google AI Ultra subscribers next, and every frame carries SynthID watermarking.\n\nThe other side: Google's \"first\" audio claim is contested, since Runway's GWM Worlds 2 also generates audio. Details drift, objects vanish, and Bloomberg framed the news as rattling video game stocks. Prototyping and concept art, entry points for a lot of young creatives, look most exposed.\n\nWorld models: CREATOR TOOL or JOB KILLER? Pick one.\n\nSend this to the friend with a script and no budget.\n\nFull story with every source: link in bio.\n\nBy The Innovators Den. Sources: DataCamp, DataNorth, AiCybr, Tech Insider, ETC Journal\n#TheInnovatorsDen #BrainTrust #Genie4 #GoogleDeepMind #AI #Creators",
+ "caption_reel": "Google DeepMind's Genie 4 turns a sentence into a world you can walk through, with sound and talking characters. CREATOR TOOL or JOB KILLER? #TheInnovatorsDen #BrainTrust #AI",
+ "caption_facebook": "Google DeepMind unveiled Genie 4 on Oct. 27, a world model that turns a text prompt into a scene you can walk through with a keyboard, now with ambient sound, music and characters who talk back. Scenes hold together for about two minutes, details still drift, and only trusted testers have access, with Google AI Ultra subscribers next. Testers are using it for film takes, archival photos and game prototypes, while Bloomberg framed it as rattling video game stocks. Creator tool or job killer? Tell us below.\n\nBy The Innovators Den. Sources: DataCamp, DataNorth, AiCybr, Tech Insider. #TheInnovatorsDen #BrainTrust",
+ "caption_linkedin": "Generative AI is moving from images and video toward interactive worlds.\n\nGoogle DeepMind's Genie 4, unveiled Oct. 27 as a research preview, generates explorable scenes in real time from a prompt, with native audio and characters who respond. Access is limited to trusted testers, with Google AI Ultra subscribers and Gemini API partners next. Scenes hold for about two minutes, and Google lists text, physics and audio as unsolved.\n\nThe workforce question is real. Tech Insider's analysis named prototyping, concept art and previsualization as the most exposed areas, roles that have long served as entry points into games and film. Google itself frames the work as a step toward AGI and training for robots and agents.\n\nHow should creative industries rebuild the entry-level ladder?\n\nBy The Innovators Den. Sources: DataCamp, DataNorth, AiCybr, Tech Insider.\n\n#TheInnovatorsDen #AI #Innovation #CreatorEconomy",
+ "story_id": "den-brain-trust-20261030",
+ "topic": "Innovation",
+ "title": "Google's Genie 4 Turns a Sentence Into a World You Can Walk Through",
+ "source_name": "The Innovators Den",
+ "source_url": "https://theinnovatorsden.net",
+ "credit_line": "By The Innovators Den"
+}

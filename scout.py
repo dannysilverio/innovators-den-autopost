@@ -104,11 +104,31 @@ def den_story(a):
     if len(body) < P.MIN_BODY or body.rstrip().endswith(("…", "...")): return None
     return {**a, "body": body[:12000]}
 
+QUEUE = P.ROOT / "manual" / "queue"
+
+def queued(now=None):
+    """Scheduled hand-written posts in manual/queue/*.json, each with a "post_at" ISO time (ET). Returns (due, pending)."""
+    now = now or dt.datetime.now(ET)
+    items = []
+    for f in sorted(QUEUE.glob("*.json")) if QUEUE.exists() else []:
+        try:
+            at = dt.datetime.fromisoformat(json.loads(f.read_text())["post_at"])
+            items.append((at if at.tzinfo else at.replace(tzinfo=ET), f))
+        except Exception as e:
+            say(f"skipping unreadable queue file {f.name}: {e}")
+    items.sort()
+    return [f for at, f in items if at <= now], [f for at, f in items if at > now]
+
 def manual_post():
-    """A hand-written post dropped in manual/post.json goes out on the next run, ahead of the trend desk."""
+    """A hand-written post dropped in manual/post.json goes out on the next run, ahead of the trend desk.
+    Otherwise the earliest due post in manual/queue/ goes out (one per run)."""
     src = P.ROOT / "manual" / "post.json"
-    if not src.exists(): return False
+    if not src.exists():
+        due, _ = queued()
+        if not due: return False
+        src = due[0]
     post = json.loads(src.read_text())
+    post.pop("post_at", None)
     post.setdefault("mode", "manual"); post.setdefault("writer", "manual"); post.setdefault("trend", None)
     try:
         from photo import find_photo
@@ -132,6 +152,10 @@ def manual_post():
 def main():
     OUT.mkdir(exist_ok=True)
     if manual_post(): return
+    due, pending = queued()
+    if pending and os.environ.get("FORCE") != "1":
+        say(f"Den originals queue active ({len(pending)} scheduled): trend desk paused until it empties")
+        return
     now = dt.datetime.now(ET)
     posts = real_posts()
     reason, go = decide_slot(now, posts)
