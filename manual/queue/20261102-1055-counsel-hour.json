@@ -1,0 +1,58 @@
+{
+ "post_at": "2026-11-02T10:55:00-05:00",
+ "kicker": "COUNSEL HOUR",
+ "hook": "GM pays *$220M* over your driving data",
+ "dek": "A 36-attorney-general settlement says GM sold driving data that could reach insurers. Over 700,000 NY drivers enrolled.",
+ "slides": [
+  {
+   "label": "The settlement",
+   "text": "On Oct. 29, NY Attorney General *Letitia James* announced General Motors will pay *$220 million* to settle a multistate probe over selling drivers' data. New York's share: *$12,054,341*."
+  },
+  {
+   "label": "Smart Driver",
+   "text": "GM's *Smart Driver* program ran from 2016 to 2024 and enrolled more than *700,000* New Yorkers. It tracked trips, *hard braking*, rapid acceleration and speeding."
+  },
+  {
+   "label": "The sale",
+   "text": "GM said it would not share data with insurers without express consent. The investigation found it sold the data to *data brokers*, who could sell it to *insurers* to adjust premiums."
+  },
+  {
+   "label": "The dealership",
+   "text": "Many drivers were signed up while buying a car. The AG says dealer staff sometimes *accepted terms for customers*, and GM paid dealers bonuses tied partly to *enrollment numbers*."
+  },
+  {
+   "label": "The app",
+   "text": "The OnStar app told more than *370,000* drivers they were not enrolled while GM kept collecting and selling their data. One driver saw a *22%* premium increase, per Yahoo News."
+  },
+  {
+   "label": "The fine print",
+   "text": "The money goes to the states. There is *no claims process* for drivers, so watch for any *GM refund* scam. GM must limit collection and get *explicit consent* first."
+  },
+  {
+   "label": "GM's side",
+   "text": "GM says connected car data makes for *safer, more personalized* experiences and that it is committed to being clear about customer choices. The findings are *allegations* from the investigation."
+  },
+  {
+   "label": "The Den's take",
+   "text": "From years in ad tech: a hard brake is just a hard brake until it becomes a *risk score*. Your car is a computer. *Treat it like one.* General information, not legal advice."
+  }
+ ],
+ "cta_line": "Read it before you *sign at the dealer*.",
+ "question": "Connected cars: CONVENIENCE or SURVEILLANCE? Pick one.",
+ "first_comment": "Did you know your car could be collecting this much about how you drive, and would you pay more for a car that collects nothing? Full story with every source: link in bio.",
+ "photo_subjects": [
+  "Major Deegan Expressway",
+  "FDR Drive"
+ ],
+ "photo_caption": "The Major Deegan Expressway in the Bronx.",
+ "caption_instagram": "Your car knows how hard you brake on the Major Deegan. GM just agreed to pay $220 million over what happened to that data.\n\nOn Oct. 29, New York Attorney General Letitia James and 35 other attorneys general announced the settlement, with $12,054,341 going to New York. GM's Smart Driver program ran from 2016 to 2024 and enrolled more than 700,000 New Yorkers, tracking trips, hard braking, rapid acceleration and speeding. The investigation found GM sold the data to brokers who could sell it to insurers, and the OnStar app told more than 370,000 drivers they were not enrolled while collection continued. GM must now limit data collection, run a privacy program and get explicit consent. Under the settlement, drivers can request a copy of their data. The money goes to the states; there is no claims process, so beware \"GM refund\" scams.\n\nThe other side: GM says connected car data makes for safer, more personalized experiences. The findings are allegations.\n\nConnected cars: CONVENIENCE or SURVEILLANCE? Pick one.\n\nSend this to someone who bought a GM car since 2016.\n\nGeneral information, not legal advice.\n\nFull story with every source: link in bio.\n\nBy The Innovators Den. Sources: NY Attorney General, Yahoo News, ClaimDepot, Kelley Blue Book, FingerLakes1\n#TheInnovatorsDen #CounselHour #DataPrivacy #ConsumerRights #NYC #GM",
+ "caption_reel": "GM will pay $220 million over the sale of driving data, and more than 700,000 New Yorkers were enrolled. CONVENIENCE or SURVEILLANCE? #TheInnovatorsDen #CounselHour #DataPrivacy",
+ "caption_facebook": "On Oct. 29, New York Attorney General Letitia James announced that General Motors will pay $220 million to settle a 36-attorney-general investigation into the sale of drivers' data, with $12,054,341 going to New York. GM's Smart Driver program enrolled more than 700,000 New Yorkers and tracked braking, acceleration and speeding; the investigation found the data was sold to brokers who could sell it to insurers. There is no claims process for individual drivers, so watch for refund scams. GM says connected car data makes for safer, more personalized experiences. General information, not legal advice. Did you know your car collected this? Tell us below.\n\nBy The Innovators Den. Sources: NY Attorney General, Yahoo News, ClaimDepot, Kelley Blue Book. #TheInnovatorsDen #DataPrivacy",
+ "caption_linkedin": "The $220 million GM settlement is a reminder that consent buried in a signature is becoming a liability.\n\nNew York Attorney General Letitia James and 35 other attorneys general found that GM's Smart Driver program, which enrolled more than 700,000 New Yorkers, collected driving behavior that was sold to data brokers who could sell it to insurers. GM must now limit collection, run a privacy program with independent third-party assessments, train dealerships and get explicit consent. GM says connected car data makes for safer, more personalized experiences.\n\nFrom an ad tech lens, the pattern is familiar: data that looks harmless in one context becomes a risk score in another. New York regulators are moving the same way elsewhere, from the city's Click to Cancel rule to proposed disclosure rules for automated customer service.\n\nHow should companies handle consent for data collected at the point of sale?\n\nBy The Innovators Den. Sources: NY Attorney General, Yahoo News, ClaimDepot, Kelley Blue Book, NBC New York.\n\n#TheInnovatorsDen #DataPrivacy #Compliance #AdTech",
+ "story_id": "den-counsel-hour-20261030",
+ "topic": "Law",
+ "title": "GM Pays $220M Over Driver Data. 700,000 New Yorkers Were Enrolled.",
+ "source_name": "The Innovators Den",
+ "source_url": "https://theinnovatorsden.net",
+ "credit_line": "By The Innovators Den"
+}
