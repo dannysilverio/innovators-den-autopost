@@ -1417,5 +1417,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session is invalid because the user logged out.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":467,\"fbtrace_id\":\"A4Ng3rDaeG_UDF_2v_k-6L0\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-31",
+  "posted_at": "2026-10-31T15:02-04:00",
+  "mode": "manual",
+  "run_id": "20261031-1901-41232096733",
+  "story_id": "den-second-wind-20261030",
+  "topic": "Health",
+  "title": "Clocks Fall Back Sunday. Here's How to Not Fall Off.",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17887615134502890"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18114843995180488"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session is invalid because the user logged out.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":467,\"fbtrace_id\":\"AUrSOu-MGFHBY9utgM98uPq\"}}"
+   }
+  }
  }
 ]
