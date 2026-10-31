@@ -7,6 +7,9 @@ on:
       force:   { description: "Post now even if caps/hours say no", default: "0" }
   schedule:
     - cron: "40 15 * * *"  # backup ~11:40 ET: only fills a missed daily baseline
+  push:                        # dropping a Den original in manual/post.json posts it right away
+    branches: [main]
+    paths: ["manual/post.json"]
 
 permissions:
   contents: write
@@ -76,6 +79,7 @@ jobs:
         run: |
           [ -f build/state.next.json ] && [ "${{ github.event.inputs.dry_run }}" != "1" ] && cp build/state.next.json state.json || true
           git add posted.json state.json 2>/dev/null || true
+          git add -A manual 2>/dev/null || true   # record manual/post.json -> manual/done so it never re-posts
           git add -A manual 2>/dev/null || true
           git commit -m "log ${RUN_ID:-run}" || true
           git pull --rebase && git push
