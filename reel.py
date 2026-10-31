@@ -72,4 +72,6 @@ def build(slides_dir, out):
 
 
 if __name__ == "__main__":
+    if (pathlib.Path(sys.argv[1]) / "NO_REEL").exists():
+        print("reel skipped (post has no_reel)"); sys.exit(0)
     build(sys.argv[1], sys.argv[2])

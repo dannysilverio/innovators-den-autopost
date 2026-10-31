@@ -121,5 +121,17 @@ def render(post, outdir):
         b.close()
     return files
 
+def prerendered(post, outdir):
+    """Den originals with hand-built slides (e.g. event carousels made from our own footage):
+    copy carousel_*.png from post["prerendered_dir"] instead of rendering."""
+    import shutil
+    out = pathlib.Path(outdir); out.mkdir(parents=True, exist_ok=True); files = []
+    for f in sorted((HERE / post["prerendered_dir"]).glob("carousel_*.png")):
+        shutil.copy(f, out / f.name); files.append(str(out / f.name))
+    if not files: sys.exit(f"no slides in {post['prerendered_dir']}")
+    if post.get("no_reel"): (out / "NO_REEL").write_text("1")
+    return files
+
 if __name__ == "__main__":
-    for f in render(json.load(open(sys.argv[1])), sys.argv[2]): print(f)
+    post = json.load(open(sys.argv[1]))
+    for f in (prerendered(post, sys.argv[2]) if post.get("prerendered_dir") else render(post, sys.argv[2])): print(f)
