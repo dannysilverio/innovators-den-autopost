@@ -1365,5 +1365,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session is invalid because the user logged out.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":467,\"fbtrace_id\":\"A9N8_1C4aBZ2Y3uFlPiiy71\"}}"
    }
   }
+ },
+ {
+  "date": "2026-10-31",
+  "posted_at": "2026-10-31T08:13-04:00",
+  "mode": "manual",
+  "run_id": "20261031-1212-41199993475",
+  "story_id": "den-our-story-20261031",
+  "topic": "Spotlight",
+  "title": "Developing: The Story of The Innovators Den",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18501787168106551"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18179936992443567"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session is invalid because the user logged out.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":467,\"fbtrace_id\":\"A00_62kqdqA4uZHVa2mvZXJ\"}}"
+   }
+  }
  }
 ]
