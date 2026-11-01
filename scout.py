@@ -149,9 +149,33 @@ def manual_post():
     say(f"POSTING (manual) [{post['topic']}] {post['title']}")
     return True
 
+def original_post():
+    """A Den original just published on theinnovatorsden.net gets its carousel on the next run,
+    ahead of the queue and the trend desk (one per run). See originals.py."""
+    import originals as O
+    now = dt.datetime.now(ET)
+    if not (8 <= now.hour <= 21) and os.environ.get("FORCE") != "1":
+        return False
+    try:
+        story, state = O.next_original(say)
+    except Exception as e:
+        say(f"Den originals check failed: {e}"); return False
+    if not story: return False
+    say(f"new Den original on the site: [{story.get('topic')}] {story['title']}")
+    try:
+        post = O.build_post(story, OUT, say)
+    except Exception as e:
+        say(f"carousel writer failed for this original ({e}), will retry next run"); return False
+    (OUT / "post.json").write_text(json.dumps(post, indent=1))
+    (OUT / "state.next.json").write_text(json.dumps(P.load(P.STATE, {"idx": 0})))
+    (OUT / "originals.next.json").write_text(json.dumps(O.mark(state, story, "carousel posted"), indent=1))
+    say(f"POSTING (original) [{post['topic']}] {post['title']}")
+    return True
+
 def main():
     OUT.mkdir(exist_ok=True)
     if manual_post(): return
+    if original_post(): return
     due, pending = queued()
     if pending and os.environ.get("FORCE") != "1":
         say(f"Den originals queue active ({len(pending)} scheduled): trend desk paused until it empties")

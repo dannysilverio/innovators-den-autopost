@@ -20,6 +20,7 @@ TOPIC_COLORS = {
     "Innovation": "#FFE600", "Business Growth": "#3DDC97", "Finance": "#3DDC97", "Culture": "#FF4D7E",
     "Art": "#B388FF", "Music": "#FF8A3D", "Sports": "#4DA3FF", "Health": "#5CE1E6", "Dining": "#FFB74D",
     "Travel": "#80DEEA", "Law": "#CFD8DC", "Spotlight": "#FF4D7E", "Astrology": "#B388FF",
+    "Food & Wine": "#FFB74D", "Food": "#FFB74D", "Business": "#3DDC97",
 }
 
 FONTS = ("@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;600;700;800;900"
