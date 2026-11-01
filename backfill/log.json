@@ -10,5 +10,17 @@
    "at": "2026-11-01T12:21-05:00",
    "id": "18132703153802011"
   }
+ },
+ "20260927-2302-36357192202": {
+  "facebook": {
+   "ok": true,
+   "at": "2026-11-01T13:00-05:00",
+   "id": "562658440270920_122211119798797044"
+  },
+  "threads": {
+   "ok": false,
+   "at": "2026-11-01T13:00-05:00",
+   "error": "POST https://graph.threads.net/v1.0/28604373319234657/threads -> 400: {\"error\":{\"message\":\"Invalid parameter\",\"type\":\"OAuthException\",\"code\":100,\"error_subcode\":4279004,\"is_transient\":false,\"error_user_title\":\"Invalid Carousel Children\",\"error_user_msg\":\"The children with IDs 17918144373463894 are invalid, nonexistent, or expired.\",\"fbtrace_id\":\"A9gl1b7Ey6LqAjQrZnMkiuM\"}}"
+  }
  }
 }
