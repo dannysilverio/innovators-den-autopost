@@ -23,6 +23,11 @@ Each run checks theinnovatorsden.net for Den originals (bylined By The Innovator
 ## Scheduled Den originals (manual queue)
 Drop hand-written posts in `manual/queue/` as JSON (same shape as files in `manual/done/`) with a `post_at` time in ET, e.g. `"post_at": "2026-10-31T10:55:00-04:00"`. Each run posts the earliest due file (one per run) and moves it to `manual/done/`. While any queued post is still scheduled, the trend desk pauses, so only the queue posts. A single `manual/post.json` still goes out on the next run, ahead of the queue.
 
+## Threads, YouTube Shorts and the Facebook backfill (added Nov 2026)
+- **Threads:** every carousel also posts to Threads (same slides, caption trimmed to Threads' 500 characters). Turns on by itself once `THREADS_USER_ID` and `THREADS_ACCESS_TOKEN` are set. The token is refreshed each run; if Meta ever issues a new token string, the run log says so.
+- **YouTube Shorts:** every carousel is rendered as a vertical slideshow (`build/short.mp4`, separate from the IG Reel, so Reels stay reserved for 10/10 stories) and uploaded as a Short. Turns on once `YT_CLIENT_ID`, `YT_CLIENT_SECRET` and `YT_REFRESH_TOKEN` are set. Uploads stay private until Google approves the API project's audit; set the `YT_PRIVACY` variable to override. YouTube's default quota allows about 6 uploads a day.
+- **Backfill:** `backfill/queue.json` lists the 54 carousels that reached Instagram but missed Facebook while the Page token was expired (Sep 26 to Nov 1, 2026), oldest first. Three date-tied posts were left out. On runs where nothing new posts, `backfill.py` sends one of them to Facebook and Threads, max 5 a day (`BACKFILL_PER_DAY` variable). Results are in `backfill/log.json`. Slides load from the commit that first published them, so the 10-day cleanup doesn't break it.
+
 ## One-time setup
 
 ### 1. GitHub
@@ -38,6 +43,8 @@ Drop hand-written posts in `manual/queue/` as JSON (same shape as files in `manu
 | `FB_PAGE_ID` | Den Facebook Page ID |
 | `FB_PAGE_TOKEN` | Long-lived **Page** access token with `pages_manage_posts`, `pages_read_engagement` |
 | `LI_ORG_ID` | Numeric ID in the company page admin URL (linkedin.com/company/**12345678**/admin) |
+| `THREADS_USER_ID` / `THREADS_ACCESS_TOKEN` | Threads use case on the same Meta app, `threads_basic` + `threads_content_publish` |
+| `YT_CLIENT_ID` / `YT_CLIENT_SECRET` / `YT_REFRESH_TOKEN` | Google Cloud project with YouTube Data API v3, refresh token for the Den channel (scope `youtube.upload`) |
 | `LI_ACCESS_TOKEN` | LinkedIn app token with `w_organization_social` (needs Community Management API approval) |
 
 Optional **Variables**: `TREND_MIN_SCORE` (default 8), `PLATFORMS` (e.g. `instagram,facebook` until LinkedIn is approved), `ANTHROPIC_MODEL`, `IG_GRAPH_HOST` (`graph.facebook.com` if using a Facebook-login token instead of Instagram-login).

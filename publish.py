@@ -1,6 +1,8 @@
-"""Publish build/post.json + rendered slides to Instagram, Facebook Page and LinkedIn company page.
+"""Publish build/post.json + rendered slides to Instagram, Facebook Page, LinkedIn company page,
+Threads and YouTube Shorts.
 
 Each platform runs independently: one failing never blocks the others.
+Threads and YouTube switch on by themselves once their secrets exist (no PLATFORMS change needed).
 Images must already be public at IMAGE_BASE_URL/<run_id>/carousel_XX.png
 (the workflow commits them to public/ first and uses raw.githubusercontent URLs).
 Set DRY_RUN=1 to print what would be posted without calling any API.
@@ -12,6 +14,15 @@ ROOT = pathlib.Path(__file__).parent
 POSTED = ROOT / "posted.json"
 DRY = os.environ.get("DRY_RUN") == "1"
 ENABLED = set((os.environ.get("PLATFORMS") or "instagram,facebook,linkedin").split(","))
+AUTO = {"threads": ("THREADS_USER_ID", "THREADS_ACCESS_TOKEN"),
+        "youtube": ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")}
+
+
+def enabled(name):
+    """PLATFORMS still governs IG/FB/LinkedIn; Threads and YouTube turn on when their secrets are set."""
+    if name in AUTO:
+        return all(os.environ.get(k) for k in AUTO[name])
+    return name in ENABLED
 
 def http(method, url, data=None, headers=None, raw=None):
     h = dict(headers or {})
@@ -154,6 +165,88 @@ def linkedin(post, files):
     _, hdr = http("POST", "https://api.linkedin.com/rest/posts", body, H)
     return {"id": hdr.get("x-restli-id") or hdr.get("X-RestLi-Id")}
 
+# ---------- Threads (carousel, same images) ----------
+TH_BASE = "https://graph.threads.net/v1.0"
+
+
+def threads_text(post, limit=500):
+    """Threads allows 500 characters and one topic tag. Trim on a paragraph/sentence boundary."""
+    s = post.get("caption_threads") or post.get("caption_facebook") or post["caption_instagram"]
+    s = re.sub(r"\s*#\w+", "", s).replace("link in bio", "link in profile").strip()
+    tag = " #TheInnovatorsDen"
+    room = limit - len(tag)
+    if len(s) > room:
+        cut = s[:room]
+        for sep in ("\n\n", ". ", "? ", "! "):
+            i = cut.rfind(sep)
+            if i > room * 0.5:
+                cut = cut[: i + (1 if sep != "\n\n" else 0)]
+                break
+        s = cut.rstrip()
+    return s + tag
+
+
+_th_checked = False
+
+
+def _threads_refresh(tok):
+    """Long-lived Threads tokens last 60 days; refreshing extends them. Runs once per process, never blocks."""
+    global _th_checked
+    if _th_checked:
+        return
+    _th_checked = True
+    try:
+        r, _ = http("GET", f"https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token={tok}")
+        if r.get("access_token") and r["access_token"] != tok:
+            print("threads: WARNING Meta issued a new token string; update the THREADS_ACCESS_TOKEN secret")
+    except Exception as e:
+        print(f"threads: token refresh skipped ({str(e)[:120]})")
+
+
+def threads(post, urls):
+    uid, tok = os.environ["THREADS_USER_ID"], os.environ["THREADS_ACCESS_TOKEN"]
+    _threads_refresh(tok)
+    kids = []
+    for u in urls[:20]:
+        r, _ = http("POST", f"{TH_BASE}/{uid}/threads",
+                    {"media_type": "IMAGE", "image_url": u, "is_carousel_item": "true", "access_token": tok})
+        kids.append(r["id"])
+    r, _ = http("POST", f"{TH_BASE}/{uid}/threads", {"media_type": "CAROUSEL", "children": ",".join(kids),
+                                                     "text": threads_text(post), "access_token": tok})
+    cid = r["id"]
+    for _ in range(24):  # Meta recommends ~30s before publishing; poll until ready
+        time.sleep(5)
+        s, _ = http("GET", f"{TH_BASE}/{cid}?fields=status,error_message&access_token={tok}")
+        if s.get("status") == "FINISHED": break
+        if s.get("status") in ("ERROR", "EXPIRED"): raise RuntimeError(f"Threads container {s}")
+    r, _ = http("POST", f"{TH_BASE}/{uid}/threads_publish", {"creation_id": cid, "access_token": tok})
+    return {"id": r["id"]}
+
+
+# ---------- YouTube Shorts (vertical slideshow of the carousel) ----------
+def youtube(post, video_file):
+    f = pathlib.Path(video_file)
+    if not f.exists():
+        raise RuntimeError("no build/short.mp4 (slideshow render failed)")
+    t, _ = http("POST", "https://oauth2.googleapis.com/token", {
+        "client_id": os.environ["YT_CLIENT_ID"], "client_secret": os.environ["YT_CLIENT_SECRET"],
+        "refresh_token": os.environ["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"})
+    auth = {"Authorization": f"Bearer {t['access_token']}"}
+    title = re.sub(r"[<>]", "", post.get("hook") or post["title"]).strip()
+    title = (title[:88].rsplit(" ", 1)[0] if len(title) > 88 else title) + " #Shorts"
+    desc = re.sub(r"[<>]", "", post.get("caption_facebook") or post["caption_instagram"])
+    meta = {"snippet": {"title": title, "description": f"{desc}\n\n#Shorts #TheInnovatorsDen"[:4900],
+                        "tags": ["The Innovators Den", "For Us By Us", str(post.get("topic") or "")][:3],
+                        "categoryId": "22"},
+            "status": {"privacyStatus": os.environ.get("YT_PRIVACY", "public"), "selfDeclaredMadeForKids": False}}
+    _, hdr = http("POST", "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
+                  meta, {**auth, "Content-Type": "application/json", "X-Upload-Content-Type": "video/mp4",
+                         "X-Upload-Content-Length": str(f.stat().st_size)})
+    loc = hdr.get("Location") or hdr.get("location")
+    r, _ = http("PUT", loc, raw=f.read_bytes(), headers={**auth, "Content-Type": "video/mp4"})
+    return {"id": r.get("id"), "privacy": (r.get("status") or {}).get("privacyStatus")}
+
+
 def main():
     post = json.loads((ROOT / "build/post.json").read_text())
     run_id, base = os.environ.get("RUN_ID", "local"), os.environ.get("IMAGE_BASE_URL", "")
@@ -162,11 +255,12 @@ def main():
     results = {}
     reel_file = ROOT / "build/reel.mp4"
     reel_url = f"{base.rstrip('/')}/{run_id}/reel.mp4"
-    jobs = [("instagram", instagram, urls), ("facebook", facebook, urls), ("linkedin", linkedin, files)]
+    jobs = [("instagram", instagram, urls), ("facebook", facebook, urls), ("linkedin", linkedin, files),
+            ("threads", threads, urls), ("youtube", youtube, str(ROOT / "build/short.mp4"))]
     if reel_file.exists() and os.environ.get("REELS", "1") != "0" and urls:
         jobs.insert(1, ("instagram_reel", lambda p, u: instagram_reel(p, u, urls[0]), reel_url))
     for name, fn, arg in jobs:
-        if name.split("_")[0] not in ENABLED: continue
+        if not enabled(name.split("_")[0]): continue
         if DRY:
             results[name] = {"dry_run": True}; print(f"[dry] {name}"); continue
         try:

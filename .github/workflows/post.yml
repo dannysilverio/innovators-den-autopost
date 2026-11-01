@@ -44,6 +44,10 @@ jobs:
           pip install playwright==1.47.0 && python -m playwright install --with-deps chromium
           python render.py build/post.json build/slides
           python reel.py build/slides build/reel.mp4 || echo "reel render failed, posting carousel only"
+          # YouTube Shorts: a slideshow of every carousel (separate file, so the IG Reels rule stays the same)
+          if [ -n "$YT_REFRESH_TOKEN" ]; then FORCE_REEL=1 python reel.py build/slides build/short.mp4 || echo "short render failed"; fi
+        env:
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
 
       - name: Commit slides to public/ (so Instagram/Facebook can fetch them)
         if: steps.check.outputs.go == 'true'
@@ -57,7 +61,7 @@ jobs:
           git add -A public && git commit -m "slides $RUN_ID" && git push
           sleep 20
 
-      - name: Post to Instagram, Facebook, LinkedIn
+      - name: Post to Instagram, Facebook, LinkedIn, Threads, YouTube
         if: steps.check.outputs.go == 'true'
         run: python publish.py
         env:
@@ -73,6 +77,11 @@ jobs:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           LI_ACCESS_TOKEN: ${{ secrets.LI_ACCESS_TOKEN }}
           LI_ORG_ID: ${{ secrets.LI_ORG_ID }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
 
       - name: Save log + rotation state
         if: always() && steps.check.outputs.go == 'true'
@@ -84,6 +93,20 @@ jobs:
           git add -A manual 2>/dev/null || true
           git commit -m "log ${RUN_ID:-run}" || true
           git pull --rebase && git push
+
+      - name: Backfill missed Facebook/Threads posts (one per run, max 5 a day, only when nothing new posted)
+        if: steps.check.outputs.go != 'true'
+        run: |
+          python backfill.py || true
+          git config user.name "den-autopost" && git config user.email "actions@github.com"
+          git add backfill/log.json 2>/dev/null && git commit -m "backfill $(date -u +%F-%H%M)" && git pull --rebase && git push || true
+        env:
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          BACKFILL_PER_DAY: ${{ vars.BACKFILL_PER_DAY }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
 
       - name: Track performance (daily Instagram insights snapshot)
         if: always()
