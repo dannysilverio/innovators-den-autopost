@@ -7,6 +7,13 @@ import json, os, pathlib, shutil, subprocess, sys
 
 import publish as P
 
+if os.environ.get("CHECK_ONLY") == "1":  # just confirm the client secret + refresh token still log in; uploads nothing
+    t, _ = P.http("POST", "https://oauth2.googleapis.com/token", {
+        "client_id": os.environ["YT_CLIENT_ID"], "client_secret": os.environ["YT_CLIENT_SECRET"],
+        "refresh_token": os.environ["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"})
+    print("youtube login OK" if t.get("access_token") else f"youtube login FAILED {t}")
+    sys.exit(0 if t.get("access_token") else 1)
+
 ROOT = pathlib.Path(__file__).parent
 runs = sorted(p for p in (ROOT / "public").iterdir() if p.is_dir() and (p / "post.json").exists())
 run = ROOT / "public" / os.environ["RUN_ID"] if os.environ.get("RUN_ID") else runs[-1]
