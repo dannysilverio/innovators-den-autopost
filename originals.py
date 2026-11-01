@@ -109,6 +109,7 @@ Slide rules (the cover and closing slide are added automatically):
 - Each slide "text" is 60 to 160 characters. Wrap 1-2 key phrases per slide in *asterisks*.
 Hard rules:
 - Use ONLY facts, names, numbers and quotes that are in the story. Never invent anything.
+- Keep the story's hedges: a projection stays a projection ("projected", "expected"), an estimate stays an estimate, a belief stays a belief.
 - Never use em dashes or en dashes anywhere. Use commas, periods or parentheses.
 - If the story touches faith, spiritual practice, family or anyone's private life, stay as respectful and discreet as the story itself is. Do not add detail it does not give.
 - No partisan political takes. No buzzwords (synergy, leverage, elevate, game-changer, revolutionize).
@@ -162,7 +163,9 @@ def story_photo(story, dest):
             data = r.read()
         if len(data) < 5000: return None
         pathlib.Path(dest).write_bytes(data)
-        return {"path": str(dest), "credit": "Image: The Innovators Den", "subject": story["title"]}
+        ai = re.search(r"AI[- ]generated", story.get("content") or "", re.I)
+        credit = "AI-generated illustration: The Innovators Den" if ai else "Image: The Innovators Den"
+        return {"path": str(dest), "credit": credit, "subject": story["title"]}
     except Exception as e:
         print("story image download failed:", e)
         return None
