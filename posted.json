@@ -1515,5 +1515,31 @@
     "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session is invalid because the user logged out.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":467,\"fbtrace_id\":\"A26n8FATs7WuJYrfiyYirD4\"}}"
    }
   }
+ },
+ {
+  "date": "2026-11-01",
+  "posted_at": "2026-11-01T11:02-05:00",
+  "mode": "manual",
+  "run_id": "20261101-1601-41324042824",
+  "story_id": "den-walk-off-20261030",
+  "topic": "Sports",
+  "title": "Brewers Won Without the Long Ball. Yankees, Take Notes.",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18179015788434502"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18637723927004334"
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session is invalid because the user logged out.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":467,\"fbtrace_id\":\"AeBRMUvvphEBpS5dCUaaocf\"}}"
+   }
+  }
  }
 ]
