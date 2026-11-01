@@ -211,6 +211,16 @@ def threads(post, urls):
         r, _ = http("POST", f"{TH_BASE}/{uid}/threads",
                     {"media_type": "IMAGE", "image_url": u, "is_carousel_item": "true", "access_token": tok})
         kids.append(r["id"])
+    # Each slide must finish processing before the carousel can use it, or Threads answers
+    # "Invalid Carousel Children ... invalid, nonexistent, or expired" (error_subcode 4279004).
+    for kid in kids:
+        for _ in range(36):  # up to ~3 minutes per slide; usually a few seconds
+            s, _ = http("GET", f"{TH_BASE}/{kid}?fields=status,error_message&access_token={tok}")
+            if s.get("status") == "FINISHED": break
+            if s.get("status") in ("ERROR", "EXPIRED"): raise RuntimeError(f"Threads slide {kid} {s}")
+            time.sleep(5)
+        else:
+            raise RuntimeError(f"Threads slide {kid} still not ready after 3 minutes")
     r, _ = http("POST", f"{TH_BASE}/{uid}/threads", {"media_type": "CAROUSEL", "children": ",".join(kids),
                                                      "text": threads_text(post), "access_token": tok})
     cid = r["id"]

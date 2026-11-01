@@ -39,6 +39,8 @@ def main():
     if done_today >= PER_DAY:
         print(f"backfill: daily cap reached ({done_today}/{PER_DAY})"); return
     for it in items:
+        if it.get("skip"):  # out-of-date news Danny chose not to post late (Nov 1, 2026)
+            continue
         entry = log.get(it["run_id"], {})
         missing = [(n, fn) for n, fn in plats if not (entry.get(n) or {}).get("ok")]
         if not missing:
