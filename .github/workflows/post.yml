@@ -42,6 +42,7 @@ jobs:
         if: steps.check.outputs.go == 'true'
         run: |
           pip install playwright==1.47.0 && python -m playwright install --with-deps chromium
+          pip install -q pillow && (which ffmpeg >/dev/null || sudo apt-get install -y -q ffmpeg >/dev/null)
           python render.py build/post.json build/slides
           python reel.py build/slides build/reel.mp4 || echo "reel render failed, posting carousel only"
           # YouTube Shorts: a slideshow of every carousel (separate file, so the IG Reels rule stays the same)
