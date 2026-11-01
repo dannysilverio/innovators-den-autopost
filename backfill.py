@@ -65,12 +65,12 @@ def main():
 
 
 YT_LOG = ROOT / "backfill/youtube_log.json"
-YT_PER_DAY = int(os.environ.get("YT_BACKFILL_PER_DAY") or 1)  # YouTube's default quota fits ~6 uploads a day; new posts come first
+YT_PER_DAY = int(os.environ.get("YT_BACKFILL_PER_DAY") or 0)  # off: the Nov 2026 catch-up runs through Metricool. Set the variable to turn this on.
 
 
 def youtube_pass():
     """Turn one missed carousel into a Short per run, max YT_BACKFILL_PER_DAY a day. Own log, so it never eats the FB/Threads cap."""
-    if not P.enabled("youtube"):
+    if not P.enabled("youtube") or YT_PER_DAY <= 0:
         return
     import subprocess, sys, tempfile, urllib.request
     items = json.loads(QUEUE.read_text())["items"]
