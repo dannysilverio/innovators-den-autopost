@@ -100,9 +100,10 @@ jobs:
       - name: Backfill missed Facebook/Threads posts (one per run, max 5 a day, only when nothing new posted)
         if: steps.check.outputs.go != 'true'
         run: |
+          pip install -q pillow && (which ffmpeg >/dev/null || sudo apt-get install -y -q ffmpeg >/dev/null) || true
           python backfill.py || true
           git config user.name "den-autopost" && git config user.email "actions@github.com"
-          git add backfill/log.json 2>/dev/null && git commit -m "backfill $(date -u +%F-%H%M)" && git pull --rebase && git push || true
+          git add backfill/log.json backfill/youtube_log.json 2>/dev/null && git commit -m "backfill $(date -u +%F-%H%M)" && git pull --rebase && git push || true
         env:
           DRY_RUN: ${{ github.event.inputs.dry_run }}
           BACKFILL_PER_DAY: ${{ vars.BACKFILL_PER_DAY }}
@@ -110,6 +111,10 @@ jobs:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_BACKFILL_PER_DAY: ${{ vars.YT_BACKFILL_PER_DAY }}
 
       - name: Track performance (daily Instagram insights snapshot)
         if: always()

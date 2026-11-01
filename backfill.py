@@ -64,5 +64,45 @@ def main():
     print("backfill: all caught up")
 
 
+YT_LOG = ROOT / "backfill/youtube_log.json"
+YT_PER_DAY = int(os.environ.get("YT_BACKFILL_PER_DAY") or 1)  # YouTube's default quota fits ~6 uploads a day; new posts come first
+
+
+def youtube_pass():
+    """Turn one missed carousel into a Short per run, max YT_BACKFILL_PER_DAY a day. Own log, so it never eats the FB/Threads cap."""
+    if not P.enabled("youtube"):
+        return
+    import subprocess, sys, tempfile, urllib.request
+    items = json.loads(QUEUE.read_text())["items"]
+    log = json.loads(YT_LOG.read_text()) if YT_LOG.exists() else {}
+    today = dt.datetime.now(ET).strftime("%Y-%m-%d")
+    if sum(1 for v in log.values() if v.get("ok") and v.get("at", "").startswith(today)) >= YT_PER_DAY:
+        print(f"youtube backfill: daily cap reached ({YT_PER_DAY})"); return
+    it = next((i for i in items if not (log.get(i["run_id"]) or {}).get("ok")), None)
+    if not it:
+        print("youtube backfill: all caught up"); return
+    work = pathlib.Path(tempfile.mkdtemp()); (work / "slides").mkdir()
+    for s in it["slides"]:
+        u = f"https://raw.githubusercontent.com/{REPO}/{it['commit']}/public/{it['run_id']}/{s}"
+        (work / "slides" / s).write_bytes(urllib.request.urlopen(u, timeout=60).read())
+    post = {"title": it["title"], "topic": it.get("topic"), "caption_facebook": it["caption_facebook"],
+            "caption_instagram": it["caption_facebook"]}
+    (work / "post.json").write_text(json.dumps(post))
+    print(f"youtube backfill: {it['title'][:70]}")
+    if P.DRY:
+        print("[dry] youtube"); return
+    now = dt.datetime.now(ET).isoformat(timespec="minutes")
+    try:
+        subprocess.run([sys.executable, str(ROOT / "reel.py"), str(work / "slides"), str(work / "short.mp4")],
+                       check=True, env={**os.environ, "FORCE_REEL": "1"})
+        log[it["run_id"]] = {"ok": True, "at": now, **P.youtube(post, str(work / "short.mp4"))}
+        print(f"  youtube: posted {log[it['run_id']]['id']}")
+    except Exception as e:
+        log[it["run_id"]] = {"ok": False, "at": now, "error": str(e)[:400]}
+        print(f"  youtube: FAILED {str(e)[:200]}")
+    YT_LOG.write_text(json.dumps(log, indent=1, ensure_ascii=False))
+
+
 if __name__ == "__main__":
     main()
+    youtube_pass()
