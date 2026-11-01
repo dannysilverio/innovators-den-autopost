@@ -17,6 +17,9 @@ Every 2 hours (9am to 9pm ET), cron-job.org wakes the GitHub workflow and Claude
 4. `render.py` builds the 1080x1350 slides in the Den brand. The cover changes by day: Mon breaking, Tue newspaper, Wed classic, Thu tabloid, Fri magazine, Sat duotone, Sun broadcast (`covers.py`). `photo.py` finds a free-licensed Wikimedia Commons photo of the story's subject and prints the credit on the cover; with no usable photo, the classic or text newspaper cover is used. They're committed to `public/<run>/` (the repo must be **public** so Instagram and Facebook can load them).
 5. `publish.py` posts to each platform independently and logs everything to `posted.json` (time, mode `trending`/`baseline`, and results or errors).
 
+## Every Den story gets a carousel (automatic)
+Each run checks theinnovatorsden.net for Den originals (bylined By The Innovators Den). Any story published in the last 7 days that hasn't had a carousel yet is written up by Claude in the story's own voice, rendered in the Den template with the story's featured image on the cover, and posted on that run, ahead of the queue and the trend desk. One per run, so several new stories post 2 hours apart. `originals.json` lists every story already handled, so nothing posts twice; stories that already have a hand-made carousel (same title in `manual/`) are skipped. Stories published overnight post at the 9am run.
+
 ## Scheduled Den originals (manual queue)
 Drop hand-written posts in `manual/queue/` as JSON (same shape as files in `manual/done/`) with a `post_at` time in ET, e.g. `"post_at": "2026-10-31T10:55:00-04:00"`. Each run posts the earliest due file (one per run) and moves it to `manual/done/`. While any queued post is still scheduled, the trend desk pauses, so only the queue posts. A single `manual/post.json` still goes out on the next run, ahead of the queue.
 
