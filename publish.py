@@ -83,6 +83,29 @@ def instagram(post, urls):
     r, _ = http("POST", f"{base}/{uid}/media_publish", {"creation_id": cid, "access_token": tok})
     return {"id": r["id"]}
 
+# ---------- Instagram Stories (opt-in per post: "ig_stories" lists 9:16 PNGs in the post's prerendered_dir) ----------
+def instagram_stories(post, _urls):
+    """Posts each listed 1080x1920 frame as an Instagram Story after the carousel. The Graph API can't add
+    link stickers, so the frames carry a 'link in bio' call to action instead."""
+    host = os.environ.get("IG_GRAPH_HOST") or "graph.instagram.com"
+    ver, uid, tok = os.environ.get("IG_API_VERSION", "v21.0"), os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
+    base = f"https://{host}/{ver}"
+    repo = os.environ.get("GITHUB_REPOSITORY", "dannysilverio/innovators-den-autopost")
+    ids = []
+    for name in post["ig_stories"]:
+        u = f"https://raw.githubusercontent.com/{repo}/main/{post['prerendered_dir'].strip('/')}/{name}"
+        _warm(u)
+        r, _ = http("POST", f"{base}/{uid}/media", {"media_type": "STORIES", "image_url": u, "access_token": tok})
+        cid = r["id"]
+        for _ in range(30):
+            s, _ = http("GET", f"{base}/{cid}?fields=status_code&access_token={tok}")
+            if s.get("status_code") == "FINISHED": break
+            if s.get("status_code") == "ERROR": raise RuntimeError(f"IG story container error {s}")
+            time.sleep(5)
+        r, _ = http("POST", f"{base}/{uid}/media_publish", {"creation_id": cid, "access_token": tok})
+        ids.append(r["id"])
+    return {"ids": ids}
+
 # ---------- Instagram Reel (video version of the same story, for discovery) ----------
 def _reel_container(base, uid, tok, post, cover_url, video_url=None):
     data = {"media_type": "REELS", "cover_url": cover_url, "share_to_feed": "true", "access_token": tok,
@@ -269,6 +292,8 @@ def main():
             ("threads", threads, urls), ("youtube", youtube, str(ROOT / "build/short.mp4"))]
     if reel_file.exists() and os.environ.get("REELS", "1") != "0" and urls:
         jobs.insert(1, ("instagram_reel", lambda p, u: instagram_reel(p, u, urls[0]), reel_url))
+    if post.get("ig_stories") and post.get("prerendered_dir"):
+        jobs.insert(1, ("instagram_stories", instagram_stories, None))
     for name, fn, arg in jobs:
         if not enabled(name.split("_")[0]): continue
         if DRY:
