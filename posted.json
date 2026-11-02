@@ -1677,5 +1677,40 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-02",
+  "posted_at": "2026-11-02T15:04-05:00",
+  "mode": "manual",
+  "run_id": "20261102-2001-41515143175",
+  "story_id": "den-capital-cipher-20261030",
+  "topic": "Finance",
+  "title": "The Fed Hit Pause, Not Reverse. What It Means for Your Wallet",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18115539170593240"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18371549155245496"
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211463724797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17881412397553499"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "43VLnlZKJJQ",
+    "privacy": "public"
+   }
+  }
  }
 ]
