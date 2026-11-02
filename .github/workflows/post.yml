@@ -56,6 +56,7 @@ jobs:
           RUN_ID=$(date -u +%Y%m%d-%H%M)-${GITHUB_RUN_ID}
           echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
           mkdir -p public/$RUN_ID && cp build/slides/carousel_*.png build/post.json public/$RUN_ID/
+          cp build/slides/story_*.png public/$RUN_ID/ 2>/dev/null || true   # Instagram Story frames
           # JPEG copies for TikTok (it rejects PNG photos)
           pip install -q pillow && python -c "import glob,sys; from PIL import Image; [Image.open(f).convert('RGB').save(f[:-4]+'.jpg', quality=92) for f in glob.glob(sys.argv[1]+'/carousel_*.png')]" public/$RUN_ID || echo "jpg copies skipped"
           [ -f build/reel.mp4 ] && cp build/reel.mp4 public/$RUN_ID/ || true
@@ -72,6 +73,7 @@ jobs:
           PLATFORMS: ${{ vars.PLATFORMS }}
           REELS: ${{ vars.REELS }}
           REEL_TRIAL: ${{ vars.REEL_TRIAL }}
+          STORIES: ${{ vars.STORIES }}
           IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/public
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}

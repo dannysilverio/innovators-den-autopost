@@ -136,3 +136,8 @@ def prerendered(post, outdir):
 if __name__ == "__main__":
     post = json.load(open(sys.argv[1]))
     for f in (prerendered(post, sys.argv[2]) if post.get("prerendered_dir") else render(post, sys.argv[2])): print(f)
+    try:  # Instagram Story frames for every post; a failure here never blocks the carousel
+        import stories
+        for f in stories.make(post, sys.argv[2]): print(f)
+    except Exception as e:
+        print(f"story frames skipped: {e}")

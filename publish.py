@@ -84,16 +84,14 @@ def instagram(post, urls):
     return {"id": r["id"]}
 
 # ---------- Instagram Stories (opt-in per post: "ig_stories" lists 9:16 PNGs in the post's prerendered_dir) ----------
-def instagram_stories(post, _urls):
-    """Posts each listed 1080x1920 frame as an Instagram Story after the carousel. The Graph API can't add
-    link stickers, so the frames carry a 'link in bio' call to action instead."""
+def instagram_stories(post, urls):
+    """Posts each 1080x1920 story frame (build/slides/story_*.png, made by stories.py) as an Instagram Story
+    right after the carousel. The Graph API can't add link stickers, so the frames say 'link in bio'."""
     host = os.environ.get("IG_GRAPH_HOST") or "graph.instagram.com"
     ver, uid, tok = os.environ.get("IG_API_VERSION", "v21.0"), os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
     base = f"https://{host}/{ver}"
-    repo = os.environ.get("GITHUB_REPOSITORY", "dannysilverio/innovators-den-autopost")
     ids = []
-    for name in post["ig_stories"]:
-        u = f"https://raw.githubusercontent.com/{repo}/main/{post['prerendered_dir'].strip('/')}/{name}"
+    for u in urls:
         _warm(u)
         r, _ = http("POST", f"{base}/{uid}/media", {"media_type": "STORIES", "image_url": u, "access_token": tok})
         cid = r["id"]
@@ -292,8 +290,11 @@ def main():
             ("threads", threads, urls), ("youtube", youtube, str(ROOT / "build/short.mp4"))]
     if reel_file.exists() and os.environ.get("REELS", "1") != "0" and urls:
         jobs.insert(1, ("instagram_reel", lambda p, u: instagram_reel(p, u, urls[0]), reel_url))
-    if post.get("ig_stories") and post.get("prerendered_dir"):
-        jobs.insert(1, ("instagram_stories", instagram_stories, None))
+    # Every carousel also goes up as Instagram Stories (STORIES=0 turns this off)
+    story_files = sorted((ROOT / "build/slides").glob("story_*.png"))
+    if story_files and os.environ.get("STORIES", "1") != "0":
+        story_urls = [f"{base.rstrip('/')}/{run_id}/{p.name}" for p in story_files]
+        jobs.insert(1, ("instagram_stories", instagram_stories, story_urls))
     for name, fn, arg in jobs:
         if not enabled(name.split("_")[0]): continue
         if DRY:
