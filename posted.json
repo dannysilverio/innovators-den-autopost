@@ -1576,5 +1576,40 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-01",
+  "posted_at": "2026-11-01T19:04-05:00",
+  "mode": "manual",
+  "run_id": "20261102-0001-41364820093",
+  "story_id": "den-brindis-20261030",
+  "topic": "Food & Wine",
+  "title": "Calabash, Humm and the West Village's New Art of Dining",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18092726309658037"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17921325576245643"
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211294350797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18127816714671778"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "TmQM_85blo4",
+    "privacy": "public"
+   }
+  }
  }
 ]
