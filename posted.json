@@ -1642,5 +1642,40 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-02",
+  "posted_at": "2026-11-02T11:04-05:00",
+  "mode": "manual",
+  "run_id": "20261102-1602-41477151137",
+  "story_id": "den-counsel-hour-20261030",
+  "topic": "Law",
+  "title": "GM Pays $220M Over Driver Data. 700,000 New Yorkers Were Enrolled.",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17993788581112527"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18133512064757925"
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211430562797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18089755547703224"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "3sUr-QK5mw4",
+    "privacy": "public"
+   }
+  }
  }
 ]
