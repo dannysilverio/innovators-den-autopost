@@ -1611,5 +1611,36 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-01",
+  "posted_at": "2026-11-01T20:03-05:00",
+  "mode": "manual",
+  "run_id": "20261102-0100-41370052079",
+  "story_id": "den-walk-off-iverson-20261101",
+  "topic": "Sports",
+  "title": "Six Feet, 165 Pounds, All Heart: Why Allen Iverson Still Matters",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": false,
+    "error": "POST https://graph.instagram.com/v21.0/17841457652102505/media_publish -> 400: {\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"Ax6xau1RXICFsE1YX0Kcm3k\"}}"
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211307388797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18016776983965440"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "DUzR-MP39Ow",
+    "privacy": "public"
+   }
+  }
  }
 ]
