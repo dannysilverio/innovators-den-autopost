@@ -1754,5 +1754,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-03",
+  "posted_at": "2026-11-03T11:05-05:00",
+  "mode": "manual",
+  "run_id": "20261103-1602-41669643860",
+  "story_id": "den-brain-trust-20261030",
+  "topic": "Innovation",
+  "title": "Google's Genie 4 Turns a Sentence Into a World You Can Walk Through",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18109532297361363"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18436215328146327"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18058798253568504",
+     "18011174696778896"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211611690797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18124061759513353"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "B8oyw3VgM1Y",
+    "privacy": "public"
+   }
+  }
  }
 ]
