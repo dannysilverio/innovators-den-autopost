@@ -1712,5 +1712,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-02",
+  "posted_at": "2026-11-02T19:05-05:00",
+  "mode": "manual",
+  "run_id": "20261103-0002-41549630985",
+  "story_id": "den-frame-room-20261030",
+  "topic": "Art",
+  "title": "Harlem and Queens Hand New York a Black Abstraction Season",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18148139614607219"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18132870439852315"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18115300685173206",
+     "18139694665630971"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211482822797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17989829022091985"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "p1VrA_x1k9g",
+    "privacy": "public"
+   }
+  }
  }
 ]
