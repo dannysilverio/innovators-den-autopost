@@ -1796,5 +1796,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-03",
+  "posted_at": "2026-11-03T15:07-05:00",
+  "mode": "manual",
+  "run_id": "20261103-2003-41708502703",
+  "story_id": "den-the-margin-20261030",
+  "topic": "Business Growth",
+  "title": "NYC Small Businesses Get a Fine Reset Right Before the Holiday Rush",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17916589761540967"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17955143568290695"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18646726849053353",
+     "18173013415465802"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211632228797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18083160005368843"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "ks3GFGBfcQY",
+    "privacy": "public"
+   }
+  }
  }
 ]
