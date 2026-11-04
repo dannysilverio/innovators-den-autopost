@@ -1922,5 +1922,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-04",
+  "posted_at": "2026-11-04T11:42-05:00",
+  "mode": "manual",
+  "run_id": "20261104-1638-41869200408",
+  "story_id": "den-tarima-jayz-top21-20261104",
+  "topic": "Music",
+  "title": "Hov's Halftime: Jay-Z's Top 21 Bars, Ranked",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18129047314845745"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18353023486265697"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18076380131597015",
+     "17885285286527299"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211831032797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18577521313075184"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "MKs9xFItiMY",
+    "privacy": "public"
+   }
+  }
  }
 ]
