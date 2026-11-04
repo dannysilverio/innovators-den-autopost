@@ -9,6 +9,7 @@ If nothing qualifies, it writes nothing and the workflow stops quietly.
 import json, os, re, sys, pathlib, datetime as dt, urllib.request, urllib.parse
 from zoneinfo import ZoneInfo
 import pick as P
+import viral as V
 
 ET = ZoneInfo("America/New_York")
 TOPICS = ["Innovation", "Art", "Culture", "Music", "Business Growth", "Sports", "Dining", "Health",
@@ -142,7 +143,7 @@ def manual_post():
     tail = f"\n\nSource: {post['source_name']} {post.get('source_url') or ''}".rstrip()
     post["caption_facebook"] += tail
     post["caption_linkedin"] += tail
-    (OUT / "post.json").write_text(json.dumps(post, indent=1))
+    (OUT / "post.json").write_text(json.dumps(V.enrich(post), indent=1))
     (OUT / "state.next.json").write_text(json.dumps(P.load(P.STATE, {"idx": 0})))
     done = P.ROOT / "manual" / "done"; done.mkdir(parents=True, exist_ok=True)
     src.rename(done / f"{dt.datetime.now(ET):%Y%m%d-%H%M}-{post['story_id']}.json")
@@ -166,7 +167,7 @@ def original_post():
         post = O.build_post(story, OUT, say)
     except Exception as e:
         say(f"carousel writer failed for this original ({e}), will retry next run"); return False
-    (OUT / "post.json").write_text(json.dumps(post, indent=1))
+    (OUT / "post.json").write_text(json.dumps(V.enrich(post), indent=1))
     (OUT / "state.next.json").write_text(json.dumps(P.load(P.STATE, {"idx": 0})))
     (OUT / "originals.next.json").write_text(json.dumps(O.mark(state, story, "carousel posted"), indent=1))
     say(f"POSTING (original) [{post['topic']}] {post['title']}")
@@ -239,7 +240,7 @@ def main():
     src = f"\n\nSource: {story['sourceName']} {story.get('sourceUrl') or ''}".rstrip()
     post["caption_facebook"] += src
     post["caption_linkedin"] += src
-    (OUT / "post.json").write_text(json.dumps(post, indent=1))
+    (OUT / "post.json").write_text(json.dumps(V.enrich(post), indent=1))
     (OUT / "state.next.json").write_text(json.dumps(state))
     say(f"POSTING ({mode}) [{story['topic']}] {story['title']}")
 

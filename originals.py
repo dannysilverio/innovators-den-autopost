@@ -99,14 +99,16 @@ Return ONLY valid JSON matching this schema:
  "first_comment": "the Den's own first comment, max 150 characters: one extra detail from the story or a follow-up question. Conversational, no hashtags, no links",
  "photo_subjects": ["exact English Wikipedia article title of the main place, person or thing, best first", "up to 2 fallbacks"],
  "photo_caption": "max 70 characters naming what the cover image shows, only facts from the story",
- "caption_instagram": "120-180 words. First sentence restates the hook and naturally includes the 2-3 words people would search for this story. 3 short paragraphs in the story's voice. End with the question, then one share prompt naming who should get it, then 'Full story: link in bio.' then 3-5 specific hashtags incl #TheInnovatorsDen and the sub-brand hashtag (#{brand_tag})",
+{viral_schema}
+ "caption_instagram": "120-180 words. First sentence restates the hook and naturally includes the 2-3 words people would search for this story. 3 short paragraphs in the story's voice. End with the question, then one share prompt naming who should get it, then 'Full story: link in bio.' then the hashtags list, #TheInnovatorsDen and the sub-brand hashtag (#{brand_tag}), 5 hashtags total at most (Instagram's hard cap)",
  "caption_reel": "40-80 words: keyword-rich first sentence, the 2 strongest moments, the question, the share prompt, the same hashtags",
  "caption_facebook": "80-130 words, conversational, ends with the question, then 'Read the full story: {url}'. No hashtags except #TheInnovatorsDen",
- "caption_linkedin": "120-200 words, a sharper angle for founders, operators and creatives, short paragraphs, end with the question, then 'Full story: {url}', 3 hashtags max"
+ "caption_linkedin": "120-200 words, a sharper angle for founders, operators and creatives, short paragraphs, end with the question, no URLs, 3 hashtags max"
 }
 Slide rules (the cover and closing slide are added automatically):
 - 3 to 8 story slides, as many as the story needs. Every slide is a complete thought: no cliffhangers, no sentence split across slides, no "..." endings.
 - Each slide "text" is 60 to 160 characters. Wrap 1-2 key phrases per slide in *asterisks*.
+{viral_rules}
 Hard rules:
 - Use ONLY facts, names, numbers and quotes that are in the story. Never invent anything.
 - Keep the story's hedges: a projection stays a projection ("projected", "expected"), an estimate stays an estimate, a belief stays a belief.
@@ -121,6 +123,10 @@ Dek: {summary}
 Story:
 {body}
 """
+
+
+import viral as V
+PROMPT = PROMPT.replace("{viral_schema}", V.SCHEMA).replace("{viral_rules}", V.RULES)
 
 
 def write_copy(story):

@@ -99,10 +99,11 @@ Turn this news story into an Instagram carousel (up to 10 slides total) plus cap
  "first_comment": "the Den's own first comment under the post, max 150 characters: either one extra surprising fact from the article or a follow-up question that invites replies. Conversational, no hashtags, no links",
  "photo_subjects": ["exact English Wikipedia article title of the main person, group, company, team or place in the story, best first", "up to 2 more fallbacks, e.g. the company or city"],
  "photo_caption": "max 70 characters naming who or what would be pictured, using only facts from the article",
- "caption_instagram": "120-180 words. First sentence restates the hook and naturally contains the 2-3 keywords people would search for this story (names, company, topic), because Instagram search ranks caption keywords. 3 short paragraphs. End with the question, then one share prompt that names who should get it (e.g. 'Send this to a founder who needs to see it.'), then 'Full story: link in bio.' then 3-5 specific hashtags incl #TheInnovatorsDen",
+{viral_schema}
+ "caption_instagram": "120-180 words. First sentence restates the hook and naturally contains the 2-3 keywords people would search for this story (names, company, topic), because Instagram search ranks caption keywords. 3 short paragraphs. End with the question, then one share prompt that names who should get it (e.g. 'Send this to a founder who needs to see it.'), then 'Full story: link in bio.' then the hashtags list and #TheInnovatorsDen (5 hashtags total at most, Instagram's hard cap)",
  "caption_reel": "40-80 words for the Reel version: keyword-rich first sentence, the 2 most important facts, the question, the same share prompt, then the same 3-5 hashtags",
  "caption_facebook": "80-130 words, conversational, ends with the question. No hashtags except #TheInnovatorsDen",
- "caption_linkedin": "120-200 words, sharper professional angle for founders/operators, short paragraphs, end with the question, 3 hashtags max"
+ "caption_linkedin": "120-200 words, sharper professional angle for founders/operators, short paragraphs, end with the question, no URLs, 3 hashtags max"
 }
 Slide rules (the cover and closing slide are added automatically, so "slides" holds 3 to 8 story slides):
 - Use as many slides as the story needs to be complete, up to 8. A simple story may need 3 or 4. A detailed one should use 6 to 8. Never cut the story short to save slides.
@@ -110,6 +111,7 @@ Slide rules (the cover and closing slide are added automatically, so "slides" ho
 - Every slide is a complete thought. No cliffhangers, no "more on the next slide", no sentence split across slides, no "..." endings.
 - Each slide "text" is 60 to 160 characters. Wrap 1-2 key phrases per slide in *asterisks*. Labels are 1-3 words.
 - If the article leaves something unresolved (a vote pending, a result unknown), say so plainly on a slide rather than leaving it out.
+{viral_rules}
 Hard rules:
 - Use ONLY facts in the article. Never invent numbers, quotes, names or outcomes. Credit the source by name ({source}) in every caption.
 - Never use em dashes or en dashes anywhere. Use commas, periods or parentheses.
@@ -122,6 +124,9 @@ Headline: {title}
 Article:
 {body}
 """
+
+import viral as V
+PROMPT = PROMPT.replace("{viral_schema}", V.SCHEMA).replace("{viral_rules}", V.RULES)
 
 def post_anthropic(body, timeout=300):
     """Call the Anthropic API; on failure raise with the API's own error message so the log says exactly what's wrong."""
@@ -230,7 +235,7 @@ def main():
     post["caption_facebook"] += src
     post["caption_linkedin"] += src
     out = ROOT / "build"; out.mkdir(exist_ok=True)
-    (out / "post.json").write_text(json.dumps(post, indent=1))
+    (out / "post.json").write_text(json.dumps(V.enrich(post), indent=1))
     (out / "state.next.json").write_text(json.dumps(state))
     print(f"Picked [{story['topic']}] {story['title']} ({writer})")
 

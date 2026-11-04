@@ -28,6 +28,21 @@ Drop hand-written posts in `manual/queue/` as JSON (same shape as files in `manu
 - **YouTube Shorts:** every carousel is rendered as a vertical slideshow (`build/short.mp4`, separate from the IG Reel, so Reels stay reserved for 10/10 stories) and uploaded as a Short. Turns on once `YT_CLIENT_ID`, `YT_CLIENT_SECRET` and `YT_REFRESH_TOKEN` are set. Uploads stay private until Google approves the API project's audit; set the `YT_PRIVACY` variable to override. YouTube's default quota allows about 6 uploads a day.
 - **Backfill:** `backfill/queue.json` lists the 54 carousels that reached Instagram but missed Facebook while the Page token was expired (Sep 26 to Nov 1, 2026), oldest first. Three date-tied posts were left out. On runs where nothing new posts, `backfill.py` sends one of them to Facebook and Threads, max 5 a day (`BACKFILL_PER_DAY` variable). Results are in `backfill/log.json`. Slides load from the commit that first published them, so the 10-day cleanup doesn't break it.
 
+## Built to be found on every platform (added Nov 4, 2026)
+`viral.py` turns each post into the copy each platform ranks best and saves it as `platform_copy` in post.json
+(also committed to `public/<run_id>/post.json`, which is where the TikTok/Metricool and Rumble uploads take their copy from).
+- **Copywriter** now also writes `seo_keyword`, `search_terms`, `hashtags`, `yt_title`, `caption_threads`, `threads_topic`
+  and `caption_tiktok`. Older or hand-written posts without them get sensible fallbacks.
+- **Instagram:** max 5 hashtags (Instagram's cap), alt text on every carousel image, and a collaborator invite to
+  Danny's personal page (`formerlyknownashashtag`) on every carousel and Reel. A post can add brand/venue handles with
+  `"ig_collaborators": ["handle"]` (3 total max). Override the default with the `IG_COLLABORATORS` variable (`none` turns it off).
+  Invites must be accepted in the Instagram app by the invited account.
+- **Threads:** its own conversational copy plus one `topic_tag` per post.
+- **YouTube Shorts:** keyword-first title, keyword-first description with the story link, 3 searchable hashtags above the
+  title, real tags (names, brands, common misspellings) and a category per Den topic.
+- **LinkedIn:** no URLs in the post body (links cut reach). Set `LI_LINKS=1` to keep them.
+- Optional extras (alt text, collaborators, topic tag) retry without the extra if an API rejects it, so they never cost a post.
+
 ## One-time setup
 
 ### 1. GitHub

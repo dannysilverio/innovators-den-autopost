@@ -9,6 +9,7 @@ Set DRY_RUN=1 to print what would be posted without calling any API.
 """
 import json, os, re, sys, time, pathlib, datetime as dt, urllib.request, urllib.parse, urllib.error
 from zoneinfo import ZoneInfo
+import viral as V
 
 ROOT = pathlib.Path(__file__).parent
 POSTED = ROOT / "posted.json"
@@ -54,17 +55,35 @@ def _warm(url, wait=90):
         time.sleep(5)
     return False
 
+def _with_extras(url, data, extras):
+    """POST with optional discovery extras (alt text, collaborators, topic tag). If the API rejects an extra,
+    retry once without it: an optional field must never cost us the post."""
+    extras = {k: v for k, v in (extras or {}).items() if v}
+    if not extras:
+        return http("POST", url, data)
+    try:
+        return http("POST", url, {**data, **extras})
+    except RuntimeError as e:
+        print(f"  extras {sorted(extras)} rejected, retrying without them: {str(e)[:200]}")
+        return http("POST", url, data)
+
+
+def _collab(post):
+    c = V.collaborators(post)
+    return {"collaborators": json.dumps(c)} if c else {}
+
 # ---------- Instagram (Graph API content publishing) ----------
 def instagram(post, urls):
     host = os.environ.get("IG_GRAPH_HOST") or "graph.instagram.com"
     ver, uid, tok = os.environ.get("IG_API_VERSION", "v21.0"), os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
     base = f"https://{host}/{ver}"
-    kids = []
-    for u in urls:
+    kids, alts = [], V.alt_texts(post, len(urls))
+    for i, u in enumerate(urls):
         _warm(u)
         for attempt in range(4):  # Instagram sometimes times out fetching freshly committed images; wait and retry
             try:
-                r, _ = http("POST", f"{base}/{uid}/media", {"image_url": u, "is_carousel_item": "true", "access_token": tok})
+                item = {"image_url": u, "is_carousel_item": "true", "access_token": tok}
+                r, _ = _with_extras(f"{base}/{uid}/media", item, {"alt_text": alts[i]})
                 break
             except RuntimeError as e:
                 if attempt == 3 or not re.search(r"Timeout|2207003|is_transient\":true|download", str(e)):
@@ -72,8 +91,9 @@ def instagram(post, urls):
                 print(f"instagram: media fetch timed out, retry {attempt + 1} in {20 * (attempt + 1)}s")
                 time.sleep(20 * (attempt + 1))
         kids.append(r["id"])
-    r, _ = http("POST", f"{base}/{uid}/media", {"media_type": "CAROUSEL", "children": ",".join(kids),
-                                                "caption": post["caption_instagram"], "access_token": tok})
+    r, _ = _with_extras(f"{base}/{uid}/media", {"media_type": "CAROUSEL", "children": ",".join(kids),
+                                                 "caption": V.cap_hashtags(post["caption_instagram"]), "access_token": tok},
+                        _collab(post))
     cid = r["id"]
     for _ in range(30):
         s, _ = http("GET", f"{base}/{cid}?fields=status_code&access_token={tok}")
@@ -107,14 +127,14 @@ def instagram_stories(post, urls):
 # ---------- Instagram Reel (video version of the same story, for discovery) ----------
 def _reel_container(base, uid, tok, post, cover_url, video_url=None):
     data = {"media_type": "REELS", "cover_url": cover_url, "share_to_feed": "true", "access_token": tok,
-            "caption": post.get("caption_reel") or post["caption_instagram"]}
+            "caption": V.cap_hashtags(post.get("caption_reel") or post["caption_instagram"])}
     if os.environ.get("REEL_TRIAL") == "1":  # trial reel: shown to non-followers first (needs 1,000+ followers)
         data["trial_params"] = json.dumps({"graduation_strategy": "SS_PERFORMANCE"})
     if video_url:
         data["video_url"] = video_url
     else:
         data["upload_type"] = "resumable"
-    r, _ = http("POST", f"{base}/{uid}/media", data)
+    r, _ = _with_extras(f"{base}/{uid}/media", data, _collab(post))
     return r["id"]
 
 
@@ -180,7 +200,7 @@ def linkedin(post, files):
         http("PUT", v["uploadUrl"], raw=pathlib.Path(f).read_bytes(),
              headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/octet-stream"})
         imgs.append({"id": v["image"], "altText": post["title"][:120]})
-    body = {"author": owner, "commentary": li_text(post["caption_linkedin"]), "visibility": "PUBLIC",
+    body = {"author": owner, "commentary": li_text(V.linkedin_text(post)), "visibility": "PUBLIC",
             "distribution": {"feedDistribution": "MAIN_FEED", "targetEntities": [], "thirdPartyDistributionChannels": []},
             "content": {"multiImage": {"images": imgs}}, "lifecycleState": "PUBLISHED", "isReshareDisabledByAuthor": False}
     _, hdr = http("POST", "https://api.linkedin.com/rest/posts", body, H)
@@ -191,20 +211,8 @@ TH_BASE = "https://graph.threads.net/v1.0"
 
 
 def threads_text(post, limit=500):
-    """Threads allows 500 characters and one topic tag. Trim on a paragraph/sentence boundary."""
-    s = post.get("caption_threads") or post.get("caption_facebook") or post["caption_instagram"]
-    s = re.sub(r"\s*#\w+", "", s).replace("link in bio", "link in profile").strip()
-    tag = " #TheInnovatorsDen"
-    room = limit - len(tag)
-    if len(s) > room:
-        cut = s[:room]
-        for sep in ("\n\n", ". ", "? ", "! "):
-            i = cut.rfind(sep)
-            if i > room * 0.5:
-                cut = cut[: i + (1 if sep != "\n\n" else 0)]
-                break
-        s = cut.rstrip()
-    return s + tag
+    """Threads copy (500 chars) without hashtags; the topic goes in topic_tag (one per post)."""
+    return V.copy_for(post, "threads")["text"][:limit]
 
 
 _th_checked = False
@@ -242,8 +250,10 @@ def threads(post, urls):
             time.sleep(5)
         else:
             raise RuntimeError(f"Threads slide {kid} still not ready after 3 minutes")
-    r, _ = http("POST", f"{TH_BASE}/{uid}/threads", {"media_type": "CAROUSEL", "children": ",".join(kids),
-                                                     "text": threads_text(post), "access_token": tok})
+    topic = V.copy_for(post, "threads")["topic"]
+    r, _ = _with_extras(f"{TH_BASE}/{uid}/threads", {"media_type": "CAROUSEL", "children": ",".join(kids),
+                                                     "text": threads_text(post), "access_token": tok},
+                        {"topic_tag": topic})
     cid = r["id"]
     for _ in range(24):  # Meta recommends ~30s before publishing; poll until ready
         time.sleep(5)
@@ -263,12 +273,9 @@ def youtube(post, video_file):
         "client_id": os.environ["YT_CLIENT_ID"], "client_secret": os.environ["YT_CLIENT_SECRET"],
         "refresh_token": os.environ["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"})
     auth = {"Authorization": f"Bearer {t['access_token']}"}
-    title = re.sub(r"[<>]", "", post.get("hook") or post["title"]).strip()
-    title = (title[:88].rsplit(" ", 1)[0] if len(title) > 88 else title) + " #Shorts"
-    desc = re.sub(r"[<>]", "", post.get("caption_facebook") or post["caption_instagram"])
-    meta = {"snippet": {"title": title, "description": f"{desc}\n\n#Shorts #TheInnovatorsDen"[:4900],
-                        "tags": ["The Innovators Den", "For Us By Us", str(post.get("topic") or "")][:3],
-                        "categoryId": "22"},
+    yt = V.copy_for(post, "youtube")
+    meta = {"snippet": {"title": yt["title"], "description": yt["description"], "tags": yt["tags"],
+                        "categoryId": yt["category_id"], "defaultLanguage": "en", "defaultAudioLanguage": "en"},
             "status": {"privacyStatus": os.environ.get("YT_PRIVACY", "public"), "selfDeclaredMadeForKids": False}}
     _, hdr = http("POST", "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
                   meta, {**auth, "Content-Type": "application/json", "X-Upload-Content-Type": "video/mp4",
