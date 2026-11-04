@@ -1838,5 +1838,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-03",
+  "posted_at": "2026-11-03T19:04-05:00",
+  "mode": "manual",
+  "run_id": "20261104-0002-41743505733",
+  "story_id": "den-carry-on-culture-20261030",
+  "topic": "Travel",
+  "title": "One Year After Melissa, Jamaica Is Open. It Is Not Finished.",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18107349716127035"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18182943964429714"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18505849507102131",
+     "18572138077077595"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211670694797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18101666987389706"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "EMv4N10AZj4",
+    "privacy": "public"
+   }
+  }
  }
 ]
