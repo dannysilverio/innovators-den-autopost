@@ -62,7 +62,7 @@ jobs:
           [ -f build/reel.mp4 ] && cp build/reel.mp4 public/$RUN_ID/ || true
           python -c "import pathlib,shutil,datetime as d; c=(d.date.today()-d.timedelta(days=10)).strftime('%Y%m%d'); [shutil.rmtree(p) for p in pathlib.Path('public').iterdir() if p.is_dir() and p.name[:8].isdigit() and p.name[:8]<c]"
           git config user.name "den-autopost" && git config user.email "actions@github.com"
-          git add -A public && git commit -m "slides $RUN_ID" && git push
+          git add -A public && git commit -m "slides $RUN_ID" && bash push.sh
           sleep 20
 
       - name: Post to Instagram, Facebook, LinkedIn, Threads, YouTube
@@ -97,7 +97,7 @@ jobs:
           git add -A manual 2>/dev/null || true   # record manual/post.json -> manual/done so it never re-posts
           git add -A manual 2>/dev/null || true
           git commit -m "log ${RUN_ID:-run}" || true
-          git pull --rebase && git push
+          bash push.sh
 
       - name: Backfill missed Facebook/Threads posts (one per run, max 5 a day, only when nothing new posted)
         if: steps.check.outputs.go != 'true'
@@ -105,7 +105,7 @@ jobs:
           pip install -q pillow && (which ffmpeg >/dev/null || sudo apt-get install -y -q ffmpeg >/dev/null) || true
           python backfill.py || true
           git config user.name "den-autopost" && git config user.email "actions@github.com"
-          git add backfill/log.json backfill/youtube_log.json 2>/dev/null && git commit -m "backfill $(date -u +%F-%H%M)" && git pull --rebase && git push || true
+          git add backfill/log.json backfill/youtube_log.json 2>/dev/null && git commit -m "backfill $(date -u +%F-%H%M)" && bash push.sh || true
         env:
           DRY_RUN: ${{ github.event.inputs.dry_run }}
           BACKFILL_PER_DAY: ${{ vars.BACKFILL_PER_DAY }}
@@ -123,7 +123,7 @@ jobs:
         run: |
           python track.py || true
           git config user.name "den-autopost" && git config user.email "actions@github.com"
-          git add metrics.json 2>/dev/null && git commit -m "metrics $(date -u +%F)" && git pull --rebase && git push || true
+          git add metrics.json 2>/dev/null && git commit -m "metrics $(date -u +%F)" && bash push.sh || true
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}

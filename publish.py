@@ -110,19 +110,43 @@ def instagram_stories(post, urls):
     host = os.environ.get("IG_GRAPH_HOST") or "graph.instagram.com"
     ver, uid, tok = os.environ.get("IG_API_VERSION", "v21.0"), os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
     base = f"https://{host}/{ver}"
-    ids = []
-    for u in urls:
+    ids, errors = [], []
+    for n, u in enumerate(urls, 1):
+        try:
+            ids.append(_story_frame(base, uid, tok, u))
+        except Exception as e:  # one bad frame must not erase the frames that did post
+            errors.append(f"frame {n}: {str(e)[:250]}"); print(f"instagram_stories: frame {n} failed: {e}")
+    if not ids:
+        raise RuntimeError("; ".join(errors) or "no story frames posted")
+    return {"ids": ids, **({"partial_errors": errors} if errors else {})}
+
+def _story_frame(base, uid, tok, u, attempts=3):
+    """One story frame: create the container, wait until Instagram has finished processing it, then publish.
+    'Media Not Found' (2207006) or a still-processing container gets a fresh container and another try."""
+    last = None
+    for attempt in range(attempts):
         _warm(u)
         r, _ = http("POST", f"{base}/{uid}/media", {"media_type": "STORIES", "image_url": u, "access_token": tok})
-        cid = r["id"]
-        for _ in range(30):
+        cid, ready = r["id"], False
+        for _ in range(36):
             s, _ = http("GET", f"{base}/{cid}?fields=status_code&access_token={tok}")
-            if s.get("status_code") == "FINISHED": break
-            if s.get("status_code") == "ERROR": raise RuntimeError(f"IG story container error {s}")
+            if s.get("status_code") == "FINISHED": ready = True; break
+            if s.get("status_code") == "ERROR": break
             time.sleep(5)
-        r, _ = http("POST", f"{base}/{uid}/media_publish", {"creation_id": cid, "access_token": tok})
-        ids.append(r["id"])
-    return {"ids": ids}
+        if ready:
+            time.sleep(3)
+            try:
+                r, _ = http("POST", f"{base}/{uid}/media_publish", {"creation_id": cid, "access_token": tok})
+                return r["id"]
+            except RuntimeError as e:
+                last = e
+                if not re.search(r"2207006|2207027|9007|is_transient\":true", str(e)):
+                    raise
+        else:
+            last = RuntimeError(f"IG story container {cid} not ready")
+        print(f"instagram_stories: retry {attempt + 1} in {15 * (attempt + 1)}s ({str(last)[:150]})")
+        time.sleep(15 * (attempt + 1))
+    raise last
 
 # ---------- Instagram Reel (video version of the same story, for discovery) ----------
 def _reel_container(base, uid, tok, post, cover_url, video_url=None):
