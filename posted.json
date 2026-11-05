@@ -1964,5 +1964,44 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-04",
+  "posted_at": "2026-11-04T19:03-05:00",
+  "mode": "manual",
+  "run_id": "20261105-0001-41938033560",
+  "story_id": "den-stoop-hookah-top21-20261104",
+  "topic": "Culture",
+  "title": "Top 21 Hookah Lounges in NYC: Hold the Liquor, Pass the Pipe",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17870897793659810"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17880077217562387"
+   },
+   "instagram_stories": {
+    "ok": false,
+    "error": "POST https://graph.instagram.com/v21.0/17841457652102505/media_publish -> 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,025,927,358,921,737 cannot be found.\",\"fbtrace_id\":\"A-gdJlBr6ySA_5JOr8m89vd\"}}"
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211872084797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18129648784880368"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "aIG7AjpUsxw",
+    "privacy": "public"
+   }
+  }
  }
 ]
