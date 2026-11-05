@@ -2003,5 +2003,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-05",
+  "posted_at": "2026-11-05T11:25-05:00",
+  "mode": "original",
+  "run_id": "20261105-1621-42063065956",
+  "story_id": "den-original-cb37085a-1bb5-5e3f-b2c3-73fd76c7bfab",
+  "topic": "Music",
+  "title": "Anuel AA at UBS Arena: Start Time, LIRR Tips and What to Bring",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17945151006367362"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18130895095835139"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18107018324345677",
+     "18133660954780628"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122211958442797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18184955785424985"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "jcYLKb77B-A",
+    "privacy": "public"
+   }
+  }
  }
 ]
