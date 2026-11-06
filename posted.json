@@ -2113,5 +2113,31 @@
     "id": "18654686821049725"
    }
   }
+ },
+ {
+  "date": "2026-11-06",
+  "posted_at": "2026-11-06T09:02-05:00",
+  "mode": "manual",
+  "run_id": "20261106-1401-42230077525",
+  "story_id": "den-pb-brasserie-20261106",
+  "topic": "Food & Wine",
+  "title": "PB Brasserie: From Dishwasher to Chef-Owner on 125th Street",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram_delete_18150084574631327": {
+    "ok": false,
+    "error": "DELETE https://graph.instagram.com/v21.0/18150084574631327 -> 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18150084574631327' does not exist, cannot be loaded due to missing permissions, or does not support this operation\",\"type\":\"IGApiException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"AGCNKm0Kqk0KrlYXNf_zjBj\"}}"
+   },
+   "instagram": {
+    "ok": true,
+    "id": "17967554754208583"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18148886548532362"
+   }
+  }
  }
 ]
