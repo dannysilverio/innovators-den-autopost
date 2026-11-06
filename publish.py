@@ -83,7 +83,9 @@ def instagram(post, urls):
         for attempt in range(4):  # Instagram sometimes times out fetching freshly committed images; wait and retry
             try:
                 item = {"image_url": u, "is_carousel_item": "true", "access_token": tok}
-                r, _ = _with_extras(f"{base}/{uid}/media", item, {"alt_text": alts[i]})
+                tags = (post.get("ig_user_tags") or {}).get(str(i))  # people tagged on this slide: [{username, x, y}]
+                r, _ = _with_extras(f"{base}/{uid}/media", item,
+                                    {"alt_text": alts[i], "user_tags": json.dumps(tags) if tags else None})
                 break
             except RuntimeError as e:
                 if attempt == 3 or not re.search(r"Timeout|2207003|is_transient\":true|download", str(e)):
@@ -332,7 +334,19 @@ def main():
     if story_files and os.environ.get("STORIES", "1") != "0":
         story_urls = [f"{base.rstrip('/')}/{run_id}/{p.name}" for p in story_files]
         jobs.insert(1, ("instagram_stories", instagram_stories, story_urls))
+    # A re-post can replace an earlier Instagram post: "ig_delete": [media ids] removes them first
+    if post.get("ig_delete") and not DRY:
+        host = os.environ.get("IG_GRAPH_HOST") or "graph.instagram.com"
+        ver, tok = os.environ.get("IG_API_VERSION", "v21.0"), os.environ["IG_ACCESS_TOKEN"]
+        for mid in post["ig_delete"]:
+            try:
+                r, _ = http("DELETE", f"https://{host}/{ver}/{mid}?access_token={tok}")
+                results[f"instagram_delete_{mid}"] = {"ok": True, **r}; print(f"instagram: deleted {mid} {r}")
+            except Exception as e:
+                results[f"instagram_delete_{mid}"] = {"ok": False, "error": str(e)[:400]}; print(f"instagram: delete {mid} FAILED {e}")
+    only = set(post.get("only") or [])  # a re-post can go to just some platforms, e.g. ["instagram"]
     for name, fn, arg in jobs:
+        if only and name not in only: continue
         if not enabled(name.split("_")[0]): continue
         if DRY:
             results[name] = {"dry_run": True}; print(f"[dry] {name}"); continue
