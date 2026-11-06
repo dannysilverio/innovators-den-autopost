@@ -25,7 +25,9 @@ SITE = "https://theinnovatorsden.net"
 # Instagram accounts invited as collaborators on every carousel and Reel (max 3 per post, public accounts only).
 # Danny's personal page by default. IG_COLLABORATORS overrides it ("none" turns it off);
 # a post's own "ig_collaborators" list (e.g. the brand or venue we covered) is added first.
-DEFAULT_COLLABORATORS = ["formerlyknownashashtag"]
+# Every Den post invites the team as collaborators: Danny, Orlando (mr_a_plus) and Wally (W Studios).
+# The API allows 3, so featured partners (a venue, a chef) get tagged on the first slide instead (see partners()).
+DEFAULT_COLLABORATORS = ["formerlyknownashashtag", "mr_a_plus", "wstudiosnj"]
 
 SUB_BRAND = {"Innovation": "Brain Trust", "Art": "Frame Room", "Culture": "The Stoop", "Music": "Tarima",
              "Business Growth": "The Margin", "Business": "The Margin", "Sports": "Walk-Off",
@@ -205,11 +207,22 @@ def collaborators(post):
     base = [] if (env or "").strip().lower() == "none" else (
         [x for x in re.split(r"[,\s]+", env) if x] if env else DEFAULT_COLLABORATORS)
     out = []
-    for u in [*(post.get("ig_collaborators") or []), *base]:
+    for u in [*base, *(post.get("ig_collaborators") or [])]:  # the team first, always
         u = str(u).lstrip("@").strip()
         if u and len(u) <= 30 and u.lower() not in [x.lower() for x in out]:
             out.append(u)
     return out[:3]
+
+
+def partners(post):
+    """Featured accounts (post ig_collaborators) that don't fit in the 3 collaborator slots: tag them instead."""
+    taken = [x.lower() for x in collaborators(post)]
+    out = []
+    for u in post.get("ig_collaborators") or []:
+        u = str(u).lstrip("@").strip()
+        if u and u.lower() not in taken and u.lower() not in [x.lower() for x in out]:
+            out.append(u)
+    return out[:20]
 
 
 def alt_texts(post, n):

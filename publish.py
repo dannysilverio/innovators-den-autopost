@@ -56,21 +56,36 @@ def _warm(url, wait=90):
     return False
 
 def _with_extras(url, data, extras):
-    """POST with optional discovery extras (alt text, collaborators, topic tag). If the API rejects an extra,
-    retry once without it: an optional field must never cost us the post."""
+    """POST with optional discovery extras (alt text, collaborators, location, people tags). If the API rejects
+    them, drop the riskiest one at a time and retry: an optional field must never cost us the post."""
     extras = {k: v for k, v in (extras or {}).items() if v}
-    if not extras:
-        return http("POST", url, data)
-    try:
-        return http("POST", url, {**data, **extras})
-    except RuntimeError as e:
-        print(f"  extras {sorted(extras)} rejected, retrying without them: {str(e)[:200]}")
-        return http("POST", url, data)
+    order = ["location_id", "user_tags", "alt_text", "collaborators"]  # dropped first -> last
+    drop = sorted(extras, key=lambda k: order.index(k) if k in order else -1)
+    while True:
+        try:
+            return http("POST", url, {**data, **extras})
+        except RuntimeError as e:
+            if not extras: raise
+            k = drop.pop(0); extras.pop(k, None)
+            print(f"  extra {k} rejected, retrying without it: {str(e)[:200]}")
 
 
 def _collab(post):
+    """Collaborators (the Den team, max 3 by API) plus the post's location tag."""
     c = V.collaborators(post)
-    return {"collaborators": json.dumps(c)} if c else {}
+    out = {"collaborators": json.dumps(c)} if c else {}
+    if post.get("ig_location_id"):  # a Facebook Page ID with a physical address (the venue's Page)
+        out["location_id"] = str(post["ig_location_id"])
+    return out
+
+
+def _people_tags(post, n=0):
+    """People tagged on slide n: the post's own ig_user_tags, else featured partners (ig_collaborators that
+    don't fit in the 3 collaborator slots) spread across the bottom of the first slide."""
+    tags = (post.get("ig_user_tags") or {}).get(str(n))
+    if tags or n: return tags
+    partners = V.partners(post)
+    return [{"username": u, "x": round((i + 1) / (len(partners) + 1), 2), "y": 0.62} for i, u in enumerate(partners)] or None
 
 # ---------- Instagram (Graph API content publishing) ----------
 def instagram(post, urls):
@@ -83,7 +98,7 @@ def instagram(post, urls):
         for attempt in range(4):  # Instagram sometimes times out fetching freshly committed images; wait and retry
             try:
                 item = {"image_url": u, "is_carousel_item": "true", "access_token": tok}
-                tags = (post.get("ig_user_tags") or {}).get(str(i))  # people tagged on this slide: [{username, x, y}]
+                tags = _people_tags(post, i)  # people tagged on this slide: [{username, x, y}]
                 r, _ = _with_extras(f"{base}/{uid}/media", item,
                                     {"alt_text": alts[i], "user_tags": json.dumps(tags) if tags else None})
                 break
@@ -160,7 +175,9 @@ def _reel_container(base, uid, tok, post, cover_url, video_url=None):
         data["video_url"] = video_url
     else:
         data["upload_type"] = "resumable"
-    r, _ = _with_extras(f"{base}/{uid}/media", data, _collab(post))
+    tags = _people_tags(post, 0)
+    extras = {**_collab(post), "user_tags": json.dumps([{"username": t["username"]} for t in tags]) if tags else None}
+    r, _ = _with_extras(f"{base}/{uid}/media", data, extras)
     return r["id"]
 
 
