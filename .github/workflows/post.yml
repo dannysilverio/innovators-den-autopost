@@ -71,7 +71,7 @@ jobs:
           [ -f build/reel.mp4 ] && [ -z "$VIDEO" ] && cp build/reel.mp4 public/$RUN_ID/ || true
           python -c "import pathlib,shutil,datetime as d; c=(d.date.today()-d.timedelta(days=10)).strftime('%Y%m%d'); [shutil.rmtree(p) for p in pathlib.Path('public').iterdir() if p.is_dir() and p.name[:8].isdigit() and p.name[:8]<c]"
           git config user.name "den-autopost" && git config user.email "actions@github.com"
-          git add -A public && git commit -m "slides $RUN_ID" && bash push.sh
+          git add -A public manual && git commit -m "slides $RUN_ID" && bash push.sh   # manual: commit post.json -> done now, so a scheduled run can never pick it up again
           sleep 20
 
       - name: Post to Instagram, Facebook, LinkedIn, Threads, YouTube
