@@ -322,8 +322,10 @@ def main():
         reel_url = f"{base.rstrip('/').rsplit('/public', 1)[0]}/{own_video}"
     jobs = [("instagram", instagram, urls), ("facebook", facebook, urls), ("linkedin", linkedin, files),
             ("threads", threads, urls), ("youtube", youtube, str(ROOT / "build/short.mp4"))]
-    # Slideshow Reels follow the REELS switch; a real video the Den shot always posts as a Reel
-    if reel_file.exists() and (own_video or os.environ.get("REELS", "1") != "0") and urls:
+    # Slideshow Reels follow the REELS switch; a real video the Den shot always posts as a Reel,
+    # unless the post says "ig_reel": false (Danny posts that Reel by hand from the app)
+    if reel_file.exists() and post.get("ig_reel", True) is not False \
+            and (own_video or os.environ.get("REELS", "1") != "0") and urls:
         jobs.insert(1, ("instagram_reel", lambda p, u: instagram_reel(p, u, urls[0]), reel_url))
     # Every carousel also goes up as Instagram Stories (STORIES=0 turns this off)
     story_files = sorted((ROOT / "build/slides").glob("story_*.png"))
