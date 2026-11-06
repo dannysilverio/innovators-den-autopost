@@ -2139,5 +2139,27 @@
     "id": "18148886548532362"
    }
   }
+ },
+ {
+  "date": "2026-11-06",
+  "posted_at": "2026-11-06T09:05-05:00",
+  "mode": "manual",
+  "run_id": "20261106-1403-42230383904",
+  "story_id": "den-pb-brasserie-20261106",
+  "topic": "Food & Wine",
+  "title": "PB Brasserie: From Dishwasher to Chef-Owner on 125th Street",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18011890611003818"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17887025979512054"
+   }
+  }
  }
 ]
