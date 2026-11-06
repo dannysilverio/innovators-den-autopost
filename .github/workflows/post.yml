@@ -44,22 +44,31 @@ jobs:
           pip install playwright==1.47.0 && python -m playwright install --with-deps chromium
           pip install -q pillow && (which ffmpeg >/dev/null || sudo apt-get install -y -q ffmpeg >/dev/null)
           python render.py build/post.json build/slides
-          python reel.py build/slides build/reel.mp4 || echo "reel render failed, posting carousel only"
-          # YouTube Shorts: a slideshow of every carousel (separate file, so the IG Reels rule stays the same)
-          if [ -n "$YT_REFRESH_TOKEN" ]; then FORCE_REEL=1 python reel.py build/slides build/short.mp4 || echo "short render failed"; fi
+          # A Den original can bring its own edited video ("video_file" in post.json): it becomes the IG Reel
+          # and the YouTube Short as-is (no re-encode, no slideshow).
+          VIDEO=$(python -c "import json,pathlib; v=json.load(open('build/post.json')).get('video_file') or ''; print(v if v and pathlib.Path(v).exists() else '')")
+          if [ -n "$VIDEO" ]; then
+            cp "$VIDEO" build/reel.mp4 && cp "$VIDEO" build/short.mp4 && echo "using the Den's own video: $VIDEO"
+          else
+            python reel.py build/slides build/reel.mp4 || echo "reel render failed, posting carousel only"
+            # YouTube Shorts: a slideshow of every carousel (separate file, so the IG Reels rule stays the same)
+            if [ -n "$YT_REFRESH_TOKEN" ]; then FORCE_REEL=1 python reel.py build/slides build/short.mp4 || echo "short render failed"; fi
+          fi
         env:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
 
       - name: Commit slides to public/ (so Instagram/Facebook can fetch them)
         if: steps.check.outputs.go == 'true'
         run: |
+          VIDEO=$(python -c "import json; print(json.load(open('build/post.json')).get('video_file') or '')")
           RUN_ID=$(date -u +%Y%m%d-%H%M)-${GITHUB_RUN_ID}
           echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
           mkdir -p public/$RUN_ID && cp build/slides/carousel_*.png build/post.json public/$RUN_ID/
           cp build/slides/story_*.png public/$RUN_ID/ 2>/dev/null || true   # Instagram Story frames
           # JPEG copies for TikTok (it rejects PNG photos)
           pip install -q pillow && python -c "import glob,sys; from PIL import Image; [Image.open(f).convert('RGB').save(f[:-4]+'.jpg', quality=92) for f in glob.glob(sys.argv[1]+'/carousel_*.png')]" public/$RUN_ID || echo "jpg copies skipped"
-          [ -f build/reel.mp4 ] && cp build/reel.mp4 public/$RUN_ID/ || true
+          # own videos are already committed in manual/assets (and can be near GitHub's 100 MB file limit), so don't copy them again
+          [ -f build/reel.mp4 ] && [ -z "$VIDEO" ] && cp build/reel.mp4 public/$RUN_ID/ || true
           python -c "import pathlib,shutil,datetime as d; c=(d.date.today()-d.timedelta(days=10)).strftime('%Y%m%d'); [shutil.rmtree(p) for p in pathlib.Path('public').iterdir() if p.is_dir() and p.name[:8].isdigit() and p.name[:8]<c]"
           git config user.name "den-autopost" && git config user.email "actions@github.com"
           git add -A public && git commit -m "slides $RUN_ID" && bash push.sh
