@@ -2343,5 +2343,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-07",
+  "posted_at": "2026-11-07T14:39-05:00",
+  "mode": "manual",
+  "run_id": "20261107-1936-42406922004",
+  "story_id": "den-cybertruck-20261107",
+  "topic": "Innovation",
+  "title": "The Cybertruck Is Winding Down. Here Is What Every Builder Should Learn From It",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18121101670782583"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18086345177329090"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18104574359164806",
+     "18151032751573563"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212228598797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17918054955468119"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "EcuWh15TUBI",
+    "privacy": "public"
+   }
+  }
  }
 ]
