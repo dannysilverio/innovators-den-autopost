@@ -2427,5 +2427,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-07",
+  "posted_at": "2026-11-07T17:04-05:00",
+  "mode": "manual",
+  "run_id": "20261107-2201-42418506034",
+  "story_id": "den-jobs-report-20261107",
+  "topic": "Finance",
+  "title": "165,000 Jobs and a Possible Rate Hike: What October's Jobs Report Means for Your Wallet",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17942036733390108"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17964065943000509"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18080423183406610",
+     "18039623327905442"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212239626797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18143485270613458"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "PgavTqa4zac",
+    "privacy": "public"
+   }
+  }
  }
 ]
