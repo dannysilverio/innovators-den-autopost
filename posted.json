@@ -2301,5 +2301,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-07",
+  "posted_at": "2026-11-07T13:34-05:00",
+  "mode": "manual",
+  "run_id": "20261107-1831-42401585890",
+  "story_id": "den-aries-fish-market-20261107",
+  "topic": "Business Growth",
+  "title": "One Door: A Bronx Fish Market Waits on a Wall It Doesn't Own",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18113705183270028"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17943311811389408"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18349731841281185",
+     "18153623065541741"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212222346797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18110410364263686"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "k_jMZZTfcx0",
+    "privacy": "public"
+   }
+  }
  }
 ]
