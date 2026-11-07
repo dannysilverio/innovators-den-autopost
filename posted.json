@@ -2385,5 +2385,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-07",
+  "posted_at": "2026-11-07T15:04-05:00",
+  "mode": "manual",
+  "run_id": "20261107-2001-42408895419",
+  "story_id": "den-met-gala-2027-20261107",
+  "topic": "Art",
+  "title": "Jeans, a White Tee and a Puffer: The Met Gala Just Made Everyday Clothes the Main Event",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18613578574066762"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18183007291440322"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18060139853565592",
+     "17924751291223339"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212231616797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18083006813753089"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "1Gu4c52CAAU",
+    "privacy": "public"
+   }
+  }
  }
 ]
