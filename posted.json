@@ -2259,5 +2259,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-07",
+  "posted_at": "2026-11-07T13:04-05:00",
+  "mode": "manual",
+  "run_id": "20261107-1801-42399056670",
+  "story_id": "den-knicks-swift-20261107",
+  "topic": "Sports",
+  "title": "Real Fan, Fake Fan: The Knicks, Taylor Swift and Who Gets a Seat at the Garden",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18231488197333632"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18110963447254375"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18217192846361052",
+     "18180345556435520"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212219298797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18158697547509968"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "bYsxKpU-XgA",
+    "privacy": "public"
+   }
+  }
  }
 ]
