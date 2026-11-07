@@ -2217,5 +2217,47 @@
     ]
    }
   }
+ },
+ {
+  "date": "2026-11-07",
+  "posted_at": "2026-11-07T11:03-05:00",
+  "mode": "manual",
+  "run_id": "20261107-1601-42389072898",
+  "story_id": "den-bam-playback-20261107",
+  "topic": "Culture",
+  "title": "Playback at BAM: Spike Lee's Brooklyn Watch Party Turns Fort Greene Into a Movie Block Party",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18113935304227835"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17893116669455516"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18109340747357627",
+     "18101196560371082"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212207736797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18102630368639767"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "2qUAKzKCOWw",
+    "privacy": "public"
+   }
+  }
  }
 ]
