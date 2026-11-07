@@ -1,0 +1,79 @@
+{
+  "kicker": "COUNSEL HOUR",
+  "hook": "New York's AI chatbot rules *for kids* start *January 1*.",
+  "dek": "AI companion apps must turn off risky features for minors and verify ages. What parents and builders need to know.",
+  "slides": [
+    {
+      "label": "The law",
+      "text": "New York enacted *Senate Bill S9051B* on *October 28*. It takes effect *January 1, 2027*."
+    },
+    {
+      "label": "Who it covers",
+      "text": "Companies running *AI companion* chatbots, built for ongoing conversation, that know a user is a *minor in New York*."
+    },
+    {
+      "label": "What it bans",
+      "text": "For minors, a bot cannot *pretend to be human*, claim a relationship, *flatter* the user or encourage *secrecy* from parents."
+    },
+    {
+      "label": "Age checks",
+      "text": "Saying *I'm an adult* is not enough. Apps must offer *more than one* way to verify age, including one *without a government ID*."
+    },
+    {
+      "label": "Enforcement",
+      "text": "The Attorney General can seek penalties up to *$25,000 per violation*. Parents cannot sue directly under this law."
+    },
+    {
+      "label": "The Den's take",
+      "text": "Ask your kids *which AI apps they use*. Watch for a bot acting like a friend or asking them to keep secrets. *Talk about it.*"
+    }
+  ],
+  "cta_line": "Know the apps. *Have the talk.*",
+  "question": "Do you know which AI apps your kids use? YES or NO.",
+  "seo_keyword": "New York AI chatbot law minors",
+  "search_terms": [
+    "New York AI chatbot law",
+    "S9051B",
+    "AI companion law minors",
+    "New York AI law January 2027",
+    "AI chatbots kids safety",
+    "age verification AI apps"
+  ],
+  "hashtags": [
+    "#AI",
+    "#Parenting",
+    "#NewYork",
+    "#TechLaw"
+  ],
+  "yt_title": "New York AI Chatbot Law for Kids: What Changes Jan 1 2027",
+  "caption_instagram": "New York AI chatbot law for kids: new rules start January 1, 2027. 🤖\n\nSenate Bill S9051B, enacted October 28, covers AI companion apps that know a user is a minor in New York. For those users, a bot cannot pretend to be human, claim a relationship, flatter them or encourage them to keep secrets from parents.\n\nApps also have to verify age: saying \"I'm an adult\" is not enough, and there must be a way to verify that does not need a government ID. The Attorney General can seek up to $25,000 per violation.\n\nWhat parents can do now: ask your kids which AI apps they use, and watch for a bot acting like a friend.\n\nDo you know which AI apps your kids use? 👇\nSend this to a parent in your life.\n\nFull explainer: link in bio. Not legal advice.\n\n#AI #Parenting #NewYork #TechLaw #TheInnovatorsDen",
+  "caption_reel": "New York's AI chatbot law for kids starts Jan 1, 2027. Bots can't pretend to be human or ask kids to keep secrets. #AI #Parenting #TheInnovatorsDen",
+  "caption_facebook": "New York has a new law for AI companion chatbots used by kids. Senate Bill S9051B was enacted October 28 and takes effect January 1, 2027.\n\nFor users they know are minors, AI companions cannot pretend to be human, claim a personal relationship, flatter users, recall personal details from earlier sessions or encourage secrecy from parents and trusted adults. Companies must also verify ages, offering more than one method, including one that does not require a government ID. The Attorney General can seek civil penalties of up to $25,000 per violation.\n\nParents: ask your kids which AI apps they use. This is general information, not legal advice.",
+  "caption_linkedin": "New York just made product design part of AI legal risk.\n\nSenate Bill S9051B, effective January 1, 2027, bars \"unsafe AI companion features\" for users an operator knows are minors: presenting as human, claiming a relationship, sycophancy, emotional appeals, recalling personal details beyond 12 hours or a prior session, encouraging secrecy and engagement tactics that override safety guardrails. Operators must offer more than one age-assurance method, including one that does not require government ID, and delete age data immediately. The Attorney General can seek penalties of up to $25,000 per violation.\n\nIf you build conversational AI, which of your engagement features would pass this test?\n\nBy The Innovators Den. General information, not legal advice.\n\n#TheInnovatorsDen #AI #TechPolicy #ProductDesign",
+  "caption_threads": "New York's AI chatbot law for kids starts Jan 1, 2027. For minors, companion bots can't pretend to be human, claim a relationship, flatter them or push them to keep secrets from parents. Apps have to verify age too. Parents: do you know which AI apps your kids use? Not legal advice.",
+  "threads_topic": "AI",
+  "caption_tiktok": "New York's AI chatbot law for kids starts Jan 1: bots can't pretend to be human or ask kids to keep secrets. #AI #Parenting #NewYork #TechLaw #TheInnovatorsDen",
+  "topic": "Law",
+  "first_comment": "Do you know which AI apps your kids use? YES or NO. 👇 The full story: https://theinnovatorsden.net/stories/new-york-ai-chatbot-law-minors-explained",
+  "photo": {
+    "path": "manual/assets/20261108-ny-ai-chatbot-law/cover-photo.jpg",
+    "credit": "Photo: Vitaly Gariev / Unsplash",
+    "caption": "Photo: Vitaly Gariev / Unsplash",
+    "subject": "Counsel Hour",
+    "focus": "50% 45%"
+  },
+  "story_id": "den-ny-ai-chatbot-law-20261108",
+  "title": "New York's New AI Chatbot Law for Kids, Explained: What Changes on January 1",
+  "source_name": "The Innovators Den",
+  "source_url": "https://theinnovatorsden.net/stories/new-york-ai-chatbot-law-minors-explained",
+  "story_url": "https://theinnovatorsden.net/stories/new-york-ai-chatbot-law-minors-explained",
+  "credit_line": "By The Innovators Den",
+  "cover_style": "broadcast",
+  "prerendered_dir": "manual/assets/20261108-ny-ai-chatbot-law",
+  "ig_stories": [
+    "story_01.png",
+    "story_02.png"
+  ],
+  "mode": "manual",
+  "post_at": "2026-11-08T16:50:00-05:00"
+}
