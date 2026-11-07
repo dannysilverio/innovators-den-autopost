@@ -2161,5 +2161,32 @@
     "id": "17887025979512054"
    }
   }
+ },
+ {
+  "date": "2026-11-07",
+  "posted_at": "2026-11-07T08:32-05:00",
+  "mode": "manual",
+  "run_id": "20261107-1331-42377231994",
+  "story_id": "den-haam-20261107",
+  "topic": "Food & Wine",
+  "title": "No Culinary School, No Meat: Two Mothers Built HAAM in Williamsburg",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212188278797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18126303530291071"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "idnq-CYNwCM",
+    "privacy": "public"
+   }
+  }
  }
 ]
