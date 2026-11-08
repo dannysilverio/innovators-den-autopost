@@ -2595,5 +2595,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-08",
+  "posted_at": "2026-11-08T11:04-05:00",
+  "mode": "manual",
+  "run_id": "20261108-1602-42497626487",
+  "story_id": "den-goat-debate-20261108",
+  "topic": "Sports",
+  "title": "LeBron vs. Jordan: Who Is the GOAT, and Who Carries the NBA Next?",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18108842771246051"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18123434252473848"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18014162108768031",
+     "18187331536418721"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212334594797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18155830270465672"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "0-nECuqJayA",
+    "privacy": "public"
+   }
+  }
  }
 ]
