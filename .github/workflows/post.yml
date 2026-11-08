@@ -74,6 +74,14 @@ jobs:
           git add -A public manual && git commit -m "slides $RUN_ID" && bash push.sh   # manual: commit post.json -> done now, so a scheduled run can never pick it up again
           sleep 20
 
+      - name: Save the Short for Rumble (media branch, shorts/<run_id>.mp4)
+        # Rumble has no posting API, so a daily browser task uploads from here. Den originals that bring
+        # their own video ("video_file") are already in the repo, so only rendered Shorts are saved.
+        if: steps.check.outputs.go == 'true' && github.event.inputs.dry_run != '1'
+        run: python rumble_save.py build/short.mp4 || echo "rumble save skipped"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Post to Instagram, Facebook, LinkedIn, Threads, YouTube
         if: steps.check.outputs.go == 'true'
         run: python publish.py
