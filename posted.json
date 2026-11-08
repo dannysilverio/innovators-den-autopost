@@ -2721,5 +2721,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-08",
+  "posted_at": "2026-11-08T17:04-05:00",
+  "mode": "manual",
+  "run_id": "20261108-2201-42527982942",
+  "story_id": "den-ny-ai-chatbot-law-20261108",
+  "topic": "Law",
+  "title": "New York's New AI Chatbot Law for Kids, Explained: What Changes on January 1",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18134212696749550"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18155888650540621"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18130541353869743",
+     "17964112776079886"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212366754797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18103343081376389"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "f4zcMwT2LZ8",
+    "privacy": "public"
+   }
+  }
  }
 ]
