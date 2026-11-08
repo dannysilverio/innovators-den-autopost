@@ -2511,5 +2511,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-07",
+  "posted_at": "2026-11-07T21:04-05:00",
+  "mode": "manual",
+  "run_id": "20261108-0201-42436632834",
+  "story_id": "den-jetblue-bags-20261107",
+  "topic": "Travel",
+  "title": "JetBlue Just Raised Bag Fees Again. Here Is How to Pack and Book Around It",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18148662718577127"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17927414856431541"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18134845042810442",
+     "18145238794592050"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212258412797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17966539617237993"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "lF4YnI9j0ag",
+    "privacy": "public"
+   }
+  }
  }
 ]
