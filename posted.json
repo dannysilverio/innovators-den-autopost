@@ -2469,5 +2469,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-07",
+  "posted_at": "2026-11-07T19:04-05:00",
+  "mode": "manual",
+  "run_id": "20261108-0001-42427752041",
+  "story_id": "den-tiafoe-turin-20261107",
+  "topic": "Spotlight",
+  "title": "From the Maintenance Room to Turin: Frances Tiafoe Makes His ATP Finals Debut",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18398660980160929"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17994602976027538"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18577865383077356",
+     "17978481216159380"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212247486797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18201282202390010"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "DhlrHSL6k7o",
+    "privacy": "public"
+   }
+  }
  }
 ]
