@@ -2553,5 +2553,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-08",
+  "posted_at": "2026-11-08T09:04-05:00",
+  "mode": "manual",
+  "run_id": "20261108-1401-42487618594",
+  "story_id": "den-raw-wine-20261108",
+  "topic": "Food & Wine",
+  "title": "RAW WINE Comes to Industry City: The Den's Guide to New York's Natural Wine Weekend",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18196903363404059"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18138167251678344"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17914910109508301",
+     "17890443477624158"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212324664797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18118039163333069"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "IP02N21DTrc",
+    "privacy": "public"
+   }
+  }
  }
 ]
