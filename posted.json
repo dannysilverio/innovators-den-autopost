@@ -2637,5 +2637,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-08",
+  "posted_at": "2026-11-08T13:03-05:00",
+  "mode": "manual",
+  "run_id": "20261108-1801-42507745587",
+  "story_id": "den-latin-grammys-20261108",
+  "topic": "Music",
+  "title": "Latin Grammys 2026 Preview: Daddy Yankee's Big Night, a Willie Col\u00f3n Tribute and a Stacked Stage",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18114935858174340"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18122771906057845"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17912925453305848",
+     "18146996005607341"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212344428797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18017726030993472"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "NMmVF1449UM",
+    "privacy": "public"
+   }
+  }
  }
 ]
