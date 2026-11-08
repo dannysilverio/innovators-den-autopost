@@ -2679,5 +2679,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-08",
+  "posted_at": "2026-11-08T14:59-05:00",
+  "mode": "manual",
+  "run_id": "20261108-1956-42517432317",
+  "story_id": "den-diabetes-study-20261108",
+  "topic": "Health",
+  "title": "Can Diet and Exercise Reverse Type 2 Diabetes? A New Study Puts a Number on It",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18152179975563106"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18101562047533400"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18102071969072036",
+     "17992645707075987"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212356890797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17957669568032916"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "jhZ8qpGwRIM",
+    "privacy": "public"
+   }
+  }
  }
 ]
