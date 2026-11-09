@@ -2763,5 +2763,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-08",
+  "posted_at": "2026-11-08T19:04-05:00",
+  "mode": "manual",
+  "run_id": "20261109-0001-42537847338",
+  "story_id": "den-elevate-ai-20261108",
+  "topic": "Business Growth",
+  "title": "Free AI Crash Course for Small Business Owners, With Google and TikTok in the Room",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18107606314984846"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18161884825552692"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18105389876028950",
+     "18439752607199020"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212375268797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18096595757658446"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "MN5X5XnOJBU",
+    "privacy": "public"
+   }
+  }
  }
 ]
