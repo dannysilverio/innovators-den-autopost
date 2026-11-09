@@ -2847,5 +2847,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-09",
+  "posted_at": "2026-11-09T11:06-05:00",
+  "mode": "baseline",
+  "run_id": "20261109-1603-42650310052",
+  "story_id": "49840815-81a3-4610-bb3b-6e62dcc5585e",
+  "topic": "Innovation",
+  "title": "Arkansas sues VGW and Kalshi, citing $66 million in VGW taxable sales in one year",
+  "source": "ReadWrite",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17957500995270305"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18109141856527350"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17927434524439340",
+     "18137892139675994"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212457834797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18649499143047599"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "k2FqIXT11EE",
+    "privacy": "public"
+   }
+  }
  }
 ]
