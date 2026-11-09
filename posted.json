@@ -2805,5 +2805,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-08",
+  "posted_at": "2026-11-08T21:03-05:00",
+  "mode": "manual",
+  "run_id": "20261109-0201-42548493319",
+  "story_id": "den-scorpio-new-moon-20261108",
+  "topic": "Astrology",
+  "title": "Let It Go Monday, Move Forward Thursday: The Scorpio New Moon and the End of Retrograde Season",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18094232831230624"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18152210638480978"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18084953669651064",
+     "18101770805426332"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212385648797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18101605583434504"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "CCJvJ1Saoc4",
+    "privacy": "public"
+   }
+  }
  }
 ]
