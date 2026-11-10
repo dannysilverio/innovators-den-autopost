@@ -203,6 +203,10 @@ def linkedin_text(post):
 
 
 def collaborators(post):
+    # A post can name its exact 3 collaborators (e.g. the venue plus two of the team) instead of the default team.
+    exact = [str(u).lstrip("@").strip() for u in (post.get("ig_collaborators_exact") or []) if str(u).strip()]
+    if exact:
+        return exact[:3]
     env = os.environ.get("IG_COLLABORATORS")
     base = [] if (env or "").strip().lower() == "none" else (
         [x for x in re.split(r"[,\s]+", env) if x] if env else DEFAULT_COLLABORATORS)
