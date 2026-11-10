@@ -2889,5 +2889,23 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-10",
+  "posted_at": "2026-11-10T07:47-05:00",
+  "mode": "manual",
+  "run_id": "20261110-1246-42818403329",
+  "story_id": "den-ginuwine-reel-20261110",
+  "topic": "Music",
+  "title": "Ginuwine is 56 and still undefeated: live at Lehman Center, Bronx",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram_reel": {
+    "ok": true,
+    "id": "17925292206225133"
+   }
+  }
  }
 ]
