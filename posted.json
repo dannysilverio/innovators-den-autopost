@@ -2907,5 +2907,47 @@
     "id": "17925292206225133"
    }
   }
+ },
+ {
+  "date": "2026-11-10",
+  "posted_at": "2026-11-10T08:00-05:00",
+  "mode": "manual",
+  "run_id": "20261110-1257-42819969129",
+  "story_id": "den-ginuwine-lehman-20261110",
+  "topic": "Music",
+  "title": "30 Years of Pony: Ginuwine and Ro James Brought R&B Home to the Bronx",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17914245549486288"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18357042586270395"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18101827997540536",
+     "18138844009677086"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212561952797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18133726585744285"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "FtECWzpecFE",
+    "privacy": "public"
+   }
+  }
  }
 ]
