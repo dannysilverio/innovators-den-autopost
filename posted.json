@@ -2949,5 +2949,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-11",
+  "posted_at": "2026-11-11T13:06-05:00",
+  "mode": "baseline",
+  "run_id": "20261111-1803-43073549117",
+  "story_id": "ac2244f2-aefe-475f-b4d0-ab5851ef4b7c",
+  "topic": "Culture",
+  "title": "Teyana Taylor and Iman Shumpert hilariously shut down viral paternity rumors about their daughters",
+  "source": "The Grio",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18105070910562036"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18427272871156614"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18117439403036775",
+     "18083701184569060"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212703432797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18226293592341647"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "eKoeLkRqlts",
+    "privacy": "public"
+   }
+  }
  }
 ]
