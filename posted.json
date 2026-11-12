@@ -2991,5 +2991,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-12",
+  "posted_at": "2026-11-12T09:04-05:00",
+  "mode": "manual",
+  "run_id": "20261112-1402-43232728289",
+  "story_id": "den-merab-abu-dhabi-20261112",
+  "topic": "Sports",
+  "title": "Merab Dvalishvili Was Hit From Behind Mid-Interview. When Is Enough Enough?",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17972637213198496"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17976737154176308"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18104825219457322",
+     "17911608438575157"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212804826797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18111023240224151"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "0_H6YZXqVzE",
+    "privacy": "public"
+   }
+  }
  }
 ]
