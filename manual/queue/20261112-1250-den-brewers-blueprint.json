@@ -29,8 +29,8 @@
   "#Yankees",
   "#WalkOff"
  ],
- "hook": "Opponents hit *.157* against him.",
- "dek": "Milwaukee won its first World Series, then put finalists on four different award ballots. Meet the arm that led the way.",
+ "hook": "Opponents hit *.157*. Voters went *unanimous*.",
+ "dek": "Jacob Misiorowski is the unanimous NL Cy Young winner, two weeks after Milwaukee's first World Series title.",
  "story_id": "den-brewers-blueprint-20261112",
  "title": "103 Wins, a First Title and a Rotation Built to Last: Awards Week Belongs to Milwaukee",
  "yt_title": "Jacob Misiorowski, the Brewers and MLB Awards Week 2026",
@@ -48,22 +48,26 @@
    "text": "Opponents hit *.157* against him, the *lowest average ever* allowed by a qualifying starter."
   },
   {
+   "label": "Cy Young",
+   "text": "Nov 11: *Misiorowski* is the *unanimous* NL Cy Young winner."
+  },
+  {
    "label": "The depth",
-   "text": "Pat Murphy, *Brice Turang* and *Trevor Megill* are on ballots too. *Four awards*, one team."
+   "text": "Pat Murphy, *Brice Turang* and *Trevor Megill* were on ballots too. *Four awards*, one team."
   },
   {
    "label": "New York",
-   "text": "The Yankees' *Cam Schlittler*: *1.95 ERA* and *239 strikeouts*, behind only Spud Chandler and Ron Guidry in team history."
+   "text": "The Yankees' *Cam Schlittler* swept the AL vote too: *1.95 ERA*, *239 strikeouts*, the team's *seventh* Cy Young."
   }
  ],
  "cta_line": "Titles get remembered. *Systems get repeated.*",
  "question": "Who was the best pitcher in baseball this year?",
  "first_comment": "Who was the best pitcher in baseball this year? 👇 The full story: https://theinnovatorsden.net/stories/brewers-misiorowski-awards-week-blueprint",
- "caption_instagram": "Opponents hit .157 against him ⚾ Swipe →\n\nTwo weeks after Milwaukee's first World Series title, the Brewers have finalists for four different awards, led by Jacob Misiorowski's 1.80 ERA. And the Yankees' Cam Schlittler gives New York an ace of its own.\n\nWho was the best pitcher in baseball this year? 👇\n\nFull story: link in bio.\n\n#Brewers #MLB #CyYoung #Yankees #WalkOff",
- "caption_facebook": "Two weeks after the Brewers' first World Series title, Milwaukee has finalists for four different awards. Jacob Misiorowski's 1.80 ERA and .157 opponents' average lead the way, and the Yankees' Cam Schlittler gives New York its own ace.\n\nThe full story: https://theinnovatorsden.net/stories/brewers-misiorowski-awards-week-blueprint\n\nWho was the best pitcher in baseball this year?\n\n#WalkOff",
+ "caption_instagram": "Opponents hit .157 against him. The voters went unanimous ⚾ Swipe →\n\nJacob Misiorowski won the NL Cy Young unanimously two weeks after Milwaukee's first World Series title, and the Yankees' Cam Schlittler swept the AL the same night.\n\nWho was the best pitcher in baseball this year? 👇\n\nFull story: link in bio.\n\n#Brewers #MLB #CyYoung #Yankees #WalkOff",
+ "caption_facebook": "Two weeks after the Brewers' first World Series title, Jacob Misiorowski won the NL Cy Young unanimously behind a 1.80 ERA and a record .157 opponents' average. The Yankees' Cam Schlittler swept the AL vote the same night.\n\nThe full story: https://theinnovatorsden.net/stories/brewers-misiorowski-awards-week-blueprint\n\nWho was the best pitcher in baseball this year?\n\n#WalkOff",
  "caption_linkedin": "103 Wins, a First Title and a Rotation Built to Last: Awards Week Belongs to Milwaukee\n\nTwo weeks after the Brewers' first World Series title, Milwaukee has finalists for four different awards. Jacob Misiorowski's 1.80 ERA and .157 opponents' average lead the way, and the Yankees' Cam Schlittler gives New York its own ace.\n\nFull story on theinnovatorsden.net\n\n#Brewers #MLB #CyYoung #Yankees #WalkOff #TheInnovatorsDen",
  "caption_threads": "Milwaukee won its first World Series, then put finalists on four different award ballots. Meet the arm that led the way. Who was the best pitcher in baseball this year?",
- "caption_tiktok": "Opponents hit .157 against him. Milwaukee won its first World Series, then put finalists on four different award ballots. Meet the arm that led the way. Who was the best pitcher in baseball this year? #brewers #mlb #cyyoung #yankees #walkoff",
+ "caption_tiktok": "Opponents hit .157 against him. Jacob Misiorowski is the unanimous NL Cy Young winner, two weeks after Milwaukee's first World Series title. Cam Schlittler swept the AL too. Who was the best pitcher in baseball this year? #brewers #mlb #cyyoung #yankees #walkoff",
  "photo": {
   "path": "manual/assets/20261112-brewers-blueprint/cover-photo.jpg",
   "credit": "Photo: via Pexels",
