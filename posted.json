@@ -3113,5 +3113,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-12",
+  "posted_at": "2026-11-12T13:04-05:00",
+  "mode": "manual",
+  "run_id": "20261112-1801-43275284654",
+  "story_id": "den-chatgpt-business-hub-20261112",
+  "topic": "Innovation",
+  "title": "ChatGPT Just Became a Business Directory. Claim Yours Before Someone Else Describes You.",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18346996657248216"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18020374403952116"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17978619617939203",
+     "17913918177552615"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212824800797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18083753027341005"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "TlAU-niWLgw",
+    "privacy": "public"
+   }
+  }
  }
 ]
