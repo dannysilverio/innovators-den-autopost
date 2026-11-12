@@ -3155,5 +3155,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-12",
+  "posted_at": "2026-11-12T15:04-05:00",
+  "mode": "manual",
+  "run_id": "20261112-2002-43295889310",
+  "story_id": "den-brewers-blueprint-20261112",
+  "topic": "Sports",
+  "title": "103 Wins, a First Title and a Rotation Built to Last: Awards Week Belongs to Milwaukee",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18062429672799150"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17991517796982238"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17990780135877460",
+     "18113647121216100"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212832432797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17926472358442365"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "8nXArGWD2nI",
+    "privacy": "public"
+   }
+  }
  }
 ]
