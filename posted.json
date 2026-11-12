@@ -3033,5 +3033,43 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-12",
+  "posted_at": "2026-11-12T09:56-05:00",
+  "mode": "manual",
+  "run_id": "20261112-1450-43240574551",
+  "story_id": "den-patek-3452-20261112",
+  "topic": "Art",
+  "title": "The Watch That Kept Two Times: A 65-Year-Old Patek Philippe Heads to Christie's New York",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": false,
+    "error": "<urlopen error [Errno 101] Network is unreachable>"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18017667755952511",
+     "18083585219372222"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212810082797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18149435674602299"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "3ULruKXuuaY",
+    "privacy": "public"
+   }
+  }
  }
 ]
