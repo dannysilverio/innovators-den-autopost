@@ -3323,5 +3323,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-13",
+  "posted_at": "2026-11-13T13:05-05:00",
+  "mode": "manual",
+  "run_id": "20261113-1802-43478315723",
+  "story_id": "den-suno-lawsuits-20261113",
+  "topic": "Law",
+  "title": "Elvis and Eminem Just Sued an AI Music Company. Every Creator Should Read Why.",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18133151561483053"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18125152529048005"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17967873890983572",
+     "17978713131137647"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212940696797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18139771066652505"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "VjKqltJczPA",
+    "privacy": "public"
+   }
+  }
  }
 ]
