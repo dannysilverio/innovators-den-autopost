@@ -3239,5 +3239,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-13",
+  "posted_at": "2026-11-13T09:04-05:00",
+  "mode": "manual",
+  "run_id": "20261113-1402-43438632781",
+  "story_id": "den-glp1-eye-warning-20261113",
+  "topic": "Health",
+  "title": "The FDA Just Added an Eye Warning to Ozempic, Wegovy and Mounjaro. Here's What It Means.",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17918334933491786"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18438357553197285"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18128277176515942",
+     "17916307026491827"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122212921514797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18117000836025850"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "IM56iWoDZ9s",
+    "privacy": "public"
+   }
+  }
  }
 ]
