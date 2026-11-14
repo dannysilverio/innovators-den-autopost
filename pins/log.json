@@ -1,0 +1,129 @@
+{
+ "boards": {
+  "NYC Food and Drink": "871094821616248272",
+  "NYC Nightlife and Things to Do": "871094821616248273",
+  "Travel Tips": "871094821616248274",
+  "Style and Culture": "871094821616248275",
+  "Astrology": "871094821616248276",
+  "NYC Art and Culture": "871094821616248277"
+ },
+ "pinned": [
+  {
+   "slug": "ginuwine-ro-james-lehman-center-bronx-30-years-of-pony",
+   "board": "NYC Nightlife and Things to Do",
+   "when": "2026-11-10T13:00:00",
+   "note": "video pin, by hand"
+  },
+  {
+   "slug": "dens-black-friday-edit-2026-travel-deals",
+   "board": "Travel Tips",
+   "when": "2026-11-14T12:30:00",
+   "metricool_id": 427829072,
+   "source": "catch-up"
+  },
+  {
+   "slug": "haam-williamsburg-plant-based-caribbean-chef-yesenia-ramdass",
+   "board": "NYC Food and Drink",
+   "when": "2026-11-14T20:30:00",
+   "metricool_id": 427829682,
+   "source": "catch-up"
+  },
+  {
+   "slug": "sagittarius-season-2026-sky-to-new-years",
+   "board": "Astrology",
+   "when": "2026-11-15T12:30:00",
+   "metricool_id": 427829692,
+   "source": "catch-up"
+  },
+  {
+   "slug": "top-21-hookah-lounges-in-nyc-hold-the-liquor-pass-the-pipe",
+   "board": "NYC Nightlife and Things to Do",
+   "when": "2026-11-15T20:30:00",
+   "metricool_id": 427829705,
+   "source": "catch-up"
+  },
+  {
+   "slug": "patek-philippe-3452-christies-new-york",
+   "board": "Style and Culture",
+   "when": "2026-11-16T12:30:00",
+   "metricool_id": 427829713,
+   "source": "catch-up"
+  },
+  {
+   "slug": "harlem-and-queens-hand-new-york-a-black-abstraction-season",
+   "board": "NYC Art and Culture",
+   "when": "2026-11-16T20:30:00",
+   "metricool_id": 427829724,
+   "source": "catch-up"
+  },
+  {
+   "slug": "one-year-after-melissa-jamaica-is-open-it-is-not-finished",
+   "board": "Travel Tips",
+   "when": "2026-11-17T12:30:00",
+   "metricool_id": 427829734,
+   "source": "catch-up"
+  },
+  {
+   "slug": "pb-brasserie-harlem-steakhouse-chef-cisse",
+   "board": "NYC Food and Drink",
+   "when": "2026-11-17T20:30:00",
+   "metricool_id": 427829744,
+   "source": "catch-up"
+  },
+  {
+   "slug": "jetblue-bag-fees-holiday-travel",
+   "board": "Travel Tips",
+   "when": "2026-11-18T12:30:00",
+   "metricool_id": 427829758,
+   "source": "catch-up"
+  },
+  {
+   "slug": "met-gala-2027-extraordinary-everyday-fashion",
+   "board": "Style and Culture",
+   "when": "2026-11-18T20:30:00",
+   "metricool_id": 427829771,
+   "source": "catch-up"
+  },
+  {
+   "slug": "calabash-humm-and-the-west-villages-new-art-of-dining",
+   "board": "NYC Food and Drink",
+   "when": "2026-11-19T12:30:00",
+   "metricool_id": 427829782,
+   "source": "catch-up"
+  },
+  {
+   "slug": "hovs-halftime-jay-zs-top-21-bars-ranked",
+   "board": "Style and Culture",
+   "when": "2026-11-19T20:30:00",
+   "metricool_id": 427829788,
+   "source": "catch-up"
+  },
+  {
+   "slug": "this-risotto-inspired-a-gin-glorious-pairing-pecoraro-latteria",
+   "board": "NYC Food and Drink",
+   "when": "2026-11-20T12:30:00",
+   "metricool_id": 427829800,
+   "source": "catch-up"
+  },
+  {
+   "slug": "hidden-harlem-kitchens-with-something-to-prove",
+   "board": "NYC Food and Drink",
+   "when": "2026-11-20T20:30:00",
+   "metricool_id": 427829812,
+   "source": "catch-up"
+  },
+  {
+   "slug": "every-bottle-a-magnum",
+   "board": "NYC Food and Drink",
+   "when": "2026-11-21T12:30:00",
+   "metricool_id": 427829828,
+   "source": "catch-up"
+  }
+ ],
+ "skipped": [
+  {
+   "slug": "the-man-who-carried-scotland-home",
+   "reason": "no real photo on the story (only the Den logo); pin once a Nikka photo is added to the story"
+  }
+ ]
+}
