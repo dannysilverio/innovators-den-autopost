@@ -3365,5 +3365,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-14",
+  "posted_at": "2026-11-14T11:04-05:00",
+  "mode": "manual",
+  "run_id": "20261114-1602-43613185417",
+  "story_id": "den-carson-benge-20261114",
+  "topic": "Spotlight",
+  "title": "Carson Benge Had a .498 OPS in May. He Finished With the First 20-20 Rookie Season in Mets History.",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18150558268581185"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18154108990543163"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18102696161430916",
+     "18149084632569117"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213048348797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18191768656409287"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "ou5ODEyUH20",
+    "privacy": "public"
+   }
+  }
  }
 ]
