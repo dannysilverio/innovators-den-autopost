@@ -3407,5 +3407,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-14",
+  "posted_at": "2026-11-14T13:05-05:00",
+  "mode": "manual",
+  "run_id": "20261114-1802-43624140710",
+  "story_id": "den-ufc-334-20261114",
+  "topic": "Sports",
+  "title": "UFC 334 Start Time at MSG: Full Card and How to Watch Gane vs. Hokit",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18116852687152667"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18119172095332785"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18114291290619597",
+     "17995120194103613"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213062790797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18441663991176993"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "9uYymGlGv4A",
+    "privacy": "public"
+   }
+  }
  }
 ]
