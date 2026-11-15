@@ -3617,5 +3617,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-15",
+  "posted_at": "2026-11-15T17:06-05:00",
+  "mode": "original",
+  "run_id": "20261115-2203-43766779467",
+  "story_id": "den-original-4bb1f1b2-b069-5479-ae1c-64fb70ba182d",
+  "topic": "Sports",
+  "title": "David Bednar Qualifying Offer: Will He Take the Yankees' $23.15M?",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18135480004811943"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17993950275110922"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18120852736785369",
+     "18118341902111193"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213217974797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18113165297621951"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "LK47_EoO5N4",
+    "privacy": "public"
+   }
+  }
  }
 ]
