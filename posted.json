@@ -3449,5 +3449,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-15",
+  "posted_at": "2026-11-15T11:04-05:00",
+  "mode": "manual",
+  "run_id": "20261115-1602-43732982167",
+  "story_id": "den-urban-civil-rights-museum-20261115",
+  "topic": "Culture",
+  "title": "The Civil Rights Movement Happened Up North Too. Harlem Finally Has the Museum to Prove It.",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17916252759284476"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17968485749980645"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17950940151347359",
+     "18477919432141173"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213183510797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18150781294583758"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "3QaS_pGwBqc",
+    "privacy": "public"
+   }
+  }
  }
 ]
