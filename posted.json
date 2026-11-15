@@ -3575,5 +3575,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-15",
+  "posted_at": "2026-11-15T15:37-05:00",
+  "mode": "original",
+  "run_id": "20261115-2035-43758548285",
+  "story_id": "den-original-689ba861-bea9-5c4e-8e03-3e2deaed5473",
+  "topic": "Sports",
+  "title": "Cam Schlittler for Bobby Witt Jr.? Why the Yankees Should Say No",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18105623222640858"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18017960996972466"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18131803276866023",
+     "17912506197589731"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213209352797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18044253164839055"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "Y_n6GnpWl5M",
+    "privacy": "public"
+   }
+  }
  }
 ]
