@@ -3533,5 +3533,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-15",
+  "posted_at": "2026-11-15T15:06-05:00",
+  "mode": "original",
+  "run_id": "20261115-2003-43755540817",
+  "story_id": "den-original-cf9ba724-4a7d-56c3-90aa-c896e24c966c",
+  "topic": "Culture",
+  "title": "SHSAT Retest: What NYC Families Need to Know After Saturday's Glitch",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18032824157692608"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18121190233949935"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18101889005538251",
+     "17912337180605282"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213205794797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18241005160316644"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "PKx2rDpgV_o",
+    "privacy": "public"
+   }
+  }
  }
 ]
