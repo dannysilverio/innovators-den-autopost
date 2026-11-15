@@ -3491,5 +3491,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-15",
+  "posted_at": "2026-11-15T13:07-05:00",
+  "mode": "original",
+  "run_id": "20261115-1804-43744240751",
+  "story_id": "den-original-aedf25b2-854e-5670-8fa2-76748a3d4179",
+  "topic": "Travel",
+  "title": "FAA Ground Stop Flight Canceled? Your Refund Rights and What to Do",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18416986564086716"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18119756561088878"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17940586146127980",
+     "18402516934200874"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213193896797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18575011105076788"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "RQPLfzB6QVY",
+    "privacy": "public"
+   }
+  }
  }
 ]
