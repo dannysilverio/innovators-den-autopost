@@ -3659,5 +3659,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-15",
+  "posted_at": "2026-11-15T19:06-05:00",
+  "mode": "original",
+  "run_id": "20261116-0003-43777810782",
+  "story_id": "den-original-a5e572b9-559e-5de0-a59b-7a6ee612b1b9",
+  "topic": "Food & Wine",
+  "title": "Where to Order a Dominican and Puerto Rican Thanksgiving in NYC",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18392305504224249"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17914784634560669"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17925752736223824",
+     "18102629195187792"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213228144797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18131542753844358"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "dnnfv1-g-eU",
+    "privacy": "public"
+   }
+  }
  }
 ]
