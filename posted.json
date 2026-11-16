@@ -3701,5 +3701,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-15",
+  "posted_at": "2026-11-15T21:07-05:00",
+  "mode": "original",
+  "run_id": "20261116-0203-43789507727",
+  "story_id": "den-original-e47e2d8a-f19a-5a29-8e42-a5c8f739f952",
+  "topic": "Culture",
+  "title": "Macy's Thanksgiving Day Parade 2026: Your Guide to the 100th March",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18140531752637857"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18064144682797840"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17940522681127217",
+     "18189755935432900"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213241662797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17936720619146116"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "GCKsY01u3KI",
+    "privacy": "public"
+   }
+  }
  }
 ]
