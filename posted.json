@@ -3743,5 +3743,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-16",
+  "posted_at": "2026-11-16T09:04-05:00",
+  "mode": "manual",
+  "run_id": "20261116-1402-43881281169",
+  "story_id": "den-kandinsky-20261116",
+  "topic": "Art",
+  "title": "The Guggenheim Sold This Kandinsky for $62,000. Tomorrow It Could Sell for $80 Million.",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18133421062831449"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18172576444461867"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18123486149056547",
+     "18354162448255714"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213302208797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17991671466107892"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "yi2hzRlEfcU",
+    "privacy": "public"
+   }
+  }
  }
 ]
