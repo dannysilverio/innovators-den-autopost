@@ -3785,5 +3785,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-16",
+  "posted_at": "2026-11-16T11:05-05:00",
+  "mode": "original",
+  "run_id": "20261116-1603-43902627060",
+  "story_id": "den-original-19a56e4c-e96d-5d9e-9565-630ffd9b9277",
+  "topic": "Travel",
+  "title": "JFK Thanksgiving Travel 2026: Terminals, AirTrain, Parking and TSA",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18120516608164966"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18125116489919640"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18106207808551272",
+     "17911105263571396"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213315504797044"
+   },
+   "threads": {
+    "ok": false,
+    "error": "POST https://graph.threads.net/v1.0/28604373319234657/threads -> 400: {\"error\":{\"message\":\"An unknown error occurred\",\"code\":1,\"type\":\"OAuthException\",\"error_subcode\":2207052,\"is_transient\":false,\"error_user_msg\":\"The media could not be fetched from this URI: https:\\/\\/raw.githubusercontent.com\\/dannysilverio\\/innovators-den-autopost\\/main\\/public\\/20261116-1603-43902627060\\/carousel_02.png.Please check the limitations section in our development document for more information: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/referen"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "u_e9NV9PAK8",
+    "privacy": "public"
+   }
+  }
  }
 ]
