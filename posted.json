@@ -3827,5 +3827,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-16",
+  "posted_at": "2026-11-16T13:04-05:00",
+  "mode": "manual",
+  "run_id": "20261116-1802-43924240580",
+  "story_id": "den-ai-selloff-money-20261116",
+  "topic": "Finance",
+  "title": "Before Nvidia Reports: What the AI Selloff and a Possible Rate Hike Mean for Your Money",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18143001925618635"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17999982534101707"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17904307122418366",
+     "18000163515020141"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213326820797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17945773347399866"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "lweJFw3F9v0",
+    "privacy": "public"
+   }
+  }
  }
 ]
