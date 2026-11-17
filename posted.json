@@ -3911,5 +3911,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-17",
+  "posted_at": "2026-11-17T15:06-05:00",
+  "mode": "original",
+  "run_id": "20261117-2003-44164626919",
+  "story_id": "den-original-3ad9f5f9-c65d-54c0-9943-80a8de24ee02",
+  "topic": "Culture",
+  "title": "Best Hookah Lounges in Manhattan: 8 Rooms Worth the Trip",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17881018374564178"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17953178868343933"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18168811657468261",
+     "17928386940205921"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213476520797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17930756568429668"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "eEkWDm2SdBw",
+    "privacy": "public"
+   }
+  }
  }
 ]
