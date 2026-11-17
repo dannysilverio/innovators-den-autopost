@@ -3953,5 +3953,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-17",
+  "posted_at": "2026-11-17T17:06-05:00",
+  "mode": "original",
+  "run_id": "20261117-2203-44185634564",
+  "story_id": "den-original-ab553cb4-0ca4-5cc7-aaaa-1817a42d82ed",
+  "topic": "Culture",
+  "title": "Top 10 Hookah Lounges in Miami: Less Bottle Service, More Bowl Service",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18033494075909312"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18132999874943436"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18375063811246543",
+     "17978897703152073"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213486126797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18104549492356762"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "ElS7z9LcUZg",
+    "privacy": "public"
+   }
+  }
  }
 ]
