@@ -3995,5 +3995,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-17",
+  "posted_at": "2026-11-17T18:12-05:00",
+  "mode": "original",
+  "run_id": "20261117-2309-44196379600",
+  "story_id": "den-original-5a15a6b6-1dfe-567d-b9ca-b7bae4936588",
+  "topic": "Culture",
+  "title": "Top 10 Hookah Lounges in Chicago: The Windy City Brings Its Own Bottle",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17998269030061084"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18105740375565391"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18111258311236382",
+     "18079341593773023"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213492450797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18202161748388554"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "pLkYy1NQGlA",
+    "privacy": "public"
+   }
+  }
  }
 ]
