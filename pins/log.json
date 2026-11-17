@@ -132,6 +132,20 @@
       "when": "2026-11-16T16:15:00",
       "metricool_id": 429451572,
       "source": "daily"
+    },
+    {
+      "slug": "jfk-thanksgiving-travel-2026-airtrain-parking-tsa",
+      "board": "Travel Tips",
+      "when": "2026-11-16T21:15:00",
+      "metricool_id": 430861836,
+      "source": "daily"
+    },
+    {
+      "slug": "urban-civil-rights-museum-harlem",
+      "board": "NYC Art and Culture",
+      "when": "2026-11-17T16:15:00",
+      "metricool_id": 430861850,
+      "source": "daily"
     }
   ],
   "skipped": [
@@ -190,6 +204,14 @@
     {
       "slug": "faa-ground-stop-flight-canceled-refund-rights",
       "reason": "breaking news (FAA ground stop)"
+    },
+    {
+      "slug": "ai-stock-selloff-rate-hike-what-to-do-with-your-money",
+      "reason": "finance and markets"
+    },
+    {
+      "slug": "kandinsky-betonte-ecken-christies-auction",
+      "reason": "single-night auction news (Christie's sale Nov 17), dated after the sale"
     }
   ]
 }
