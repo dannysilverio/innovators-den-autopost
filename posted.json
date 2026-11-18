@@ -4121,5 +4121,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-18",
+  "posted_at": "2026-11-18T09:07-05:00",
+  "mode": "original",
+  "run_id": "20261118-1403-44319530132",
+  "story_id": "den-original-84d31a76-e01c-57a1-b74a-1a89259261b5",
+  "topic": "Food & Wine",
+  "title": "Best Steakhouses in Harlem: A Cut Above 110th Street",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18026972966926535"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18134249479694018"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17896498086616225",
+     "18028367936934231"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213574722797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18115630481037345"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "5l9Ig_jNSZ4",
+    "privacy": "public"
+   }
+  }
  }
 ]
