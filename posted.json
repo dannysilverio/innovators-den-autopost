@@ -4037,5 +4037,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-17",
+  "posted_at": "2026-11-17T19:06-05:00",
+  "mode": "original",
+  "run_id": "20261118-0003-44204179293",
+  "story_id": "den-original-178b0384-9ff5-5f5a-869e-7fbc9abe4604",
+  "topic": "Culture",
+  "title": "Top 10 Hookah Lounges in Los Angeles: Skip the Velvet Rope, Pass the Hose",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18121552087788521"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18133925650701828"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18135915640753419",
+     "18025864136941361"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213500586797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17968635872983457"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "dDO9JQVd3UU",
+    "privacy": "public"
+   }
+  }
  }
 ]
