@@ -4079,5 +4079,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-17",
+  "posted_at": "2026-11-17T21:06-05:00",
+  "mode": "original",
+  "run_id": "20261118-0203-44220015161",
+  "story_id": "den-original-50c951b7-0676-544d-96dd-9932fd691253",
+  "topic": "Culture",
+  "title": "Top 10 Hookah Lounges in Atlanta: Inside the Perimeter, Inside the Cloud",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18079139630463346"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18118759172035722"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18348300466276092",
+     "18113826305208008"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213511818797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18108914870524789"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "I-QrMUBzSRk",
+    "privacy": "public"
+   }
+  }
  }
 ]
