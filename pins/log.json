@@ -160,6 +160,20 @@
       "when": "2026-11-18T16:15:00",
       "metricool_id": 432226819,
       "source": "daily"
+    },
+    {
+      "slug": "beaujolais-nouveau-2026-november-19",
+      "board": "NYC Food and Drink",
+      "when": "2026-11-17T22:15:00",
+      "metricool_id": 432230062,
+      "source": "daily"
+    },
+    {
+      "slug": "best-countries-to-live-outside-the-us",
+      "board": "Travel Tips",
+      "when": "2026-11-17T23:15:00",
+      "metricool_id": 432230076,
+      "source": "daily"
     }
   ],
   "skipped": [
