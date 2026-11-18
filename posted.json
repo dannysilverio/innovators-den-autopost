@@ -4205,5 +4205,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-18",
+  "posted_at": "2026-11-18T13:06-05:00",
+  "mode": "original",
+  "run_id": "20261118-1803-44364879435",
+  "story_id": "den-original-bb919998-704c-5d27-b3dd-8680548fec08",
+  "topic": "Sports",
+  "title": "The Eye Poke Nobody Called: Gane Keeps the Belt, Hokit Keeps the Receipts",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18136968367663316"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18040017389900128"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18429949984157055",
+     "18236579812324760"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213626064797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17914049538581310"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "lDdMeqt6m_0",
+    "privacy": "public"
+   }
+  }
  }
 ]
