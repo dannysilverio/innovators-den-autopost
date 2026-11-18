@@ -4289,5 +4289,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-18",
+  "posted_at": "2026-11-18T17:07-05:00",
+  "mode": "original",
+  "run_id": "20261118-2204-44407238115",
+  "story_id": "den-original-3f1a6566-b469-5561-ac95-78d50611f8b9",
+  "topic": "Sports",
+  "title": "David Bednar Accepts the Yankees' $23.15M Qualifying Offer. What's Next?",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17892315759468882"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18125458222943075"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17983028853138005",
+     "18473800636140514"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213647850797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17913863937592003"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "SmxlLfQKfG8",
+    "privacy": "public"
+   }
+  }
  }
 ]
