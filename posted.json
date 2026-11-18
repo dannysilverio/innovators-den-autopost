@@ -4247,5 +4247,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-18",
+  "posted_at": "2026-11-18T15:06-05:00",
+  "mode": "original",
+  "run_id": "20261118-2003-44386368945",
+  "story_id": "den-original-69dbe6f9-7e2e-508d-8be5-d0c5e634e667",
+  "topic": "Sports",
+  "title": "Amanda Nunes Fought the Wrong Fight: How Kayla Harrison Kept the Belt at UFC 334",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17938090623411734"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18135185683686339"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17925979899221380",
+     "18168938239491337"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213637686797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18027901757919927"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "FOIgt6ve8hI",
+    "privacy": "public"
+   }
+  }
  }
 ]
