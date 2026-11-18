@@ -146,6 +146,20 @@
       "when": "2026-11-17T16:15:00",
       "metricool_id": 430861850,
       "source": "daily"
+    },
+    {
+      "slug": "best-steakhouses-in-harlem-a-cut-above-110th",
+      "board": "NYC Food and Drink",
+      "when": "2026-11-17T21:15:00",
+      "metricool_id": 432226809,
+      "source": "daily"
+    },
+    {
+      "slug": "best-hookah-lounges-in-manhattan-8-rooms-worth",
+      "board": "NYC Nightlife and Things to Do",
+      "when": "2026-11-18T16:15:00",
+      "metricool_id": 432226819,
+      "source": "daily"
     }
   ],
   "skipped": [
@@ -212,6 +226,50 @@
     {
       "slug": "kandinsky-betonte-ecken-christies-auction",
       "reason": "single-night auction news (Christie's sale Nov 17), dated after the sale"
+    },
+    {
+      "slug": "best-states-to-move-to-from-new-york",
+      "reason": "finance (cost of living and taxes)"
+    },
+    {
+      "slug": "tarima-hip-hop-report-don-toliver-sets-nitrous",
+      "reason": "music and celebrity news"
+    },
+    {
+      "slug": "giants-in-first-jets-in-last-where-new",
+      "reason": "sports results"
+    },
+    {
+      "slug": "nba-viewership-is-up-not-down-what",
+      "reason": "sports news"
+    },
+    {
+      "slug": "david-bednar-accepts-the-yankees-23-15m-qualifying",
+      "reason": "sports news"
+    },
+    {
+      "slug": "amanda-nunes-fought-the-wrong-fight-how-kayla",
+      "reason": "sports results"
+    },
+    {
+      "slug": "the-eye-poke-nobody-called-gane-keeps",
+      "reason": "sports results"
+    },
+    {
+      "slug": "top-10-hookah-lounges-in-atlanta-inside",
+      "reason": "hookah guide outside NYC, no fitting board"
+    },
+    {
+      "slug": "top-10-hookah-lounges-in-los-angeles-skip",
+      "reason": "hookah guide outside NYC, no fitting board"
+    },
+    {
+      "slug": "top-10-hookah-lounges-in-chicago-the-windy",
+      "reason": "hookah guide outside NYC, no fitting board"
+    },
+    {
+      "slug": "top-10-hookah-lounges-in-miami-less-bottle",
+      "reason": "hookah guide outside NYC, no fitting board"
     }
   ]
 }
