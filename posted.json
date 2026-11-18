@@ -4331,5 +4331,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-18",
+  "posted_at": "2026-11-18T17:47-05:00",
+  "mode": "original",
+  "run_id": "20261118-2244-44413865722",
+  "story_id": "den-original-a8cbb06b-9df3-5d7e-898b-0452173edc73",
+  "topic": "Sports",
+  "title": "NBA Viewership Is Up, Not Down: What the 2026-27 Numbers Actually Say",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18446087080181063"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "17875776093649526"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18081476117415810",
+     "18123365585000387"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213651876797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18403844449202180"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "02b6BzflWso",
+    "privacy": "public"
+   }
+  }
  }
 ]
