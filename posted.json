@@ -4499,5 +4499,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-19",
+  "posted_at": "2026-11-19T15:07-05:00",
+  "mode": "original",
+  "run_id": "20261119-2003-44604128862",
+  "story_id": "den-original-b8e3c701-3189-5fa6-8ed7-9b0781335d05",
+  "topic": "Food & Wine",
+  "title": "Where to Eat in Harlem: 12 Classic Restaurants",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18131144383637493"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18104781467453212"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18107239304018276",
+     "18030686846865729"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213752580797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18109005869370612"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "iaIpU2JT0k4",
+    "privacy": "public"
+   }
+  }
  }
 ]
