@@ -4541,5 +4541,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-19",
+  "posted_at": "2026-11-19T17:07-05:00",
+  "mode": "original",
+  "run_id": "20261119-2204-44624352783",
+  "story_id": "den-original-7cdde1b4-0f92-51ca-9fff-6f2e8e828d76",
+  "topic": "Innovation",
+  "title": "GTA 6 Release Date and the New Zelda: 3 Games to Play",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18277258504305723"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18104112593059871"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18159344458577980",
+     "18026373353753398"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213762312797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17912213877568294"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "KtKhm1fK42Y",
+    "privacy": "public"
+   }
+  }
  }
 ]
