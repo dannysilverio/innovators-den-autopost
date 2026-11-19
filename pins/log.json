@@ -174,6 +174,13 @@
       "when": "2026-11-17T23:15:00",
       "metricool_id": 432230076,
       "source": "daily"
+    },
+    {
+      "slug": "where-to-eat-in-harlem-12-classic-restaurants",
+      "board": "NYC Food and Drink",
+      "when": "2026-11-18T21:15:00",
+      "metricool_id": 433616112,
+      "source": "daily"
     }
   ],
   "skipped": [
@@ -284,6 +291,14 @@
     {
       "slug": "top-10-hookah-lounges-in-miami-less-bottle",
       "reason": "hookah guide outside NYC, no fitting board"
+    },
+    {
+      "slug": "small-business-saturday-2026-holiday-playbook",
+      "reason": "business and retail news, no fitting board"
+    },
+    {
+      "slug": "gta-6-release-date-and-the-new-zelda",
+      "reason": "tech and gaming release news, AI illustration, no fitting board"
     }
   ]
 }
