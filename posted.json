@@ -4373,5 +4373,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-19",
+  "posted_at": "2026-11-19T09:13-05:00",
+  "mode": "original",
+  "run_id": "20261119-1410-44539105329",
+  "story_id": "den-original-50d344e6-b3d9-5814-91e4-9d0b2a18490a",
+  "topic": "Travel",
+  "title": "Best Countries to Live Outside the US in 2026, Ranked by Cost and the Flight Home",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17979195962935632"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18063160259549596"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18153741070546363",
+     "18213116905374481"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213724944797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18223889794357015"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "RrFda30VRoQ",
+    "privacy": "public"
+   }
+  }
  }
 ]
