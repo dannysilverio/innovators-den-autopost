@@ -4583,5 +4583,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-19",
+  "posted_at": "2026-11-19T17:50-05:00",
+  "mode": "original",
+  "run_id": "20261119-2247-44631440622",
+  "story_id": "den-original-2cd64060-8f69-5da3-94c7-73e1dfababc7",
+  "topic": "Law",
+  "title": "Equifax Sent Lenders the Wrong Credit Scores. The $100 Million Check Has Two Deadlines.",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18393038200227241"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18222317359351470"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17931032043439632",
+     "18398880307164127"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213765864797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18082702280386903"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "4YVBR0fDpL4",
+    "privacy": "public"
+   }
+  }
  }
 ]
