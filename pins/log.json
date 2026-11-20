@@ -181,6 +181,13 @@
       "when": "2026-11-18T21:15:00",
       "metricool_id": 433616112,
       "source": "daily"
+    },
+    {
+      "slug": "thanksgiving-2026-best-days-to-fly",
+      "board": "Travel Tips",
+      "when": "2026-11-19T21:15:00",
+      "metricool_id": 434977715,
+      "source": "daily"
     }
   ],
   "skipped": [
@@ -299,6 +306,18 @@
     {
       "slug": "gta-6-release-date-and-the-new-zelda",
       "reason": "tech and gaming release news, AI illustration, no fitting board"
+    },
+    {
+      "slug": "three-supplements-are-all-over-your-feed-only",
+      "reason": "health study / supplements, not evergreen visual"
+    },
+    {
+      "slug": "equifax-sent-lenders-the-wrong-credit-scores",
+      "reason": "legal and finance news (settlement)"
+    },
+    {
+      "slug": "the-hottest-table-in-new-york-after-10",
+      "reason": "no real photo (hero image yemeni-coffee-houses-nyc-late-night.jpg returns 404 on the site)"
     }
   ]
 }
