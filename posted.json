@@ -4663,5 +4663,43 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-19",
+  "posted_at": "2026-11-19T21:07-05:00",
+  "mode": "original",
+  "run_id": "20261120-0204-44657651066",
+  "story_id": "den-original-e0f936bd-a116-5b9f-970f-31f0e91fef96",
+  "topic": "Health",
+  "title": "Three Supplements Are All Over Your Feed. Only One Has Earned It.",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": false,
+    "error": "POST https://graph.instagram.com/v21.0/17841457652102505/media_publish -> 400: {\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"A06UqBVwlZdQSsvsNV1R6N9\"}}"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17968675809227482",
+     "18575708533073752"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213782910797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17918806335537011"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "K4Vz1_7jrOM",
+    "privacy": "public"
+   }
+  }
  }
 ]
