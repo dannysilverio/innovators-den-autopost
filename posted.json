@@ -4701,5 +4701,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-20",
+  "posted_at": "2026-11-20T11:09-05:00",
+  "mode": "baseline",
+  "run_id": "20261120-1606-44768921249",
+  "story_id": "4d1cd28f-12d7-4f10-867f-75cddbe137ca",
+  "topic": "Innovation",
+  "title": "Uber tests rides for kids as young as 10, with extra pay for drivers",
+  "source": "TechCrunch",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18121644089602242"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18104996732640200"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17966463660212461",
+     "18128567932928813"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122213855708797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17956132389313389"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "2-U2yvRsHa0",
+    "privacy": "public"
+   }
+  }
  }
 ]
