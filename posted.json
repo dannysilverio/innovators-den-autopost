@@ -4743,5 +4743,38 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-21",
+  "posted_at": "2026-11-21T11:33-05:00",
+  "mode": "manual",
+  "run_id": "20261121-1631-44924813567",
+  "story_id": "den-i-love-paraguay-20261120",
+  "topic": "Food & Wine",
+  "title": "I Love Paraguay: The Family Table That Brought Paraguay to Queens",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17912226045575342"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18112874333364625"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18119172704087368",
+     "18121373614771189"
+    ]
+   },
+   "threads": {
+    "ok": true,
+    "id": "18212486269371611"
+   }
+  }
  }
 ]
