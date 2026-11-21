@@ -79,9 +79,15 @@
  "mode": "manual",
  "ig_reel": false,
  "only": [
+  "instagram",
+  "instagram_stories",
   "threads"
  ],
- "post_at": "2026-11-21T13:00:00-05:00",
  "story_url": "https://theinnovatorsden.net/stories/i-love-paraguay-sunnyside-queens-paraguayan-restaurant",
- "source_url": "https://theinnovatorsden.net/stories/i-love-paraguay-sunnyside-queens-paraguayan-restaurant"
+ "source_url": "https://theinnovatorsden.net/stories/i-love-paraguay-sunnyside-queens-paraguayan-restaurant",
+ "ig_collaborators_exact": [
+  "formerlyknownashashtag",
+  "mr_a_plus",
+  "wstudiosnj"
+ ]
 }
