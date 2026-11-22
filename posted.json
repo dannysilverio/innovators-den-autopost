@@ -4860,5 +4860,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-22",
+  "posted_at": "2026-11-22T15:07-05:00",
+  "mode": "original",
+  "run_id": "20261122-2004-45063905503",
+  "story_id": "den-original-d45b9466-1cf9-4dbc-b025-3bc871b22a03",
+  "topic": "Food & Wine",
+  "title": "Best Desserts in NYC: 21 Spots and the One Thing to Order at Each",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18118512764041641"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18101449601396137"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18031118663874487",
+     "18117218231617406"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122214128084797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17978718924149668"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "tPARf2HEB7U",
+    "privacy": "public"
+   }
+  }
  }
 ]
