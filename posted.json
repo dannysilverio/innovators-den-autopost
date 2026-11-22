@@ -4818,5 +4818,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-22",
+  "posted_at": "2026-11-22T13:06-05:00",
+  "mode": "original",
+  "run_id": "20261122-1803-45052564714",
+  "story_id": "den-original-e326719f-a12b-4952-90d8-43a6088f0d63",
+  "topic": "Business Growth",
+  "title": "The Best Free Places to Work Remotely in NYC: 15 Spots in All Five Boroughs",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18120221470821760"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18151277362601014"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17969120366980501",
+     "17921305380533174"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122214117932797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18105826754374934"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "ekMERryuq1Y",
+    "privacy": "public"
+   }
+  }
  }
 ]
