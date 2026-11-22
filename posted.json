@@ -4776,5 +4776,47 @@
     "id": "18212486269371611"
    }
   }
+ },
+ {
+  "date": "2026-11-22",
+  "posted_at": "2026-11-22T11:06-05:00",
+  "mode": "original",
+  "run_id": "20261122-1603-45041369489",
+  "story_id": "den-original-a770e8b6-01e0-4482-be64-3f6ad7eaa81a",
+  "topic": "Culture",
+  "title": "What to Watch in December 2026: New Movies and TV for Kids to Adults",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18128898623487689"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18016768454969771"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18145168357620210",
+     "17899386078682931"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122214104216797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17946637371093497"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "L7_OntMVBFM",
+    "privacy": "public"
+   }
+  }
  }
 ]
