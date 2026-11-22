@@ -318,6 +318,10 @@
     {
       "slug": "the-hottest-table-in-new-york-after-10",
       "reason": "no real photo (hero image yemeni-coffee-houses-nyc-late-night.jpg returns 404 on the site)"
+    },
+    {
+      "slug": "i-love-paraguay-the-family-table-that-brought",
+      "reason": "no real photo (hero image i-love-paraguay-sunnyside-queens-paraguayan-restaurant.jpg returns 404 on the site; story is evergreen Food & Wine for NYC Food and Drink, re-pin once the photo is fixed)"
     }
   ]
 }
