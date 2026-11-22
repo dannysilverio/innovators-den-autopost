@@ -4944,5 +4944,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-22",
+  "posted_at": "2026-11-22T17:07-05:00",
+  "mode": "original",
+  "run_id": "20261122-2204-45075200983",
+  "story_id": "den-original-8f831cbf-fd6f-48eb-84e5-b92b4907dfb6",
+  "topic": "Sports",
+  "title": "Knicks vs. Pacers Tonight: Time, TV, Injuries and the NBA Cup Math",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18081810275413111"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18136414141666644"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17915830761476330",
+     "18495320281128974"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122214139148797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18119162510591542"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "KIn05dFzuak",
+    "privacy": "public"
+   }
+  }
  }
 ]
