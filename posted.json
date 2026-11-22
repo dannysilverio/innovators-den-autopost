@@ -4902,5 +4902,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-22",
+  "posted_at": "2026-11-22T16:18-05:00",
+  "mode": "original",
+  "run_id": "20261122-2116-45070772483",
+  "story_id": "den-original-90b1362a-0391-471c-b97e-215985c0a87d",
+  "topic": "Food & Wine",
+  "title": "The Best Dominican Restaurants in Washington Heights and Inwood",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17992658649118795"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18105826661357203"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18030772259698437",
+     "18110348819366180"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122214134756797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18168483691496079"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "-iBcTOC5zxg",
+    "privacy": "public"
+   }
+  }
  }
 ]
