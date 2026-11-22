@@ -65,12 +65,17 @@ def photo_uri(post):
 def ctx(post):
     now = dt.datetime.now(ET)
     ph = post.get("photo") or {}
-    return dict(topic=post.get("topic", ""), color=TOPIC_COLORS.get(post.get("topic"), "#FFE600"),
+    day, date, short = now.strftime("%a").upper(), f"{now.strftime('%A, %B')} {now.day}, {now.year}", f"{now.strftime('%b').upper()} {now.day}"
+    if post.get("lang") == "es":  # Spanish edition: dates the way they are written in Spanish
+        d = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"][now.weekday()]
+        m = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre",
+             "noviembre", "diciembre"][now.month - 1]
+        day, date, short = d[:3].upper(), f"{d.capitalize()}, {now.day} de {m} de {now.year}", f"{now.day} {m[:3].upper()}"
+    return dict(topic=post.get("topic_label") or post.get("topic", ""), color=TOPIC_COLORS.get(post.get("topic"), "#FFE600"),
                 kicker=post.get("kicker", ""), hook=post.get("hook", ""), dek=post.get("dek", ""),
                 src=post.get("source_name", ""), via=post.get("credit_line") or f"via {post.get('source_name', '')}", img=photo_uri(post), credit=ph.get("credit", ""),
                 caption=ph.get("caption") or ph.get("subject", ""), focus=ph.get("focus", "50% 22%"),
-                day=now.strftime("%a").upper(), date=f"{now.strftime('%A, %B')} {now.day}, {now.year}",
-                short=f"{now.strftime('%b').upper()} {now.day}", yday=now.timetuple().tm_yday,
+                day=day, date=date, short=short, yday=now.timetuple().tm_yday,
                 lede=plain(post["slides"][0]["text"]) if post.get("slides") else "")
 
 

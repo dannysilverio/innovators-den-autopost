@@ -1,0 +1,1093 @@
+{
+ "note": "Every carousel the Den posted to Instagram before the Spanish account existed (Sep 26 to Nov 22, 2026), oldest first. es.py posts them in Spanish, max ES_CATCHUP_PER_DAY a day. Add \"skip\": true to leave one out. The English source of each is in es/source/<run_id>.json.",
+ "items": [
+  {
+   "run_id": "20260927-0018-36281995652",
+   "story_id": "eedd1193-b771-4583-8849-484fc17126a9",
+   "title": "What 25,000 Startup Applications Reveal About The New Rules Of Seed-Stage Startups",
+   "topic": "Innovation",
+   "posted_at": "2026-09-26T20:19-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20260927-0150-36286657863",
+   "story_id": "2138a2df-81e8-43ed-85af-e9631162b1c5",
+   "title": "September’s Aries Full Moon: Be YOU, Unapologetically",
+   "topic": "Astrology",
+   "posted_at": "2026-09-26T21:52-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20260927-2302-36357192202",
+   "story_id": "ad1e58fa-3700-4dec-8cdc-f94dec9d92d2",
+   "title": "Why Premier League faces uncertainty and chaos after Man City ruling",
+   "topic": "Sports",
+   "posted_at": "2026-09-27T19:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20260928-1503-36440250180",
+   "story_id": "852afeda-a442-4fa9-82e4-847813523fa2",
+   "title": "SpaceX’s Starship rocket reaches orbit for the first time",
+   "topic": "Innovation",
+   "posted_at": "2026-09-28T11:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20260928-1902-36469167442",
+   "story_id": "e70aa58f-b1af-4655-948c-e98a9fe2f343",
+   "title": "Stevie Wonder Surprise-Releases Four Previously Unheard ‘Songs in the Key of Life’",
+   "topic": "Music",
+   "posted_at": "2026-09-28T15:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20260929-1302-36571967861",
+   "story_id": "023ade6e-1961-456e-8a81-0b8ffe416681",
+   "title": "Anthropic warns of ‘catastrophic’ AI risks in its own IPO filing",
+   "topic": "Innovation",
+   "posted_at": "2026-09-29T09:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20260930-1303-36718528562",
+   "story_id": "79e6ae0e-557a-47a1-829b-16e60e61b6ff",
+   "title": "OpenAI DevDay 2026: The biggest news and announcements",
+   "topic": "Innovation",
+   "posted_at": "2026-09-30T09:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20260930-1702-36748288921",
+   "story_id": "1be13aa5-9282-426c-a2f4-8a6faacbc6f2",
+   "title": "Hedge fund CEO Ken Griffin just made the single biggest donation ever to a U.S. university",
+   "topic": "Innovation",
+   "posted_at": "2026-09-30T13:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261001-1302-36865613296",
+   "story_id": "f84b6f88-e3ed-459c-9311-f39bb0b37c36",
+   "title": "Google releases Gemini 4 Argon, called its most powerful model yet",
+   "topic": "Innovation",
+   "posted_at": "2026-10-01T09:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261001-1356-36872152270",
+   "story_id": "a2b7487d-3682-4dd7-a46c-4257228c0aad",
+   "title": "Tria Federal Books $120M VA Task Order for VHA Community Care Support",
+   "topic": "Business Growth",
+   "posted_at": "2026-10-01T09:57-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261002-1701-37037753025",
+   "story_id": "e2662591-b659-4eb8-95ab-5dd5e2f830ed",
+   "title": "Paramount’s Warner Bros. megamerger will just be called Skydance",
+   "topic": "Innovation",
+   "posted_at": "2026-10-02T13:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261003-1302-37124713184",
+   "story_id": "15b33a75-5b41-499a-ad8c-8f0d200398e0",
+   "title": "Another Semester Secured! Netflix Renews ‘A Different World’ For Season 2, Felicia Pride & Debbie Allen Thank Fans For Sparking Hillman Hysteria",
+   "topic": "Culture",
+   "posted_at": "2026-10-03T09:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261004-1302-37204065221",
+   "story_id": "aef846eb-b652-4503-8a3e-db86a5a81327",
+   "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+   "topic": "Innovation",
+   "posted_at": "2026-10-04T09:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261004-2211-37238911884",
+   "story_id": "9596cf9a-5386-4c9f-a4eb-c41ff4f46b52",
+   "title": "Verstappen wins in Malaysia after long delays as Russell retires",
+   "topic": "Sports",
+   "posted_at": "2026-10-04T18:12-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261005-1502-37329289095",
+   "story_id": "beda8ec1-3fab-4cdb-865a-f570b6e40620",
+   "title": "Ciara makes surprise Paris Fashion Week runway appearance while expecting fifth child",
+   "topic": "Culture",
+   "posted_at": "2026-10-05T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261005-1522-37332060204",
+   "story_id": "bfca2182-3c64-4171-bd52-f8c8dffb904f",
+   "title": "Clarence Thomas faces scrutiny as Supreme Court takes up major climate case",
+   "topic": "Culture",
+   "posted_at": "2026-10-05T11:24-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261006-1502-37483701460",
+   "story_id": "19e59548-ba77-4fb7-acc8-7dedb1df9e4c",
+   "title": "Willie D Raises $300K For Nolan Wells Justice Fund",
+   "topic": "Culture",
+   "posted_at": "2026-10-06T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261006-2102-37530692438",
+   "story_id": "d839e01c-888f-4111-b92c-a85600e4501b",
+   "title": "Paramount and Warner Bros. Discovery complete $110 billion media megamerger",
+   "topic": "Innovation",
+   "posted_at": "2026-10-06T17:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261007-1302-37625131575",
+   "story_id": "b3bea5ba-ccb9-47cd-ae89-42d53cc146f2",
+   "title": "Is Jay-Z’s MarcyPen Capital Partners Looking to Buy the Ownership Stake in Fenty Beauty?",
+   "topic": "Culture",
+   "posted_at": "2026-10-07T09:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261008-1302-37780978049",
+   "story_id": "ext:https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+   "title": "ChatGPT is getting a lot more visual, with the launch of a new interface | TechCrunch",
+   "topic": "Innovation",
+   "posted_at": "2026-10-08T09:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261008-1903-37828636821",
+   "story_id": "ff827709-7369-4717-bc97-a07c2300d6e2",
+   "title": "Meta’s Muse is taking off. So are the privacy concerns",
+   "topic": "Innovation",
+   "posted_at": "2026-10-08T15:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261009-1502-37948423178",
+   "story_id": "1e89e4de-4333-4f68-bcc7-5a959d3f43f2",
+   "title": "Fury-Joshua tickets priced up to £13,000 sell out in one hour",
+   "topic": "Sports",
+   "posted_at": "2026-10-09T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261009-1902-37977212971",
+   "story_id": "6a22cd7a-37c6-4fe8-a618-2951e106bf5e",
+   "title": "Nas & Slick Rick Become Marvel Superheroes As Hip-Hop Hits New York Comic Con",
+   "topic": "Culture",
+   "posted_at": "2026-10-09T15:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261010-1302-38054050351",
+   "story_id": "b73a4d86-51a9-47f8-9442-f6e17d153976",
+   "title": "Elon Musk intensifies attack on Ambani over Starlink India launch delay",
+   "topic": "Innovation",
+   "posted_at": "2026-10-10T09:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261010-1702-38069948448",
+   "story_id": "af2adfd4-106b-45cd-8a59-7513d31363db",
+   "title": "Atlanta Dream in WNBA Finals; sweep New York Liberty 3-0",
+   "topic": "Culture",
+   "posted_at": "2026-10-10T13:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261011-1302-38141441583",
+   "story_id": "a1009563-d2ba-4766-8c53-3653b67f31ce",
+   "title": "A’ja Wilson Becomes First Player to Win 5 WNBA MVPs, Third Consecutive",
+   "topic": "Culture",
+   "posted_at": "2026-10-11T09:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261011-1702-38157807823",
+   "story_id": "ea690aee-8d8e-4e41-be28-aa12a9aab329",
+   "title": "Buffie the Body revisits her video-vixen era as hip-hop reexamines the women who defined it",
+   "topic": "Culture",
+   "posted_at": "2026-10-11T13:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261012-1302-38252662125",
+   "story_id": "72906c46-0e23-4e4c-b21c-85c69a786e7e",
+   "title": "Verstappen dominates for first Singapore Grand Prix win",
+   "topic": "Sports",
+   "posted_at": "2026-10-12T09:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261013-0103-38330015176",
+   "story_id": "ext:https://www.mlb.com/dodgers/news/brewers-win-nlcs-game-2-2026",
+   "title": "Crew overcomes 3 deficits in seesaw Game 2, tightens grip on NLCS",
+   "topic": "Sports",
+   "posted_at": "2026-10-12T21:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261013-1502-38418267945",
+   "story_id": "5fd7e3a7-c3f8-439d-9106-9f957f79af11",
+   "title": "Apple makes another push into the smart home market with HomeView",
+   "topic": "Innovation",
+   "posted_at": "2026-10-13T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261013-1902-38451343834",
+   "story_id": "15e5926e-de51-4837-964b-417b051836b2",
+   "title": "Getty Images was worth $4.8 billion just 4 years ago. Now it’s filing for bankruptcy",
+   "topic": "Innovation",
+   "posted_at": "2026-10-13T15:05-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261014-1302-38568216225",
+   "story_id": "88bf6e85-8163-45fd-8702-1d2ca65ea77a",
+   "title": "Anthropic's IPO Could Value It at $2 Trillion Even as Its Losses Hit $42 Billion",
+   "topic": "Finance",
+   "posted_at": "2026-10-14T09:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261014-1500-38585474320",
+   "story_id": "manual-netflix-layoffs-20261014",
+   "title": "Netflix to Cut About 1,000 Jobs, Its Biggest Layoffs Since 2022, Ahead of Earnings",
+   "topic": "Business Growth",
+   "posted_at": "2026-10-14T11:02-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261015-1302-38739066127",
+   "story_id": "0a967902-f70d-41f5-9618-36f3cd19400c",
+   "title": "CoreWeave stock keeps falling as fears of AI spending drag down markets. Here’s the latest on what’s happening",
+   "topic": "Innovation",
+   "posted_at": "2026-10-15T09:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261016-1303-38904552015",
+   "story_id": "a790b23e-b5ff-4ae5-a6e8-b639a5bcc0b9",
+   "title": "Tesla reveals SpaceX-powered Roadster that flies and falls with style",
+   "topic": "Innovation",
+   "posted_at": "2026-10-16T09:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261016-1702-38936315792",
+   "story_id": "9dc58dd4-a581-4c2e-8982-e570b302124d",
+   "title": "Brian Flores’ attorneys allege racial bias in NFL hiring after recruiting memo is unsealed",
+   "topic": "Culture",
+   "posted_at": "2026-10-16T13:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261017-1302-39034769801",
+   "story_id": "4286b67e-6334-4557-87d6-6cc8e4014980",
+   "title": "Speaker Menin confronts SpaceXAI after Grok creates sexualized image of her in under 30 seconds",
+   "topic": "Culture",
+   "posted_at": "2026-10-17T09:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261018-1502-39138500015",
+   "story_id": "6ab86fe4-a5ca-42a9-a2a2-649c493156c3",
+   "title": "11 New Albums You Should Listen to Now: Fontaines D.C., the Avalanches, and More",
+   "topic": "Music",
+   "posted_at": "2026-10-18T11:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261019-1502-39274067720",
+   "story_id": "205f290a-221f-49ae-b423-e4ebf30521f6",
+   "title": "The Story of Billy Evans and ‘Theranos 2.0’",
+   "topic": "Innovation",
+   "posted_at": "2026-10-19T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261020-1502-39444404517",
+   "story_id": "577d1700-1143-469d-8d4d-e1225c8eeb0f",
+   "title": "Everyone’s taking PTO and sick days to play ‘Grand Theft Auto VI’",
+   "topic": "Finance",
+   "posted_at": "2026-10-20T11:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261021-1502-39621854669",
+   "story_id": "75652106-d69d-4a47-994e-6fac402b1dbf",
+   "title": "The 6 Best Shows Released Between 2000 and Now",
+   "topic": "Art",
+   "posted_at": "2026-10-21T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261022-1502-39800717182",
+   "story_id": "9ed9c2ed-19ea-4006-b8a0-e2b99cf1d124",
+   "title": "NFL Executive Links Dallas Cowboys to Trade for Pro Bowl Defender",
+   "topic": "Sports",
+   "posted_at": "2026-10-22T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261023-1502-39974483028",
+   "story_id": "08c818d3-4290-4655-8cae-651ba5375f02",
+   "title": "8 Things to Know About the iPhone Duo",
+   "topic": "Innovation",
+   "posted_at": "2026-10-23T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261024-1501-40104989271",
+   "story_id": "2e80b9e5-4736-4b02-86c5-0c0ab918316e",
+   "title": "The 10 Best Deodorants for Men in 2026, Tested by Grooming Editors",
+   "topic": "Health",
+   "posted_at": "2026-10-24T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261025-1502-40204861945",
+   "story_id": "5a96470f-0c95-4fec-ac1c-bab7eca12019",
+   "title": "Vans And Pro BMXer Coco Zurita Debut The Acura ADX “CZ-77 Concept”",
+   "topic": "Spotlight",
+   "posted_at": "2026-10-25T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261026-1502-40345010786",
+   "story_id": "68f149a5-b25e-4ba4-94ca-3b570c06642c",
+   "title": "Your Los Angeles Restaurant Weekend Guide: October 23",
+   "topic": "Dining",
+   "posted_at": "2026-10-26T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261027-0019-40425534589",
+   "story_id": "manual-microsoft-buyouts-20261026",
+   "title": "Microsoft Offers Voluntary Buyouts to About 60,000 Employees",
+   "topic": "Business Growth",
+   "posted_at": "2026-10-26T20:20-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261027-1501-40526648378",
+   "story_id": "5946d87a-ed1f-47ca-b8e7-66a6814c0007",
+   "title": "Want to be happier? Oxford research says ask yourself these 3 questions",
+   "topic": "Innovation",
+   "posted_at": "2026-10-27T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261028-1502-40711532686",
+   "story_id": "afc9c210-5d94-4bd2-ad19-46e11e062d0e",
+   "title": "Bilt’s 2027 Shake-Up: Longer-Lasting Bilt Cash and a Deadline You Can’t Miss",
+   "topic": "Travel",
+   "posted_at": "2026-10-28T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261029-0101-40797689189",
+   "story_id": "manual-nyc-nowhere-to-stop-20261028",
+   "title": "Nowhere to Stop: Living in New York in 2026",
+   "topic": "Culture",
+   "posted_at": "2026-10-28T21:02-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261029-1503-40897123832",
+   "story_id": "ca9c1faf-4076-4a80-85ee-c3fd800d098b",
+   "title": "Tarter Krinsky & Drogin Announces Six 2026 Attorney Promotions Across Key Practices",
+   "topic": "Law",
+   "posted_at": "2026-10-29T11:04-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261030-1502-41076662293",
+   "story_id": "6e345c0f-78f0-443b-abee-9f67d64e1485",
+   "title": "Daily Horoscope for Friday October 30, 2026",
+   "topic": "Astrology",
+   "posted_at": "2026-10-30T11:03-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261031-0135-41155995674",
+   "story_id": "manual-glorious-pairing-pecoraro-20261031",
+   "title": "This risotto inspired a gin: A Glorious Pairing at Pecoraro Latteria",
+   "topic": "Food & Wine",
+   "posted_at": "2026-10-30T21:36-04:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261031-1212-41199993475",
+   "story_id": "den-our-story-20261031",
+   "title": "Developing: The Story of The Innovators Den",
+   "topic": "Spotlight",
+   "posted_at": "2026-10-31T08:13-04:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261031-1501-41212728688",
+   "story_id": "den-the-stoop-20261030",
+   "title": "The NYC Marathon Turns 50 and Finally Listens to the South Bronx",
+   "topic": "Culture",
+   "posted_at": "2026-10-31T11:02-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261031-1901-41232096733",
+   "story_id": "den-second-wind-20261030",
+   "title": "Clocks Fall Back Sunday. Here's How to Not Fall Off.",
+   "topic": "Health",
+   "posted_at": "2026-10-31T15:02-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261031-2301-41250634508",
+   "story_id": "den-rising-sign-20261030",
+   "title": "Friday the 13th Ends the Double Retrograde. Here's the Sky Until Then",
+   "topic": "Astrology",
+   "posted_at": "2026-10-31T19:02-04:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261101-1402-41313972491",
+   "story_id": "den-original-bb599996-d723-5c2b-bc22-d29a64a90ead",
+   "title": "The Night the Dead Come Home",
+   "topic": "Culture",
+   "posted_at": "2026-11-01T09:03-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261101-1601-41324042824",
+   "story_id": "den-walk-off-20261030",
+   "title": "Brewers Won Without the Long Ball. Yankees, Take Notes.",
+   "topic": "Sports",
+   "posted_at": "2026-11-01T11:02-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261101-2001-41344573241",
+   "story_id": "den-tarima-20261030",
+   "title": "Fuerza Regida Won Miami. The Bronx Bachata Kings Stole It.",
+   "topic": "Music",
+   "posted_at": "2026-11-01T15:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261102-0001-41364820093",
+   "story_id": "den-brindis-20261030",
+   "title": "Calabash, Humm and the West Village's New Art of Dining",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-01T19:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261102-1602-41477151137",
+   "story_id": "den-counsel-hour-20261030",
+   "title": "GM Pays $220M Over Driver Data. 700,000 New Yorkers Were Enrolled.",
+   "topic": "Law",
+   "posted_at": "2026-11-02T11:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261102-2001-41515143175",
+   "story_id": "den-capital-cipher-20261030",
+   "title": "The Fed Hit Pause, Not Reverse. What It Means for Your Wallet",
+   "topic": "Finance",
+   "posted_at": "2026-11-02T15:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261103-0002-41549630985",
+   "story_id": "den-frame-room-20261030",
+   "title": "Harlem and Queens Hand New York a Black Abstraction Season",
+   "topic": "Art",
+   "posted_at": "2026-11-02T19:05-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261103-1602-41669643860",
+   "story_id": "den-brain-trust-20261030",
+   "title": "Google's Genie 4 Turns a Sentence Into a World You Can Walk Through",
+   "topic": "Innovation",
+   "posted_at": "2026-11-03T11:05-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261103-2003-41708502703",
+   "story_id": "den-the-margin-20261030",
+   "title": "NYC Small Businesses Get a Fine Reset Right Before the Holiday Rush",
+   "topic": "Business Growth",
+   "posted_at": "2026-11-03T15:07-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261104-0002-41743505733",
+   "story_id": "den-carry-on-culture-20261030",
+   "title": "One Year After Melissa, Jamaica Is Open. It Is Not Finished.",
+   "topic": "Travel",
+   "posted_at": "2026-11-03T19:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261104-1602-41863278098",
+   "story_id": "den-the-debut-20261030",
+   "title": "Omar Courtz Just Became Latin Music's Official New Artist",
+   "topic": "Spotlight",
+   "posted_at": "2026-11-04T11:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261104-1638-41869200408",
+   "story_id": "den-tarima-jayz-top21-20261104",
+   "title": "Hov's Halftime: Jay-Z's Top 21 Bars, Ranked",
+   "topic": "Music",
+   "posted_at": "2026-11-04T11:42-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261105-0001-41938033560",
+   "story_id": "den-stoop-hookah-top21-20261104",
+   "title": "Top 21 Hookah Lounges in NYC: Hold the Liquor, Pass the Pipe",
+   "topic": "Culture",
+   "posted_at": "2026-11-04T19:03-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261105-1621-42063065956",
+   "story_id": "den-original-cb37085a-1bb5-5e3f-b2c3-73fd76c7bfab",
+   "title": "Anuel AA at UBS Arena: Start Time, LIRR Tips and What to Bring",
+   "topic": "Music",
+   "posted_at": "2026-11-05T11:25-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261106-1403-42230383904",
+   "story_id": "den-pb-brasserie-20261106",
+   "title": "PB Brasserie: From Dishwasher to Chef-Owner on 125th Street",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-06T09:05-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261107-1401-42379500639",
+   "story_id": "den-haam-20261107",
+   "title": "No Culinary School, No Meat: Two Mothers Built HAAM in Williamsburg",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-07T09:03-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261107-1601-42389072898",
+   "story_id": "den-bam-playback-20261107",
+   "title": "Playback at BAM: Spike Lee's Brooklyn Watch Party Turns Fort Greene Into a Movie Block Party",
+   "topic": "Culture",
+   "posted_at": "2026-11-07T11:03-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261107-1801-42399056670",
+   "story_id": "den-knicks-swift-20261107",
+   "title": "Real Fan, Fake Fan: The Knicks, Taylor Swift and Who Gets a Seat at the Garden",
+   "topic": "Sports",
+   "posted_at": "2026-11-07T13:04-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261107-1831-42401585890",
+   "story_id": "den-aries-fish-market-20261107",
+   "title": "One Door: A Bronx Fish Market Waits on a Wall It Doesn't Own",
+   "topic": "Business Growth",
+   "posted_at": "2026-11-07T13:34-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261107-1936-42406922004",
+   "story_id": "den-cybertruck-20261107",
+   "title": "The Cybertruck Is Winding Down. Here Is What Every Builder Should Learn From It",
+   "topic": "Innovation",
+   "posted_at": "2026-11-07T14:39-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261107-2001-42408895419",
+   "story_id": "den-met-gala-2027-20261107",
+   "title": "Jeans, a White Tee and a Puffer: The Met Gala Just Made Everyday Clothes the Main Event",
+   "topic": "Art",
+   "posted_at": "2026-11-07T15:04-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261107-2201-42418506034",
+   "story_id": "den-jobs-report-20261107",
+   "title": "165,000 Jobs and a Possible Rate Hike: What October's Jobs Report Means for Your Wallet",
+   "topic": "Finance",
+   "posted_at": "2026-11-07T17:04-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261108-0001-42427752041",
+   "story_id": "den-tiafoe-turin-20261107",
+   "title": "From the Maintenance Room to Turin: Frances Tiafoe Makes His ATP Finals Debut",
+   "topic": "Spotlight",
+   "posted_at": "2026-11-07T19:04-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261108-0201-42436632834",
+   "story_id": "den-jetblue-bags-20261107",
+   "title": "JetBlue Just Raised Bag Fees Again. Here Is How to Pack and Book Around It",
+   "topic": "Travel",
+   "posted_at": "2026-11-07T21:04-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261108-1401-42487618594",
+   "story_id": "den-raw-wine-20261108",
+   "title": "RAW WINE Comes to Industry City: The Den's Guide to New York's Natural Wine Weekend",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-08T09:04-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261108-1602-42497626487",
+   "story_id": "den-goat-debate-20261108",
+   "title": "LeBron vs. Jordan: Who Is the GOAT, and Who Carries the NBA Next?",
+   "topic": "Sports",
+   "posted_at": "2026-11-08T11:04-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261108-1801-42507745587",
+   "story_id": "den-latin-grammys-20261108",
+   "title": "Latin Grammys 2026 Preview: Daddy Yankee's Big Night, a Willie Colón Tribute and a Stacked Stage",
+   "topic": "Music",
+   "posted_at": "2026-11-08T13:03-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261108-1956-42517432317",
+   "story_id": "den-diabetes-study-20261108",
+   "title": "Can Diet and Exercise Reverse Type 2 Diabetes? A New Study Puts a Number on It",
+   "topic": "Health",
+   "posted_at": "2026-11-08T14:59-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261108-2201-42527982942",
+   "story_id": "den-ny-ai-chatbot-law-20261108",
+   "title": "New York's New AI Chatbot Law for Kids, Explained: What Changes on January 1",
+   "topic": "Law",
+   "posted_at": "2026-11-08T17:04-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261109-0001-42537847338",
+   "story_id": "den-elevate-ai-20261108",
+   "title": "Free AI Crash Course for Small Business Owners, With Google and TikTok in the Room",
+   "topic": "Business Growth",
+   "posted_at": "2026-11-08T19:04-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261109-0201-42548493319",
+   "story_id": "den-scorpio-new-moon-20261108",
+   "title": "Let It Go Monday, Move Forward Thursday: The Scorpio New Moon and the End of Retrograde Season",
+   "topic": "Astrology",
+   "posted_at": "2026-11-08T21:03-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261109-1603-42650310052",
+   "story_id": "49840815-81a3-4610-bb3b-6e62dcc5585e",
+   "title": "Arkansas sues VGW and Kalshi, citing $66 million in VGW taxable sales in one year",
+   "topic": "Innovation",
+   "posted_at": "2026-11-09T11:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261110-1257-42819969129",
+   "story_id": "den-ginuwine-lehman-20261110",
+   "title": "30 Years of Pony: Ginuwine and Ro James Brought R&B Home to the Bronx",
+   "topic": "Music",
+   "posted_at": "2026-11-10T08:00-05:00",
+   "hand_built": true
+  },
+  {
+   "run_id": "20261111-1803-43073549117",
+   "story_id": "ac2244f2-aefe-475f-b4d0-ab5851ef4b7c",
+   "title": "Teyana Taylor and Iman Shumpert hilariously shut down viral paternity rumors about their daughters",
+   "topic": "Culture",
+   "posted_at": "2026-11-11T13:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261112-1402-43232728289",
+   "story_id": "den-merab-abu-dhabi-20261112",
+   "title": "Merab Dvalishvili Was Hit From Behind Mid-Interview. When Is Enough Enough?",
+   "topic": "Sports",
+   "posted_at": "2026-11-12T09:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261112-1602-43253886378",
+   "story_id": "den-latin-grammys-barrera-20261112",
+   "title": "The Most Nominated Name at Tonight's Latin Grammys Isn't on the Album Cover",
+   "topic": "Music",
+   "posted_at": "2026-11-12T11:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261112-1801-43275284654",
+   "story_id": "den-chatgpt-business-hub-20261112",
+   "title": "ChatGPT Just Became a Business Directory. Claim Yours Before Someone Else Describes You.",
+   "topic": "Innovation",
+   "posted_at": "2026-11-12T13:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261112-2002-43295889310",
+   "story_id": "den-brewers-blueprint-20261112",
+   "title": "103 Wins, a First Title and a Rotation Built to Last: Awards Week Belongs to Milwaukee",
+   "topic": "Sports",
+   "posted_at": "2026-11-12T15:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261112-2156-43314742269",
+   "story_id": "den-black-friday-edit-20261111",
+   "title": "The Den's Black Friday Edit: 23 Deals Worth Booking Before 2027",
+   "topic": "Travel",
+   "posted_at": "2026-11-12T16:59-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261113-1402-43438632781",
+   "story_id": "den-glp1-eye-warning-20261113",
+   "title": "The FDA Just Added an Eye Warning to Ozempic, Wegovy and Mounjaro. Here's What It Means.",
+   "topic": "Health",
+   "posted_at": "2026-11-13T09:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261113-1602-43458254977",
+   "story_id": "den-sagittarius-season-20261113",
+   "title": "Sagittarius Season 2026: Your Sky From Here to New Year's",
+   "topic": "Astrology",
+   "posted_at": "2026-11-13T11:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261113-1802-43478315723",
+   "story_id": "den-suno-lawsuits-20261113",
+   "title": "Elvis and Eminem Just Sued an AI Music Company. Every Creator Should Read Why.",
+   "topic": "Law",
+   "posted_at": "2026-11-13T13:05-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261114-1602-43613185417",
+   "story_id": "den-carson-benge-20261114",
+   "title": "Carson Benge Had a .498 OPS in May. He Finished With the First 20-20 Rookie Season in Mets History.",
+   "topic": "Spotlight",
+   "posted_at": "2026-11-14T11:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261114-1802-43624140710",
+   "story_id": "den-ufc-334-20261114",
+   "title": "UFC 334 Start Time at MSG: Full Card and How to Watch Gane vs. Hokit",
+   "topic": "Sports",
+   "posted_at": "2026-11-14T13:05-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261115-1602-43732982167",
+   "story_id": "den-urban-civil-rights-museum-20261115",
+   "title": "The Civil Rights Movement Happened Up North Too. Harlem Finally Has the Museum to Prove It.",
+   "topic": "Culture",
+   "posted_at": "2026-11-15T11:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261115-1804-43744240751",
+   "story_id": "den-original-aedf25b2-854e-5670-8fa2-76748a3d4179",
+   "title": "FAA Ground Stop Flight Canceled? Your Refund Rights and What to Do",
+   "topic": "Travel",
+   "posted_at": "2026-11-15T13:07-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261115-2003-43755540817",
+   "story_id": "den-original-cf9ba724-4a7d-56c3-90aa-c896e24c966c",
+   "title": "SHSAT Retest: What NYC Families Need to Know After Saturday's Glitch",
+   "topic": "Culture",
+   "posted_at": "2026-11-15T15:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261115-2035-43758548285",
+   "story_id": "den-original-689ba861-bea9-5c4e-8e03-3e2deaed5473",
+   "title": "Cam Schlittler for Bobby Witt Jr.? Why the Yankees Should Say No",
+   "topic": "Sports",
+   "posted_at": "2026-11-15T15:37-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261115-2203-43766779467",
+   "story_id": "den-original-4bb1f1b2-b069-5479-ae1c-64fb70ba182d",
+   "title": "David Bednar Qualifying Offer: Will He Take the Yankees' $23.15M?",
+   "topic": "Sports",
+   "posted_at": "2026-11-15T17:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261116-0003-43777810782",
+   "story_id": "den-original-a5e572b9-559e-5de0-a59b-7a6ee612b1b9",
+   "title": "Where to Order a Dominican and Puerto Rican Thanksgiving in NYC",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-15T19:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261116-0203-43789507727",
+   "story_id": "den-original-e47e2d8a-f19a-5a29-8e42-a5c8f739f952",
+   "title": "Macy's Thanksgiving Day Parade 2026: Your Guide to the 100th March",
+   "topic": "Culture",
+   "posted_at": "2026-11-15T21:07-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261116-1402-43881281169",
+   "story_id": "den-kandinsky-20261116",
+   "title": "The Guggenheim Sold This Kandinsky for $62,000. Tomorrow It Could Sell for $80 Million.",
+   "topic": "Art",
+   "posted_at": "2026-11-16T09:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261116-1603-43902627060",
+   "story_id": "den-original-19a56e4c-e96d-5d9e-9565-630ffd9b9277",
+   "title": "JFK Thanksgiving Travel 2026: Terminals, AirTrain, Parking and TSA",
+   "topic": "Travel",
+   "posted_at": "2026-11-16T11:05-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261116-1802-43924240580",
+   "story_id": "den-ai-selloff-money-20261116",
+   "title": "Before Nvidia Reports: What the AI Selloff and a Possible Rate Hike Mean for Your Money",
+   "topic": "Finance",
+   "posted_at": "2026-11-16T13:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261117-1603-44120761174",
+   "story_id": "den-beaujolais-nouveau-20261117",
+   "title": "The First Wine of 2026 Arrives November 19, From the Earliest Harvest on Record",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-17T11:05-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261117-2003-44164626919",
+   "story_id": "den-original-3ad9f5f9-c65d-54c0-9943-80a8de24ee02",
+   "title": "Best Hookah Lounges in Manhattan: 8 Rooms Worth the Trip",
+   "topic": "Culture",
+   "posted_at": "2026-11-17T15:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261117-2203-44185634564",
+   "story_id": "den-original-ab553cb4-0ca4-5cc7-aaaa-1817a42d82ed",
+   "title": "Top 10 Hookah Lounges in Miami: Less Bottle Service, More Bowl Service",
+   "topic": "Culture",
+   "posted_at": "2026-11-17T17:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261117-2309-44196379600",
+   "story_id": "den-original-5a15a6b6-1dfe-567d-b9ca-b7bae4936588",
+   "title": "Top 10 Hookah Lounges in Chicago: The Windy City Brings Its Own Bottle",
+   "topic": "Culture",
+   "posted_at": "2026-11-17T18:12-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261118-0003-44204179293",
+   "story_id": "den-original-178b0384-9ff5-5f5a-869e-7fbc9abe4604",
+   "title": "Top 10 Hookah Lounges in Los Angeles: Skip the Velvet Rope, Pass the Hose",
+   "topic": "Culture",
+   "posted_at": "2026-11-17T19:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261118-0203-44220015161",
+   "story_id": "den-original-50c951b7-0676-544d-96dd-9932fd691253",
+   "title": "Top 10 Hookah Lounges in Atlanta: Inside the Perimeter, Inside the Cloud",
+   "topic": "Culture",
+   "posted_at": "2026-11-17T21:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261118-1403-44319530132",
+   "story_id": "den-original-84d31a76-e01c-57a1-b74a-1a89259261b5",
+   "title": "Best Steakhouses in Harlem: A Cut Above 110th Street",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-18T09:07-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261118-1602-44342115307",
+   "story_id": "den-small-business-playbook-20261118",
+   "title": "64% of Shoppers Are Waiting for Thanksgiving Weekend. Here's the Small-Brand Playbook.",
+   "topic": "Business Growth",
+   "posted_at": "2026-11-18T11:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261118-1803-44364879435",
+   "story_id": "den-original-bb919998-704c-5d27-b3dd-8680548fec08",
+   "title": "The Eye Poke Nobody Called: Gane Keeps the Belt, Hokit Keeps the Receipts",
+   "topic": "Sports",
+   "posted_at": "2026-11-18T13:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261118-2003-44386368945",
+   "story_id": "den-original-69dbe6f9-7e2e-508d-8be5-d0c5e634e667",
+   "title": "Amanda Nunes Fought the Wrong Fight: How Kayla Harrison Kept the Belt at UFC 334",
+   "topic": "Sports",
+   "posted_at": "2026-11-18T15:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261118-2204-44407238115",
+   "story_id": "den-original-3f1a6566-b469-5561-ac95-78d50611f8b9",
+   "title": "David Bednar Accepts the Yankees' $23.15M Qualifying Offer. What's Next?",
+   "topic": "Sports",
+   "posted_at": "2026-11-18T17:07-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261118-2244-44413865722",
+   "story_id": "den-original-a8cbb06b-9df3-5d7e-898b-0452173edc73",
+   "title": "NBA Viewership Is Up, Not Down: What the 2026-27 Numbers Actually Say",
+   "topic": "Sports",
+   "posted_at": "2026-11-18T17:47-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261119-1410-44539105329",
+   "story_id": "den-original-50d344e6-b3d9-5814-91e4-9d0b2a18490a",
+   "title": "Best Countries to Live Outside the US in 2026, Ranked by Cost and the Flight Home",
+   "topic": "Travel",
+   "posted_at": "2026-11-19T09:13-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261119-1602-44561148604",
+   "story_id": "den-thanksgiving-flights-20261119",
+   "title": "Thanksgiving Fares Are the Highest in a Decade. Here's How to Fly Smarter.",
+   "topic": "Travel",
+   "posted_at": "2026-11-19T11:04-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261119-1803-44583154674",
+   "story_id": "den-original-e41be7fc-494c-583d-a83c-e88e9f4586a8",
+   "title": "Best States to Move to From New York in 2026: Where $100 Goes Further",
+   "topic": "Finance",
+   "posted_at": "2026-11-19T13:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261119-2003-44604128862",
+   "story_id": "den-original-b8e3c701-3189-5fa6-8ed7-9b0781335d05",
+   "title": "Where to Eat in Harlem: 12 Classic Restaurants",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-19T15:07-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261119-2204-44624352783",
+   "story_id": "den-original-7cdde1b4-0f92-51ca-9fff-6f2e8e828d76",
+   "title": "GTA 6 Release Date and the New Zelda: 3 Games to Play",
+   "topic": "Innovation",
+   "posted_at": "2026-11-19T17:07-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261119-2247-44631440622",
+   "story_id": "den-original-2cd64060-8f69-5da3-94c7-73e1dfababc7",
+   "title": "Equifax Sent Lenders the Wrong Credit Scores. The $100 Million Check Has Two Deadlines.",
+   "topic": "Law",
+   "posted_at": "2026-11-19T17:50-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261120-1606-44768921249",
+   "story_id": "4d1cd28f-12d7-4f10-867f-75cddbe137ca",
+   "title": "Uber tests rides for kids as young as 10, with extra pay for drivers",
+   "topic": "Innovation",
+   "posted_at": "2026-11-20T11:09-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261121-1631-44924813567",
+   "story_id": "den-i-love-paraguay-20261120",
+   "title": "I Love Paraguay: The Family Table That Brought Paraguay to Queens",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-21T11:33-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261122-1603-45041369489",
+   "story_id": "den-original-a770e8b6-01e0-4482-be64-3f6ad7eaa81a",
+   "title": "What to Watch in December 2026: New Movies and TV for Kids to Adults",
+   "topic": "Culture",
+   "posted_at": "2026-11-22T11:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261122-1803-45052564714",
+   "story_id": "den-original-e326719f-a12b-4952-90d8-43a6088f0d63",
+   "title": "The Best Free Places to Work Remotely in NYC: 15 Spots in All Five Boroughs",
+   "topic": "Business Growth",
+   "posted_at": "2026-11-22T13:06-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261122-2004-45063905503",
+   "story_id": "den-original-d45b9466-1cf9-4dbc-b025-3bc871b22a03",
+   "title": "Best Desserts in NYC: 21 Spots and the One Thing to Order at Each",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-22T15:07-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261122-2116-45070772483",
+   "story_id": "den-original-90b1362a-0391-471c-b97e-215985c0a87d",
+   "title": "The Best Dominican Restaurants in Washington Heights and Inwood",
+   "topic": "Food & Wine",
+   "posted_at": "2026-11-22T16:18-05:00",
+   "hand_built": false
+  },
+  {
+   "run_id": "20261122-2204-45075200983",
+   "story_id": "den-original-8f831cbf-fd6f-48eb-84e5-b92b4907dfb6",
+   "title": "Knicks vs. Pacers Tonight: Time, TV, Injuries and the NBA Cup Math",
+   "topic": "Sports",
+   "posted_at": "2026-11-22T17:07-05:00",
+   "hand_built": false
+  }
+ ]
+}

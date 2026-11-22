@@ -1,0 +1,60 @@
+{
+ "kicker": "TECH DROP",
+ "hook": "Apple's $1,999 Foldable Skips *Face ID*",
+ "dek": "The iPhone Duo is here, Apple's first fold, seven years after Samsung's.",
+ "slides": [
+  {
+   "label": "What happened",
+   "text": "Apple just launched the *iPhone Duo*, its first folding phone, seven years after Samsung's Galaxy Fold."
+  },
+  {
+   "label": "No Face ID",
+   "text": "The Duo skips *Face ID* completely and brings back Touch ID, likely because the fold leaves no room for Face ID hardware."
+  },
+  {
+   "label": "Apps still catching up",
+   "text": "Many third-party apps aren't optimized yet. Slack, Instagram, DoorDash and WhatsApp already updated for the *new screens*."
+  },
+  {
+   "label": "Hidden tricks",
+   "text": "Flip the phone to use the rear cameras for *selfies*, or lock two apps into an *app pair* for split-screen multitasking."
+  },
+  {
+   "label": "Accessory issues",
+   "text": "MagSafe works, but wallets *stick out* past the shorter frame, and the phone tips over in magnetic car docks."
+  },
+  {
+   "label": "Handle with care",
+   "text": "The inner screen's nano-texture finish can't be removed. A scratch costs $19 to fix, a full crack costs *$999* without AppleCare+."
+  },
+  {
+   "label": "What's next",
+   "text": "Apple Pencil support and a new *Reachability* feature are both coming later this year via software update."
+  },
+  {
+   "label": "Why it matters",
+   "text": "For indie iOS developers, especially *underrepresented* creators, being first to optimize for new hardware like this can mean getting seen first."
+  }
+ ],
+ "cta_line": "Fold responsibly, that screen is *delicate*.",
+ "question": "Would you pay $1,999 for this? Yes or no.",
+ "first_comment": "Fun fact: the wallet accessory literally sticks out past the phone because the Duo is shorter than a normal iPhone.",
+ "photo_subjects": [
+  "IPhone",
+  "Apple Inc.",
+  "Samsung Galaxy Fold"
+ ],
+ "photo_caption": "Apple's new iPhone Duo, its first folding smartphone, priced at $1,999",
+ "caption_instagram": "Apple's iPhone Duo is finally out, and it's the company's first folding phone, landing seven years after Samsung's Galaxy Fold. According to Wired, the $1,999 device skips Face ID for Touch ID, has app pairs for multitasking, lets you use the rear cameras for selfies, and comes with a fragile nano-texture inner screen that costs $999 to fix if it cracks.\n\nMany third-party apps aren't fully optimized yet, though big names like Slack, Instagram, DoorDash, and WhatsApp have already updated. Apple Pencil support and a new Reachability feature are coming later this year.\n\nFor developers building for iOS, especially those from underrepresented communities, getting ahead on new hardware like this can be a real opportunity to stand out early.\n\nWould you pay $1,999 for this? Yes or no.\n\nSend this to the friend who already preordered one.\n\nFull story: link in bio.\n#TheInnovatorsDen #iPhoneDuo #Apple #TechNews #Foldables",
+ "caption_reel": "Apple's iPhone Duo just dropped, its first folding iPhone, and it skips Face ID for Touch ID instead, per Wired. It's $1,999, many apps aren't optimized yet, and the inner screen is seriously fragile. Would you pay $1,999 for this? Yes or no. Send this to the friend who already preordered one. #TheInnovatorsDen #iPhoneDuo #Apple #TechNews #Foldables",
+ "caption_facebook": "Apple finally made a folding phone. The iPhone Duo is out now, seven years after Samsung's Galaxy Fold, and Wired broke down everything you need to know. It's $1,999, it ditches Face ID for Touch ID, and the inner screen is so delicate that a crack will cost you $999 without AppleCare+. On the bright side, you get cool tricks like locking two apps together for multitasking and using the rear cameras for better selfies. Apple Pencil support is coming later this year too. Would you pay $1,999 for this? Yes or no. #TheInnovatorsDen\n\nSource: Wired https://www.wired.com/story/8-things-to-know-about-the-apple-iphone-duo/",
+ "caption_linkedin": "Apple's iPhone Duo, its first folding smartphone, is officially shipping, seven years after Samsung opened the foldable category with the Galaxy Fold. Wired's breakdown shows a device that's polished but still catching up in one key area: software.\n\nMany third-party apps aren't optimized for the new 5.4-inch and 7.6-inch displays yet, even some that technically support it, like Instagram, still have broken UI elements. Apple's own apps look great; everyone else is playing catch-up.\n\nThat gap is an opening. Developers, especially those building lean teams without huge design resources, who move fast to optimize for new form factors tend to get noticed first by users and press alike.\n\nThe Duo also drops Face ID for Touch ID, likely a hardware tradeoff for thinness, and adds real multitasking tools like app pairs. Pricing starts at $1,999, with notable fragility risks on the inner screen.\n\nWould you bet on foldables becoming the new standard? Yes or no.\n#Innovation #ProductLaunch #TheInnovatorsDen\n\nSource: Wired https://www.wired.com/story/8-things-to-know-about-the-apple-iphone-duo/",
+ "story_id": "08c818d3-4290-4655-8cae-651ba5375f02",
+ "topic": "Innovation",
+ "title": "8 Things to Know About the iPhone Duo",
+ "source_name": "Wired",
+ "source_url": "https://www.wired.com/story/8-things-to-know-about-the-apple-iphone-duo/",
+ "writer": "claude",
+ "mode": "baseline",
+ "trend": null
+}

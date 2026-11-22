@@ -43,6 +43,18 @@ Drop hand-written posts in `manual/queue/` as JSON (same shape as files in `manu
 - **LinkedIn:** no URLs in the post body (links cut reach). Set `LI_LINKS=1` to keep them.
 - Optional extras (alt text, collaborators, topic tag) retry without the extra if an API rejects it, so they never cost a post.
 
+## Spanish Instagram (added Nov 22, 2026)
+`es.py` runs a second Instagram account in Spanish. Carousels only: no Reels, no Stories, no collaborator invites.
+- **Every new carousel:** right after the English post, Claude rewrites the same carousel in Spanish (same facts, same
+  slide count), `render.py` builds it in the same Den template with Spanish labels, and it posts to the Spanish account.
+- **Tags the main page:** `@theinnovatorsden` is tagged on the cover and named in the caption ("Edición en inglés").
+  Venues and brands the English post featured are tagged on the cover too.
+- **Catch-up:** `es/queue.json` lists the 136 carousels posted before the Spanish account existed, oldest first.
+  One goes out per run, max 6 a day (`ES_CATCHUP_PER_DAY` variable; `0` pauses it). Add `"skip": true` to leave one out.
+- **Hand-built carousels** (22 in the catch-up, e.g. PB Brasserie, HAAM) keep their original slides, with a Spanish caption.
+- **Turns on by itself** once the `IG_ES_USER_ID` and `IG_ES_ACCESS_TOKEN` secrets exist (same token flow as the main
+  account). Results are in `es/log.json`. A failed post retries on later runs, 3 tries max. Nothing here can block an English post.
+
 ## One-time setup
 
 ### 1. GitHub

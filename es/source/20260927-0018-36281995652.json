@@ -1,0 +1,64 @@
+{
+ "kicker": "FOUNDER INTEL",
+ "hook": "What *25,000* Applications Taught VCs",
+ "dek": "LvlUp Ventures breaks down what actually gets seed startups funded now.",
+ "slides": [
+  {
+   "label": "What Happened",
+   "text": "LvlUp Ventures reviewed *25,000 startup applications* and says the seed-stage playbook has quietly changed."
+  },
+  {
+   "label": "Who's Behind It",
+   "text": "The findings come from *Aaron Golbin*, co-founder of LvlUp Ventures, who has backed *1,000+ startups* worldwide."
+  },
+  {
+   "label": "Money Moves",
+   "text": "Equity isn't the only option anymore. LvlUp financed one startup with *$1M in non-dilutive capital* almost overnight."
+  },
+  {
+   "label": "Distribution First",
+   "text": "Winning startups build *distribution into the product* from day one instead of bolting it on after launch."
+  },
+  {
+   "label": "Learning > Speed",
+   "text": "Moving fast isn't rare anymore. What separates winners is *closing knowledge gaps faster* than everyone else."
+  },
+  {
+   "label": "Focus Wins",
+   "text": "About *82% of startups* still alive a year later had a strong go-to-market plan baked into their pitch."
+  },
+  {
+   "label": "AI As Infrastructure",
+   "text": "*78% of founders* applying now use AI, but the winners design it as core architecture, not a bolted-on experiment."
+  },
+  {
+   "label": "Why It Matters",
+   "text": "For Black, Brown and underrepresented founders raising less capital, knowing these rules can be the difference between funded and passed on."
+  }
+ ],
+ "cta_line": "Know the rules before you *pitch*.",
+ "question": "Which of these seed-stage rules surprises you most?",
+ "caption_instagram": "The seed-stage playbook just changed, and most founders don't know it yet.\n\nAccording to Crunchbase News, LvlUp Ventures reviewed 25,000 startup applications and found that equity alone isn't cutting it anymore. Non-dilutive capital, built-in distribution and AI as core infrastructure (not an experiment) are now separating funded startups from the rest.\n\nThe data is blunt: about 82% of startups still standing a year later had a real go-to-market plan from day one. Founders who wait to figure out distribution after launch are already behind.\n\nFor underrepresented founders raising less capital with less room for error, knowing these shifts before you pitch isn't optional, it's survival.\n\nWhich of these seed-stage rules surprises you most?\n\nFull story: link in bio.\n\n#TheInnovatorsDen #StartupFunding #SeedStage #FounderTips #VentureCapital #BlackFounders #LatinoFounders",
+ "caption_facebook": "The rules for raising seed funding just shifted, and Crunchbase News just broke down exactly how.\n\nLvlUp Ventures reviewed 25,000 startup applications and found founders leaning on non-dilutive capital, building distribution into their product from day one, and treating AI as real infrastructure instead of a side experiment. The kicker: 82% of startups still around a year later had a solid go-to-market plan baked in from the start.\n\nFor founders in our community who don't always get a second shot at a pitch, knowing this before you walk into a room changes everything.\n\nWhich of these seed-stage rules surprises you most?\n\n#TheInnovatorsDen\n\nSource: Crunchbase News https://news.crunchbase.com/seed/startup-funding-rules-ai-gtm-golbin-lvlup/",
+ "caption_linkedin": "Crunchbase News just published a breakdown from LvlUp Ventures that every early-stage founder needs to see.\n\nAfter reviewing 25,000 startup applications, the firm found that the old formula (product, team, deck) no longer predicts who gets funded. Non-dilutive capital is now a real strategic lever, not a backup plan. Distribution has to be designed into the product before scale, not added after launch. And AI only works when it's treated as infrastructure, not an experiment bolted onto existing workflows.\n\nThe most telling number: 82% of startups still operating a year later had a strong go-to-market foundation in their original pitch deck.\n\nFor founders operating with less capital and less margin for error, especially in underrepresented communities, understanding these shifts before a raise isn't optional anymore.\n\nWhich of these seed-stage rules surprises you most?\n\n#VentureCapital #StartupFounders #TheInnovatorsDen\n\nSource: Crunchbase News https://news.crunchbase.com/seed/startup-funding-rules-ai-gtm-golbin-lvlup/",
+ "story_id": "eedd1193-b771-4583-8849-484fc17126a9",
+ "topic": "Innovation",
+ "title": "What 25,000 Startup Applications Reveal About The New Rules Of Seed-Stage Startups",
+ "source_name": "Crunchbase News",
+ "source_url": "https://news.crunchbase.com/seed/startup-funding-rules-ai-gtm-golbin-lvlup/",
+ "writer": "claude",
+ "mode": "baseline",
+ "trend": {
+  "story_id": "46d965c1-d4f9-4d69-9a37-3d59346c198a",
+  "outside_url": null,
+  "topic": "Law",
+  "score": 7,
+  "why": "Justice Ketanji Brown Jackson's public rebuke of the Supreme Court's 'shadow docket' speed-dial treatment of favored litigants is being covered simultaneously by Fox News, The Hill, USA Today/Yahoo, PBS NewsHour, ABA Journal and TheGrio in the last 24-48 hours, making it the most widely-syndicated Law-topic story in the feed right now.",
+  "evidence": [
+   "https://thehill.com/regulation/court-battles/6110805-justice-jackson-critiques-scotus-emergency-docket/",
+   "https://www.foxnews.com/politics/liberal-justice-hammers-supreme-court-fast-tracking-emergency-docket-cases",
+   "https://thegrio.com/2026/09/25/ketanji-brown-jackson-supreme-court-emergency-docket-trump/",
+   "https://www.abajournal.com/news/article/justice-jackson-criticizes-frequent-use-of-emergency-orders"
+  ]
+ }
+}

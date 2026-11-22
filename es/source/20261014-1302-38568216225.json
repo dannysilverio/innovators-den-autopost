@@ -1,0 +1,78 @@
+{
+ "kicker": "IPO WATCH",
+ "hook": "Anthropic's IPO: *$2 Trillion* Value, $42B Losses",
+ "dek": "Claude's maker could top SpaceX's record IPO despite a historic net loss.",
+ "slides": [
+  {
+   "label": "What happened",
+   "text": "Anthropic, maker of the *Claude* AI model, filed to go public, with a possible *$2 trillion* valuation."
+  },
+  {
+   "label": "The numbers",
+   "text": "Revenue grew *1,050%* to $4.6 billion in 2025, but net losses hit a staggering *$42 billion*."
+  },
+  {
+   "label": "Inside the loss",
+   "text": "About *$34 billion* of that came from an accounting charge; the real operating loss was *$8 billion*."
+  },
+  {
+   "label": "Where it's spent",
+   "text": "Anthropic spent *$7.3 billion* on compute in 2025 (up from $400 million in 2023), 58% of its costs."
+  },
+  {
+   "label": "The risk warning",
+   "text": "Its own filing warns advanced AI could pose *\"catastrophic or existential risks to humanity.\"*"
+  },
+  {
+   "label": "Not alone",
+   "text": "OpenAI's *Sam Altman* has urged AI companies to slow down over similar safety concerns."
+  },
+  {
+   "label": "What's next",
+   "text": "Anthropic would be the *first frontier AI lab* to go public, facing intense investor scrutiny."
+  },
+  {
+   "label": "Why it matters",
+   "text": "For underrepresented founders, it's a reminder: AI money moves fast, but so do the risks and the hype."
+  }
+ ],
+ "cta_line": "The AI money race just got *bigger*.",
+ "question": "Hype or red flag? One word.",
+ "first_comment": "Wild detail: $34B of that $42B loss came from a single accounting charge, not actual cash burn.",
+ "photo_subjects": [
+  "Anthropic",
+  "Claude (language model)",
+  "SpaceX"
+ ],
+ "photo_caption": "Anthropic, maker of Claude, could file the largest IPO in history.",
+ "caption_instagram": "Anthropic, the company behind the Claude AI model, just filed for an IPO that could value it at $2 trillion, enough to beat SpaceX as the biggest IPO ever. According to The Motley Fool, the filing also revealed a staggering $42 billion net loss for 2025, even as revenue jumped 1,050% to $4.6 billion.\n\nMost of that loss came from an accounting charge, but the real operating loss still sits around $8 billion, driven by the $7.3 billion Anthropic spent on compute power. The filing even admits advanced AI could pose \"existential risks to humanity,\" a warning OpenAI's Sam Altman has echoed by telling the industry to slow down.\n\nThis would be the first frontier AI lab to test public markets, and every founder building in AI (especially those without deep pockets) should be watching how investors react.\n\nHype or red flag? One word.\n\nSend this to a founder tracking the AI money.\n\nFull story: link in bio.\n#TheInnovatorsDen #Anthropic #AI #IPO #StartupNews",
+ "caption_reel": "Anthropic's IPO could value it at $2 trillion, bigger than SpaceX, even with a $42 billion net loss in 2025. Revenue grew 1,050% to $4.6 billion, but compute costs alone hit $7.3 billion. Hype or red flag? One word. Send this to a founder tracking AI money. #TheInnovatorsDen #Anthropic #AI #IPO",
+ "caption_facebook": "Anthropic, the company behind Claude AI, just filed for an IPO that could make it worth $2 trillion, bigger than SpaceX's record-breaking debut. But the numbers cut both ways: revenue jumped 1,050% to $4.6 billion in 2025, while net losses hit $42 billion (most from an accounting charge, but the real operating loss is still $8 billion).\n\nThe filing even warns that advanced AI could pose risks to humanity itself, something OpenAI's Sam Altman has also flagged by urging the industry to slow down.\n\nHype or red flag? One word. #TheInnovatorsDen\n\nSource: The Motley Fool https://www.fool.com/investing/2026/10/13/anthropics-ipo-could-value-it-at-2-trillion-even-a/?source=iedfolrf0000001",
+ "caption_linkedin": "Anthropic's IPO filing is a case study in what it costs to build frontier AI. The company behind Claude is reportedly eyeing a $2 trillion valuation, which would make it the largest IPO in history, surpassing SpaceX.\n\nThe numbers tell two stories. Revenue grew 1,050% to $4.6 billion in 2025. Net losses hit $42 billion, though about $34 billion of that came from an accounting charge rather than operations. The real operating loss was closer to $8 billion, driven largely by a $7.3 billion compute bill (up from just $400 million in 2023).\n\nAnthropic's own filing also flags a bigger risk: the possibility that advanced AI systems could act against human interests. OpenAI's Sam Altman has made similar calls for the industry to slow down.\n\nFor founders and operators building in AI, this filing previews what scale, capital intensity, and safety scrutiny look like at the top of the market.\n\nWill this IPO reset the bar for AI valuations? Yes or no.\n\n#AI #IPO #Startups\n\nSource: The Motley Fool https://www.fool.com/investing/2026/10/13/anthropics-ipo-could-value-it-at-2-trillion-even-a/?source=iedfolrf0000001",
+ "story_id": "88bf6e85-8163-45fd-8702-1d2ca65ea77a",
+ "topic": "Finance",
+ "title": "Anthropic's IPO Could Value It at $2 Trillion Even as Its Losses Hit $42 Billion",
+ "source_name": "The Motley Fool",
+ "source_url": "https://www.fool.com/investing/2026/10/13/anthropics-ipo-could-value-it-at-2-trillion-even-a/?source=iedfolrf0000001",
+ "writer": "claude",
+ "mode": "trending",
+ "trend": {
+  "story_id": "88bf6e85-8163-45fd-8702-1d2ca65ea77a",
+  "outside_url": null,
+  "topic": "Finance",
+  "score": 7,
+  "why": "Anthropic's eye-popping $2 trillion IPO valuation and $42 billion loss figure from its prospectus is being actively dissected across Yahoo Finance, Motley Fool, Forbes, Kiplinger and Seeking Alpha this week, making it the most widely-covered finance story fitting the Den's topics right now, though it's a developing multi-week saga rather than a single-day explosive spike.",
+  "evidence": [
+   "https://www.fool.com/investing/2026/10/13/anthropics-ipo-could-value-it-at-2-trillion-even-a/",
+   "https://www.kiplinger.com/investing/ipos/anthropic-to-seek-trillion-ipo-valuation",
+   "https://www.valuethemarkets.com/news/anthropics-2-trillion-ipo-faces-a-profit-test",
+   "https://finance.yahoo.com/markets/stocks/articles/anthropic-targeting-valuation-over-2-081500258.html"
+  ]
+ },
+ "photo": {
+  "path": "/home/runner/work/innovators-den-autopost/innovators-den-autopost/build/photo.jpg",
+  "credit": "Photo: HaeB / CC BY-SA 4.0 via Wikimedia Commons",
+  "subject": "Anthropic",
+  "caption": "Anthropic, maker of Claude, could file the largest IPO in history."
+ }
+}

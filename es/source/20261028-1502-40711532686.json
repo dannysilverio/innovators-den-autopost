@@ -1,0 +1,66 @@
+{
+ "kicker": "MONEY MOVES",
+ "hook": "Bilt's killing *4%* cash back, unless you act",
+ "dek": "Bilt cardholders face a deadline to opt out before losing 4% Bilt Cash rewards.",
+ "slides": [
+  {
+   "label": "What Happened",
+   "text": "Bilt is cutting its *4% Bilt Cash* rewards for most cardholders, starting on each person's card anniversary."
+  },
+  {
+   "label": "The Deadline",
+   "text": "You must *opt out* in the Bilt app before your anniversary date, or the switch happens automatically."
+  },
+  {
+   "label": "No Going Back",
+   "text": "Opting out is safe, but moving to the new system is a *one-way door*, you can't switch back to 4% Bilt Cash."
+  },
+  {
+   "label": "New Cardholders",
+   "text": "Starting in 2027, new applicants *can't choose* 4% Bilt Cash at all, that option disappears completely."
+  },
+  {
+   "label": "The Upside",
+   "text": "*Bilt Cash now lasts 12 months* from when you earn it, instead of expiring every Dec. 31."
+  },
+  {
+   "label": "The Catch",
+   "text": "Hotel redemptions get cut *83%*, Bilt Cash use on hotels drops from monthly to twice a year starting 2027."
+  },
+  {
+   "label": "New Perk",
+   "text": "*Daily Rewards* launches Jan. 15, 2027, a prize program with up to $1,000,000 toward a home purchase."
+  },
+  {
+   "label": "Why It Matters",
+   "text": "For renters and everyday spenders building credit through Bilt, missing this *deadline* could mean losing real money."
+  }
+ ],
+ "cta_line": "Know your *anniversary date*.",
+ "question": "Opting out or letting it switch? Pick one.",
+ "first_comment": "Fun fact: fewer than 10% of Bilt members even have a Bilt card, that's who Daily Rewards is really built for.",
+ "photo_subjects": [
+  "Bilt Rewards",
+  "Bilt Technologies",
+  "Credit card"
+ ],
+ "photo_caption": "Bilt Palladium and Obsidian cards, the focus of Bilt's 2027 rewards overhaul.",
+ "caption_instagram": "Bilt is making a huge change to its credit card rewards, and if you have a Bilt card, you need to pay attention. Thrifty Traveler reports that Bilt is killing the 4% Bilt Cash option for most cardholders, moving everyone to a new points system on your card anniversary date unless you opt out first.\n\nHere's the catch: opting out is safe, but once you move to the new benefits, there's no going back to earning 4% back. New applicants in 2027 won't even get the choice, that option disappears completely. The good news is Bilt Cash will finally last 12 months instead of expiring every December, but hotel redemptions are getting cut hard, down 83% starting in 2027.\n\nFor people building credit and rewards through everyday spending like rent, groceries and daycare, a deadline like this can quietly cost real money if you miss it.\n\nOpting out or letting it switch? Pick one.\n\nSend this to anyone with a Bilt card before they miss their deadline.\n\nFull story: link in bio.\n\n#TheInnovatorsDen #BiltRewards #CreditCards #MoneyMoves #PersonalFinance",
+ "caption_reel": "Bilt is cutting 4% Bilt Cash rewards for most cardholders, and there's a deadline to opt out before your card anniversary hits. New cardholders in 2027 lose the option entirely, while Bilt Cash finally stops expiring every December. Opting out or letting it switch? Pick one. Send this to anyone with a Bilt card. #TheInnovatorsDen #BiltRewards #CreditCards #MoneyMoves",
+ "caption_facebook": "Bilt just dropped a major change to its credit card rewards, and Thrifty Traveler broke down everything you need to know. If you earn 4% Bilt Cash on your Bilt card, you're about to lose that option unless you opt out in the app before your card anniversary date. Miss it, and you're automatically moved to a new system, with no way back. New applicants in 2027 won't get the 4% choice at all. The upside: Bilt Cash will finally last 12 months instead of expiring every December. The downside: hotel redemptions just got cut by 83%. Opting out or letting it switch? Pick one. Tag someone with a Bilt card so they don't miss this. #TheInnovatorsDen\n\nSource: Thrifty Traveler https://thriftytraveler.com/news/points/bilt-2027-changes/",
+ "caption_linkedin": "Bilt just restructured its credit card rewards program, and it's a good reminder for founders and operators building loyalty programs of your own.\n\nPer Thrifty Traveler, Bilt is phasing out its 4% Bilt Cash option for most cardholders, moving everyone to a simplified points system on their card anniversary date unless they opt out first. The move is framed as simplification, but it comes with real tradeoffs: better expiration terms on Bilt Cash, paired with an 83% cut to hotel redemption limits starting in 2027.\n\nThe lesson for anyone running a rewards or membership program: simplifying a confusing system often means some users lose value, even when the headline sounds like an upgrade. How you communicate tradeoffs, and how much lead time you give before a deadline, matters as much as the benefit itself.\n\nFor underrepresented founders building loyalty programs, membership tiers or fintech products, this is a case study in managing change without losing member trust.\n\nOpting out or letting it switch? Pick one.\n\n#FinTech #MoneyMoves #TheInnovatorsDen\n\nSource: Thrifty Traveler https://thriftytraveler.com/news/points/bilt-2027-changes/",
+ "story_id": "afc9c210-5d94-4bd2-ad19-46e11e062d0e",
+ "topic": "Travel",
+ "title": "Bilt\u2019s 2027 Shake-Up: Longer-Lasting Bilt Cash and a Deadline You Can\u2019t Miss",
+ "source_name": "Thrifty Traveler",
+ "source_url": "https://thriftytraveler.com/news/points/bilt-2027-changes/",
+ "writer": "claude",
+ "mode": "baseline",
+ "trend": null,
+ "photo": {
+  "path": "/home/runner/work/innovators-den-autopost/innovators-den-autopost/build/photo.jpg",
+  "credit": "Photo: ajay_suresh / CC BY 4.0 via Wikimedia Commons",
+  "subject": "Bilt Rewards",
+  "caption": "Bilt Palladium and Obsidian cards, the focus of Bilt's 2027 rewards overhaul."
+ }
+}

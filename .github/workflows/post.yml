@@ -19,7 +19,7 @@ concurrency: { group: den-autopost, cancel-in-progress: false }
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -145,3 +145,29 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST }}
+
+      - name: Spanish Instagram (carousels only; sleeps until IG_ES_USER_ID and IG_ES_ACCESS_TOKEN are set)
+        # Runs last and never fails the job: the carousel this run posted, in Spanish, plus one past carousel
+        # from es/queue.json (max ES_CATCHUP_PER_DAY a day). See es.py.
+        if: always()
+        run: |
+          if [ -z "$IG_ES_USER_ID" ] || [ -z "$IG_ES_ACCESS_TOKEN" ]; then echo "Spanish Instagram: not set up yet"; exit 0; fi
+          pip install -q pillow playwright==1.47.0 && python -m playwright install --with-deps chromium >/dev/null 2>&1 || true
+          python es.py build || { echo "es build failed"; exit 0; }
+          git config user.name "den-autopost" && git config user.email "actions@github.com"
+          git add -A public/es es && git commit -q -m "es slides $(date -u +%F-%H%M)" && bash push.sh || true
+          sleep 20
+          python es.py post || echo "es post failed"
+          git add -A es && git commit -q -m "es log $(date -u +%F-%H%M)" && bash push.sh || true
+        env:
+          RUN_ID: ${{ env.RUN_ID }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          IG_ES_USER_ID: ${{ secrets.IG_ES_USER_ID }}
+          IG_ES_ACCESS_TOKEN: ${{ secrets.IG_ES_ACCESS_TOKEN }}
+          IG_ES_GRAPH_HOST: ${{ vars.IG_ES_GRAPH_HOST }}
+          IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST }}
+          IG_ES_COLLABORATORS: ${{ vars.IG_ES_COLLABORATORS }}
+          ES_CATCHUP_PER_DAY: ${{ vars.ES_CATCHUP_PER_DAY }}
+          ES_MAIN_HANDLE: ${{ vars.ES_MAIN_HANDLE }}

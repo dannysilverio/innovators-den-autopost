@@ -1,0 +1,67 @@
+{
+ "kicker": "THE STOOP",
+ "hook": "Nowhere to *stop* in NYC",
+ "dek": "Bus cameras, a $9 toll and record rents: what it really costs to live in New York in 2026.",
+ "slides": [
+  {
+   "label": "The curb",
+   "text": "NYC has about *3 million* street parking spots, and only about 80,000 are metered. New bus and bike lanes are taking more: *61* on 116th St, close to *300* on University Ave."
+  },
+  {
+   "label": "The cameras",
+   "text": "Cameras on MTA buses now ticket *double-parking* and blocked bus stops on *62 routes*. Fines start at $50 and climb to $250."
+  },
+  {
+   "label": "The tickets",
+   "text": "In one year: *1.1 million* bus-camera tickets for double-parking and blocking stops. Of 1,410 drivers who appealed, only *48* won."
+  },
+  {
+   "label": "The toll",
+   "text": "It costs *$9* to drive into Manhattan below 60th St at peak hours. Traffic is down 11%, and the toll is set to rise in *2028*."
+  },
+  {
+   "label": "The garage",
+   "text": "A monthly garage spot near Central Park can run *$1,400*. That's close to the typical *one-bedroom rent* across the US."
+  },
+  {
+   "label": "The rent",
+   "text": "Manhattan's median rent hit a record *$5,295* a month. Stabilized rents are frozen, but market-rate tenants get *no relief*."
+  },
+  {
+   "label": "The sidewalk",
+   "text": "Overdose deaths fell 28%, but NYC still loses someone *every 4 hours*. On one March night, *4,991* people slept outside or in the subways."
+  },
+  {
+   "label": "The other side",
+   "text": "The city says camera routes run up to *30% faster* with 20% fewer collisions. Faster buses, and still *nowhere to stop*."
+  }
+ ],
+ "cta_line": "Circle the block *one more time*.",
+ "question": "Bus cameras: SAFER streets or CASH GRAB? Pick one.",
+ "first_comment": "Which borough has it the worst for parking right now? Name it below. Full story with every source: link in bio.",
+ "photo_subjects": [
+  "East Harlem",
+  "Spanish Harlem"
+ ],
+ "photo_caption": "East Harlem, Manhattan, looking north along the East River.",
+ "caption_instagram": "Living in New York in 2026 costs more at every turn, and the street itself has less room for all of it.\n\nCameras on MTA buses now ticket double-parking on 62 routes, even if you're just running the groceries upstairs. In one year they wrote more than 1.1 million tickets for double-parking and blocking bus stops, and only 48 of 1,410 appeals won. New bus and bike lanes are taking spots, the $9 congestion toll is set to rise in 2028, and a garage spot near Central Park can cost about as much as a one-bedroom apartment in the rest of the country. Manhattan's median rent just hit a record $5,295.\n\nThe city's side: camera routes run up to 30% faster with 20% fewer collisions, and traffic in the toll zone is down 11%.\n\nBus cameras: SAFER streets or CASH GRAB? Pick one.\n\nSend this to a New Yorker who circled the block tonight.\n\nFull story with every source: link in bio.\n\nBy The Innovators Den. Data: NYC Dept. of Finance, MTA, Corcoran, NYC Health, NYC DSS\n#TheInnovatorsDen #TheStoop #NYC #NewYorkCity #Harlem #NYCParking",
+ "caption_reel": "Bus cameras on 62 routes, a $9 toll, record rent and nowhere to stop. What it really costs to live in NYC in 2026. Bus cameras: SAFER streets or CASH GRAB? #TheInnovatorsDen #TheStoop #NYC",
+ "caption_facebook": "Living in New York in 2026 costs more at every turn, and the street has less room for all of it. Cameras on MTA buses now ticket double-parking on 62 routes: more than 1.1 million tickets for double-parking and blocking bus stops in one year. New bus and bike lanes are taking spots, the $9 congestion toll rises in 2028, a garage spot near Central Park can run $1,400 a month, and Manhattan's median rent hit a record $5,295. The city's side: camera routes run up to 30% faster with 20% fewer collisions. Bus cameras: safer streets or cash grab? Tell us below.\n\nBy The Innovators Den. Data: NYC Dept. of Finance, MTA, Corcoran, NYC Health. #TheInnovatorsDen #NYC\n\nSource: The Innovators Den https://theinnovatorsden.net",
+ "caption_linkedin": "New York's curb is being rebuilt, and residents are paying for the transition.\n\nIn fiscal 2026, MTA bus cameras issued more than 1.1 million tickets for double-parking and blocking bus stops. Bus and bike lanes are replacing parking, the $9 congestion toll is set to rise in 2028, and Manhattan's median rent hit a record $5,295. The city points to buses up to 30% faster with 20% fewer collisions on camera routes.\n\nFor small businesses and delivery operators, the open question is where a legal two-minute stop fits. DOT data says loading zones cut double-parking by up to 70%, yet they remain scarce.\n\nBus cameras: safer streets or cash grab?\n\nBy The Innovators Den. Data: NYC Dept. of Finance, MTA, Corcoran, NYC Health.\n\n#TheInnovatorsDen #NYC #UrbanPolicy #SmallBusiness\n\nSource: The Innovators Den https://theinnovatorsden.net",
+ "story_id": "manual-nyc-nowhere-to-stop-20261028",
+ "topic": "Culture",
+ "title": "Nowhere to Stop: Living in New York in 2026",
+ "source_name": "The Innovators Den",
+ "source_url": "https://theinnovatorsden.net",
+ "credit_line": "By The Innovators Den",
+ "cover_style": "breaking",
+ "mode": "manual",
+ "writer": "manual",
+ "trend": null,
+ "photo": {
+  "path": "/home/runner/work/innovators-den-autopost/innovators-den-autopost/build/photo.jpg",
+  "credit": "Photo: Ajay Suresh from New York, NY, USA / CC BY 2.0 via Wikimedia Commons",
+  "subject": "East Harlem",
+  "caption": "East Harlem, Manhattan, looking north along the East River."
+ }
+}

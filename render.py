@@ -64,10 +64,10 @@ def page(inner, wm=True):
     w = f"<img class='wm' src='{BULB}'>" if wm else ""
     return f"<html><head><style>{CSS}</style></head><body><div class='card'><div class='glow'></div>{w}{inner}</div></body></html>"
 
-def top(topic):
+def top(topic, label=None):  # label: the topic name as shown (the Spanish edition passes its own)
     c = TOPIC_COLORS.get(topic, "#FFE600")
     return (f"<div class='top'><div class='brand'><img src='{BULB}'><span>THE INNOVATORS<br>DEN</span></div>"
-            f"<div class='chip' style='background:{c}'>{esc(topic)}</div></div>")
+            f"<div class='chip' style='background:{c}'>{esc(label or topic)}</div></div>")
 
 def dots(i, n): return "<div class='dots'>" + "".join(f"<i class='{'on' if k == i else ''}'></i>" for k in range(1, n + 1)) + "</div>"
 
@@ -81,11 +81,12 @@ def hsize(t):
 
 def carousel(post):
     t, src, n = post["topic"], post["source_name"], len(post["slides"]) + 2
-    out = [top(t) + f"<div class='body'><div class='kicker'>{esc(post.get('kicker','Signal'))}</div>"
+    tl = post.get("topic_label")
+    out = [top(t, tl) + f"<div class='body'><div class='kicker'>{esc(post.get('kicker','Signal'))}</div>"
            f"<h1 style='font-size:{hsize(post['hook'])}px'>{mark(post['hook'],'em')}</h1></div>"
            f"<div class='foot'><span>{esc(credit(post))}</span><span class='swipe'>SWIPE &rarr;</span></div>"]
     for i, s in enumerate(post["slides"], start=2):
-        out.append(top(t) + f"<div class='body'><div class='big'>{i-1:02d}</div><div class='label'>{esc(s['label'])}</div>"
+        out.append(top(t, tl) + f"<div class='body'><div class='big'>{i-1:02d}</div><div class='label'>{esc(s['label'])}</div>"
                    f"<p class='txt' style='font-size:{tsize(s['text'])}px'>{mark(s['text'],'strong')}</p></div>"
                    f"<div class='foot'><span>{esc(credit(post))}</span>{dots(i,n)}</div>")
     out.append(f"<div class='body cta'><img src='{FULL}'><h1>{mark(post['cta_line'],'em')}</h1>"
@@ -95,7 +96,7 @@ def carousel(post):
     return out
 
 def single(post):
-    return (top(post["topic"]) + f"<div class='body'><div class='kicker'>{esc(post.get('kicker','Signal'))}</div>"
+    return (top(post["topic"], post.get("topic_label")) + f"<div class='body'><div class='kicker'>{esc(post.get('kicker','Signal'))}</div>"
             f"<h1 style='font-size:{hsize(post['hook'])}px'>{mark(post['hook'],'em')}</h1>"
             f"<p style='font-weight:600;font-size:40px;line-height:1.3;color:#D8D8D8;margin-top:44px'>{mark(post['dek'],'strong')}</p></div>"
             f"<div class='foot'><span>{esc(credit(post))}</span><span style='font-family:Anton;color:#FF4D7E;font-size:32px'>FOR US. BY US.</span></div>")
@@ -109,7 +110,10 @@ def render(post, outdir):
         b = p.chromium.launch()
         def shot(inner, name, wm=True, full=False):
             pg = b.new_page(viewport={"width": W, "height": H})
-            pg.set_content(inner if full else page(inner, wm), wait_until="networkidle"); pg.wait_for_timeout(400)
+            doc = inner if full else page(inner, wm)
+            if post.get("lang") == "es":  # Spanish edition: same template, fixed labels swapped (es.py)
+                import es; doc = es.localize(doc)
+            pg.set_content(doc, wait_until="networkidle"); pg.wait_for_timeout(400)
             f = out / name; pg.screenshot(path=str(f)); pg.close(); files.append(str(f))
         slides = carousel(post)
         style = covers.pick_style(post)

@@ -1,0 +1,64 @@
+{
+ "kicker": "AI WATCH",
+ "hook": "OpenAI Drops *Dots*, Skips IPO",
+ "dek": "DevDay 2026 brought new agents, a $500 tier, and no IPO promise.",
+ "slides": [
+  {
+   "label": "What Happened",
+   "text": "OpenAI held its DevDay 2026 keynote in *San Francisco* on September 29th, led by CEO Sam Altman."
+  },
+  {
+   "label": "Meet Dots",
+   "text": "OpenAI launched *Dots*, an always-on AI agent that works across *4,000+ apps*, rivaling Meta's Muse."
+  },
+  {
+   "label": "Paid Access Only",
+   "text": "Unlike free-to-use Muse, Dots starts *paid-only* for ChatGPT Pro, Business Premium, and Enterprise users."
+  },
+  {
+   "label": "Bigger Plans",
+   "text": "OpenAI's CFO says the goal is to bring Dots to its *entire consumer base* down the line."
+  },
+  {
+   "label": "New Numbers",
+   "text": "OpenAI added a *$500/month* Pro tier with Ultrafast speed, as ChatGPT hit *1.2 billion* weekly users."
+  },
+  {
+   "label": "No IPO Yet",
+   "text": "Altman says OpenAI *won't go public* until it can make confident safety claims, with no timeline set."
+  },
+  {
+   "label": "Tense Backdrop",
+   "text": "The launch follows reports of AI agents *hacking outside companies* and protesters outside DevDay chanting 'people over profit.'"
+  },
+  {
+   "label": "Why It Matters",
+   "text": "As AI tools get *pricier and gatekept*, access gaps widen for underrepresented builders trying to compete."
+  }
+ ],
+ "cta_line": "Watch who gets *first access*.",
+ "question": "Would you pay $500 a month for an AI agent that never IPOs?",
+ "caption_instagram": "OpenAI just dropped a new AI agent, and it's not free for everyone.\n\nAt its DevDay 2026 keynote in San Francisco, CEO Sam Altman unveiled Dots, an always-on assistant that works across more than 4,000 apps to rival Meta's Muse. Unlike Muse, Dots is starting out paid-only, limited to ChatGPT Pro, Business Premium, and Enterprise subscribers, with OpenAI's CFO saying wider consumer access is coming later.\n\nThe company also rolled out a $500 a month Pro tier, revealed ChatGPT now has 1.2 billion weekly users, and confirmed there's no IPO on the horizon until it can make stronger safety promises. All of this comes as reports surface of AI agents hacking outside companies, and protesters gathered outside DevDay demanding OpenAI put people over profit.\n\nFor underrepresented builders already priced out of top-tier AI tools, access gaps like this hit different.\n\nWould you pay $500 a month for an AI agent that never IPOs?\n\nFull story: link in bio.\n\n#TheInnovatorsDen #AIWatch #OpenAI #TechNews #Innovation #BlackInTech #FutureOfWork",
+ "caption_facebook": "OpenAI just held its DevDay 2026 keynote in San Francisco, and there's a lot to unpack.\n\nThe company launched Dots, an always-on AI agent that rivals Meta's Muse, but it's starting out paid-only for Pro, Business Premium, and Enterprise subscribers. OpenAI also added a $500 a month Pro tier, revealed ChatGPT has 1.2 billion weekly users, and confirmed CEO Sam Altman still won't commit to an IPO date until the company can make stronger safety claims.\n\nAll this comes as reports of AI agents hacking outside companies keep surfacing, and protesters gathered outside the event demanding OpenAI put people over profit.\n\nWould you pay $500 a month for an AI agent that never IPOs? #TheInnovatorsDen\n\nSource: The Verge https://www.theverge.com/ai-artificial-intelligence/1001681/openai-devday-2026-biggest-news-announcements",
+ "caption_linkedin": "OpenAI's DevDay 2026 keynote in San Francisco dropped a lot of signal for founders and operators watching the AI agent race.\n\nThe headline launch is Dots, an always-on AI agent built on OpenAI's GPT-6 Astra model, working across more than 4,000 apps to compete with Meta's Muse. The catch: Dots is launching paid-only, reserved for ChatGPT Pro, Business Premium, and Enterprise subscribers, with OpenAI's CFO confirming broader consumer access is a future goal, not a current reality.\n\nOpenAI also introduced a $500 a month Pro tier, reported 1.2 billion weekly ChatGPT users, and CEO Sam Altman reaffirmed there's no IPO timeline until the company can make confident safety claims, a stance shaped by recent reports of AI agents hacking outside companies.\n\nFor founders building on top of these platforms, pricing tiers like this decide who gets early access to the tools shaping the next product cycle.\n\nWhere should the line be on who gets first access to powerful AI tools?\n\n#OpenAI #AIAgents #TheInnovatorsDen\n\nSource: The Verge https://www.theverge.com/ai-artificial-intelligence/1001681/openai-devday-2026-biggest-news-announcements",
+ "story_id": "79e6ae0e-557a-47a1-829b-16e60e61b6ff",
+ "topic": "Innovation",
+ "title": "OpenAI DevDay 2026: The biggest news and announcements",
+ "source_name": "The Verge",
+ "source_url": "https://www.theverge.com/ai-artificial-intelligence/1001681/openai-devday-2026-biggest-news-announcements",
+ "writer": "claude",
+ "mode": "trending",
+ "trend": {
+  "story_id": "79e6ae0e-557a-47a1-829b-16e60e61b6ff",
+  "outside_url": null,
+  "topic": "Innovation",
+  "score": 9,
+  "why": "OpenAI's DevDay 2026 keynote and 20+ product launches (Dots agents, GPT-6.1 Sol, Codex updates) dominated coverage across CNBC, Axios, TechCrunch, Engadget and 9to5Mac in the last 24 hours and was a top trending topic on X.",
+  "evidence": [
+   "https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html",
+   "https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol",
+   "https://www.engadget.com/2271985/openai-dev-day-live-blog-chatgpt-news/",
+   "https://9to5mac.com/2026/09/29/openai-teases-20-announcements-at-devday-watch-live/"
+  ]
+ }
+}

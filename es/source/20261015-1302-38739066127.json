@@ -1,0 +1,78 @@
+{
+ "kicker": "AI WATCH",
+ "hook": "CoreWeave stock craters *25%* in one week",
+ "dek": "Analysts warn most AI 'neocloud' providers could collapse by 2030.",
+ "slides": [
+  {
+   "label": "What happened",
+   "text": "CoreWeave shares plunged more than *25%* in a single week on growing AI spending fears."
+  },
+  {
+   "label": "The numbers",
+   "text": "Stock fell *15.46%* in one day, then slid up to *7%* more in premarket Thursday trading."
+  },
+  {
+   "label": "Not alone",
+   "text": "SK Hynix dropped over *6%*, Sandisk fell over *5%*, and Korea's Kospi sank more than *7%*."
+  },
+  {
+   "label": "The warning",
+   "text": "Gartner predicts over *80%* of 'neocloud' providers could shut down by 2030 from cost pressure."
+  },
+  {
+   "label": "The debt problem",
+   "text": "CoreWeave's unsecured bond yields hit nearly *15%*, a level analysts call 'distress.'"
+  },
+  {
+   "label": "CEO responds",
+   "text": "CEO Mike Intrator blames an 'irrational' market and rivals' failed IPOs, not CoreWeave's model."
+  },
+  {
+   "label": "Where it stands",
+   "text": "CoreWeave stock is down *17%* this year while the Nasdaq Composite is up nearly 15%."
+  },
+  {
+   "label": "Why it matters",
+   "text": "If AI infrastructure bets collapse, capital for *Black, Brown, Latino* tech builders tends to dry up first."
+  }
+ ],
+ "cta_line": "The AI bubble talk is getting *loud*.",
+ "question": "Bubble or just a correction? One word.",
+ "first_comment": "Gartner says AI data centers need $8.5 trillion in revenue by 2030 just to break even on spending.",
+ "photo_subjects": [
+  "CoreWeave",
+  "Mike Intrator",
+  "Nasdaq"
+ ],
+ "photo_caption": "CoreWeave CEO Mike Intrator amid the company's falling stock price",
+ "caption_instagram": "CoreWeave stock just dropped more than 25% in one week, and the whole 'neocloud' AI industry is feeling the pressure.\n\nGartner now predicts over 80% of neocloud providers could shut down by 2030, pointing to cost pressure and no real differentiation. CoreWeave's own bond yields spiked to nearly 15%, a level usually tied to financial distress. CEO Mike Intrator says the market has it wrong, blaming 'irrational' investors and rivals' failed IPOs, not his company's model.\n\nMeanwhile CoreWeave stock is down 17% this year while the Nasdaq is up nearly 15%. Chip makers like SK Hynix and Sandisk are sliding too, and if the AI infrastructure bet goes bad, capital for Black, Brown, Latino and underrepresented builders tends to dry up first.\n\nBubble or just a correction? One word.\n\nSend this to a founder watching the AI market closely.\n\nFull story: link in bio.\n\n#TheInnovatorsDen #AIWatch #CoreWeave #TechNews #MoneyMoves",
+ "caption_reel": "CoreWeave stock fell over 25% in a week as AI spending fears spread across markets, Fast Company reports. Gartner predicts 80% of neocloud providers could shut down by 2030, and CoreWeave's bond yields hit near 15%, a distress signal. The CEO says the market is wrong. Bubble or just a correction? One word. Send this to a founder watching AI markets. Full story: link in bio. #TheInnovatorsDen #AIWatch #CoreWeave #TechNews",
+ "caption_facebook": "CoreWeave's stock has dropped more than 25% in just one week, and it's dragging other AI-related companies down with it, according to Fast Company. Gartner, a major research firm, now predicts that over 80% of 'neocloud' providers could close by 2030 because of high costs and no clear edge over competitors. CoreWeave's own debt is getting expensive too, with bond yields near 15%, a level usually linked to financial trouble. The CEO says the market has it wrong and the business is fine. Meanwhile CoreWeave stock is down 17% this year while the Nasdaq overall is up. Bubble or just a correction? One word. #TheInnovatorsDen\n\nSource: Fast Company https://www.fastcompany.com/91624276/coreweave-stock-drop-why-down-ai-spending-rattles-market",
+ "caption_linkedin": "CoreWeave's stock fell more than 25% in a week, and according to Fast Company, it's a signal worth watching for anyone building or investing near AI infrastructure.\n\nGartner now projects over 80% of 'neocloud' providers could shut down by 2030, citing cost pressure and a lack of differentiation. The firm estimates AI data center owners need a cumulative $8.5 trillion in revenue through 2030 just to cover spending and hit a 12% return.\n\nCoreWeave's unsecured bond yields have climbed to nearly 15%, a level analysts associate with distress. CEO Mike Intrator maintains the business model is sound and blames market overreaction and rivals' failed IPOs for the pressure on CoreWeave specifically.\n\nFor founders raising capital in AI adjacent spaces, this is a reminder that infrastructure spend and investor patience don't always move together.\n\nBubble or just a correction? One word.\n\n#AIWatch #CoreWeave #TheInnovatorsDen\n\nSource: Fast Company https://www.fastcompany.com/91624276/coreweave-stock-drop-why-down-ai-spending-rattles-market",
+ "story_id": "0a967902-f70d-41f5-9618-36f3cd19400c",
+ "topic": "Innovation",
+ "title": "CoreWeave stock keeps falling as fears of AI spending drag down markets. Here\u2019s the latest on what\u2019s happening",
+ "source_name": "Fast Company",
+ "source_url": "https://www.fastcompany.com/91624276/coreweave-stock-drop-why-down-ai-spending-rattles-market",
+ "writer": "claude",
+ "mode": "trending",
+ "trend": {
+  "story_id": "0a967902-f70d-41f5-9618-36f3cd19400c",
+  "outside_url": null,
+  "topic": "Finance",
+  "score": 8,
+  "why": "CoreWeave's bond-yield spike, Musk's viral 'Yikes' reply to Chamath's 'private credit bubble' warning, and a fresh pre-market slide are driving a multi-day AI-infrastructure debt selloff covered simultaneously by CNBC, Bloomberg, Yahoo Finance and Investing.com this morning.",
+  "evidence": [
+   "https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html",
+   "https://finance.yahoo.com/markets/stocks/article/coreweave-is-getting-drilled-again-the-day-after-a-panic-filled-rout-091811806.html",
+   "https://www.investing.com/news/stock-market-news/why-is-coreweave-stock-sliding-today-93CH-4950971",
+   "https://www.bloomberg.com/news/articles/2026-10-14/stock-market-today-dow-s-p-live-updates"
+  ]
+ },
+ "photo": {
+  "path": "/home/runner/work/innovators-den-autopost/innovators-den-autopost/build/photo.jpg",
+  "credit": "Photo: Nielsoncaetanosalmeron / CC BY 4.0 via Wikimedia Commons",
+  "subject": "Nasdaq",
+  "caption": "CoreWeave CEO Mike Intrator amid the company's falling stock price"
+ }
+}
