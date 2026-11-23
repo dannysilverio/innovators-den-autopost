@@ -5070,5 +5070,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-23",
+  "posted_at": "2026-11-23T11:07-05:00",
+  "mode": "baseline",
+  "run_id": "20261123-1604-45211527874",
+  "story_id": "d96edbc8-1730-4977-98af-2d463ba1d472",
+  "topic": "Finance",
+  "title": "Why Nvidia brought Jensen Huang back as CEO despite his scandals",
+  "source": "Fast Company",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18127455553941744"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18194716441405172"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18141982450552527",
+     "18139948783730073"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122214228080797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18068364830791901"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "PavjKE3koVg",
+    "privacy": "public"
+   }
+  }
  }
 ]
