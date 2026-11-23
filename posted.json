@@ -5028,5 +5028,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-22",
+  "posted_at": "2026-11-22T21:07-05:00",
+  "mode": "original",
+  "run_id": "20261123-0204-45097681921",
+  "story_id": "den-original-7179ce1f-1c9a-4392-8a19-690d04b58b13",
+  "topic": "Sports",
+  "title": "Skubal's $450 Million Mets Deal: Does Steve Cohen's Spending Make Sense?",
+  "source": "The Innovators Den",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "17914564500580384"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18116651366136252"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17880460332635980",
+     "17966649486213851"
+    ]
+   },
+   "facebook": {
+    "ok": true,
+    "id": "562658440270920_122214157838797044"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18156546556531324"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "7FFeqk0fvfc",
+    "privacy": "public"
+   }
+  }
  }
 ]
