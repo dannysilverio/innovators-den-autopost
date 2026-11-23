@@ -188,6 +188,20 @@
       "when": "2026-11-19T21:15:00",
       "metricool_id": 434977715,
       "source": "daily"
+    },
+    {
+      "slug": "best-desserts-in-nyc-21-spots-what-to-order",
+      "board": "NYC Food and Drink",
+      "when": "2026-11-22T21:15:00",
+      "metricool_id": 438136211,
+      "source": "daily"
+    },
+    {
+      "slug": "i-love-paraguay-sunnyside-queens-paraguayan-restaurant",
+      "board": "NYC Food and Drink",
+      "when": "2026-11-23T16:15:00",
+      "metricool_id": 438136222,
+      "source": "daily"
     }
   ],
   "skipped": [
@@ -322,6 +336,30 @@
     {
       "slug": "i-love-paraguay-the-family-table-that-brought",
       "reason": "no real photo (hero image i-love-paraguay-sunnyside-queens-paraguayan-restaurant.jpg returns 404 on the site; story is evergreen Food & Wine for NYC Food and Drink, re-pin once the photo is fixed)"
+    },
+    {
+      "slug": "skubal-mets-450-million-cohen-spending-does-it-make-sense",
+      "reason": "sports and finance news"
+    },
+    {
+      "slug": "knicks-vs-pacers-tonight-time-tv-injuries-nba-cup",
+      "reason": "sports, single-night game preview"
+    },
+    {
+      "slug": "the-lox-longevity-jadakiss-styles-p-sheek-louch",
+      "reason": "celebrity music profile, not a ranking; hero is an AI illustration"
+    },
+    {
+      "slug": "best-dominican-restaurants-washington-heights-inwood",
+      "reason": "no real photo (hero is an AI illustration; story is evergreen Food & Wine for NYC Food and Drink, re-pin once a real photo is added)"
+    },
+    {
+      "slug": "best-free-places-to-work-remotely-nyc",
+      "reason": "no fitting board (Business Growth) and hero is an AI illustration"
+    },
+    {
+      "slug": "what-to-watch-december-2026-movies-tv",
+      "reason": "no real photo (hero is an AI illustration)"
     }
   ]
 }
