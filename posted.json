@@ -5215,5 +5215,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-25",
+  "posted_at": "2026-11-25T11:06-05:00",
+  "mode": "baseline",
+  "run_id": "20261125-1603-45650310135",
+  "story_id": "b8cf4f8d-5d94-4601-b12f-f15e01b70914",
+  "topic": "Sports",
+  "title": "How to watch Champions League: Live streams, TV channels and latest fixtures for 2026/27 season schedule",
+  "source": "Sporting News",
+  "writer": "claude",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18121912171783754"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18119241995106018"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "17998529505098820",
+     "18112341779245320"
+    ]
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"AYttGIDOhXt1phmw0W9yoBv\"}}"
+   },
+   "threads": {
+    "ok": true,
+    "id": "18102195269418110"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "7kJgfbmr4bE",
+    "privacy": "public"
+   }
+  }
  }
 ]
