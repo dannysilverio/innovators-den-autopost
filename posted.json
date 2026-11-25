@@ -5196,5 +5196,24 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-24",
+  "posted_at": "2026-11-24T22:12-05:00",
+  "mode": "manual",
+  "run_id": "20261125-0311-45538014628",
+  "story_id": "den-luis-vargas-monchy-reel-20261124",
+  "topic": "Music",
+  "title": "Luis Vargas and Monchy live in the Bronx: Bachat\u00e9ame New York at Lehman Center",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "youtube": {
+    "ok": true,
+    "id": "2eYvNx-Bzfk",
+    "privacy": "public"
+   }
+  }
  }
 ]
