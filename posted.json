@@ -5154,5 +5154,47 @@
     "privacy": "public"
    }
   }
+ },
+ {
+  "date": "2026-11-24",
+  "posted_at": "2026-11-24T20:58-05:00",
+  "mode": "manual",
+  "run_id": "20261125-0156-45529174244",
+  "story_id": "den-luis-vargas-monchy-lehman-20261124",
+  "topic": "Music",
+  "title": "Two Dominican Legends, One Bronx Stage: Luis Vargas and Monchy at Lehman Center",
+  "source": "The Innovators Den",
+  "writer": "manual",
+  "dry_run": false,
+  "results": {
+   "instagram": {
+    "ok": true,
+    "id": "18109749694985464"
+   },
+   "instagram_comment": {
+    "ok": true,
+    "id": "18419391595085107"
+   },
+   "instagram_stories": {
+    "ok": true,
+    "ids": [
+     "18135339709740704",
+     "18120565183814345"
+    ]
+   },
+   "facebook": {
+    "ok": false,
+    "error": "POST https://graph.facebook.com/v21.0/562658440270920/photos -> 400: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"AK0o2JBhnOr20ESH9A2bQTF\"}}"
+   },
+   "threads": {
+    "ok": true,
+    "id": "17923411632530261"
+   },
+   "youtube": {
+    "ok": true,
+    "id": "yWR2e-ChHUU",
+    "privacy": "public"
+   }
+  }
  }
 ]
