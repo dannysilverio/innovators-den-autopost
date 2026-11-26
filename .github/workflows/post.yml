@@ -7,6 +7,7 @@ on:
       force:   { description: "Post now even if caps/hours say no", default: "0" }
   schedule:
     - cron: "40 15 * * *"  # backup ~11:40 ET: only fills a missed daily baseline
+    - cron: "30 13 * * 3"  # Wednesdays 8:30am ET (winter time): the one evergreen list of the week
   push:                        # dropping a Den original in manual/post.json posts it right away
     branches: [main]
     paths: ["manual/post.json"]
