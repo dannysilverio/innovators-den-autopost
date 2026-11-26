@@ -57,19 +57,42 @@ def live_at(a):
     return None
 
 
+def kind_of(a):
+    """Evergreen stories are paced on purpose (Danny, Nov 26, 2026): lists go out ONE a week, on Wednesdays at 8:30am ET,
+    and artist explainers at most one a day. Everything else keeps posting on the next run."""
+    tags = str(a.get("tags") or "").lower()
+    if "evergreen-list" in tags: return "list"
+    if "artist-explainer" in tags: return "artist"
+    return "story"
+
+
+def week_of(now):
+    y, w, _ = now.isocalendar()
+    return f"{y}-W{w:02d}"
+
+
+def list_window(now):
+    """Wednesday 8:30am to noon ET. The 9am and 11am runs are the fallback if the 8:30 run is late."""
+    return now.weekday() == 2 and (now.hour, now.minute) >= (8, 30) and now.hour < 12
+
+
 def next_original(say=print):
-    """Oldest new, live Den original that still needs a carousel. Returns (story, seen_state)."""
+    """Next live Den original that still needs a carousel. Returns (story, seen_state).
+    Order: the weekly evergreen list when its Wednesday slot is open, then regular stories (oldest first),
+    then one artist explainer a day."""
     state = load_seen()
     seen = state.setdefault("seen", {})
     made = already_made()
     now = dt.datetime.now(dt.timezone.utc)
-    todo = []
+    now_et = dt.datetime.now(ET)
+    todo = {"list": [], "story": [], "artist": []}
     for a in fetch():
         if a.get("sourceName") != SOURCE or a.get("status") not in (None, "approved") or a["id"] in seen:
             continue
+        kind = kind_of(a)
         at = live_at(a)
-        if not at or at > now or (now - at).days >= LOOKBACK_DAYS:
-            continue
+        if not at or at > now or (kind == "story" and (now - at).days >= LOOKBACK_DAYS):
+            continue   # evergreen stories wait in line for their slot, so they have no lookback limit
         if norm(a["title"]) in made:
             seen[a["id"]] = {"title": P.clean(a["title"]), "how": "already had a carousel",
                              "at": dt.datetime.now(ET).isoformat(timespec="minutes")}
@@ -78,9 +101,19 @@ def next_original(say=print):
         if len(body) < 600:
             say(f"original '{a['title']}' has no full text yet, will retry next run")
             continue
-        todo.append((at, {**a, "title": P.clean(a["title"]), "body": body[:14000]}))
-    todo.sort(key=lambda x: x[0])
-    return (todo[0][1] if todo else None), state
+        todo[kind].append((at, {**a, "title": P.clean(a["title"]), "body": body[:14000], "_kind": kind}))
+    for k in todo: todo[k].sort(key=lambda x: x[0])
+    if todo["list"]:
+        if list_window(now_et) and state.get("evergreen_week") != week_of(now_et):
+            return todo["list"][0][1], state
+        say(f"{len(todo['list'])} evergreen list(s) waiting: one posts each Wednesday at 8:30am ET")
+    if todo["story"]:
+        return todo["story"][0][1], state
+    if todo["artist"]:
+        if state.get("artist_day") != now_et.date().isoformat():
+            return todo["artist"][0][1], state
+        say(f"{len(todo['artist'])} artist explainer(s) waiting: one posts a day")
+    return None, state
 
 
 PROMPT = """You make Instagram carousels for The Innovators Den, a NYC media network for Black, Brown, Latino and underrepresented innovators. Tagline: "For Us. By Us."
@@ -197,8 +230,11 @@ def build_post(story, out_dir, say=print):
 
 
 def mark(state, story, how):
+    now = dt.datetime.now(ET)
     state.setdefault("seen", {})[story["id"]] = {"title": story["title"], "how": how,
-                                                 "at": dt.datetime.now(ET).isoformat(timespec="minutes")}
+                                                 "at": now.isoformat(timespec="minutes")}
+    if story.get("_kind") == "list": state["evergreen_week"] = week_of(now)
+    if story.get("_kind") == "artist": state["artist_day"] = now.date().isoformat()
     return state
 
 
