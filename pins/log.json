@@ -202,6 +202,13 @@
       "when": "2026-11-23T16:15:00",
       "metricool_id": 438136222,
       "source": "daily"
+    },
+    {
+      "slug": "luis-vargas-monchy-lehman-center-bronx-bachateame-new-york",
+      "board": "NYC Nightlife and Things to Do",
+      "when": "2026-11-25T21:15:00",
+      "metricool_id": 442511837,
+      "source": "daily"
     }
   ],
   "skipped": [
